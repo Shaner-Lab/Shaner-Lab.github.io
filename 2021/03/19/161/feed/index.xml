@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: 	</title>
-	<atom:link href="/2021/03/19/161/feed/" rel="self" type="application/rss+xml" />
-	<link>/2021/03/19/161/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>UCSD Department of Neurosciences</description>
 	<lastBuildDate>Fri, 19 Mar 2021 21:49:05 +0000</lastBuildDate>
 	<sy:updatePeriod>
