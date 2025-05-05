@@ -188,46 +188,10 @@ header {
 
 <div id="publications-container" style="padding: 0 20px;">
   <h3 style="color:white;"><b style="font-size:1.5em; padding-left:20px;">Publications</b></h3>
-  <ol id="publication-list" style="list-style: decimal inside; margin: 0; padding: 0;"></ol>
+  <ol id="publication-list" style="list-style: decimal inside; margin: 0; padding: 0;">
+    <!-- Add or update publications here -->
+  </ol>
 </div>
-<script>
-  async function loadPublications() {
-    try {
-      const proxyUrl = 'https://api.allorigins.win/get?url=';
-      const targetUrl = 'https://profiles.ucsd.edu/nathan.shaner';
-      const response = await fetch(proxyUrl + encodeURIComponent(targetUrl));
-      const data = await response.json();
-      const text = data.contents;
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(text, 'text/html');
-      const pubs = doc.querySelector('#publicationListAll');
-      const listContainer = document.getElementById('publication-list');
-      if (pubs) {
-        listContainer.innerHTML = '';
-        pubs.querySelectorAll('li').forEach(li => {
-          const clone = li.cloneNode(true);
-          const metricsDiv = clone.querySelector('.article-metrics');
-          if (metricsDiv) {
-            const pubmedLink = metricsDiv.querySelector('a');
-            if (pubmedLink) {
-              metricsDiv.innerHTML = 'View in: ';
-              metricsDiv.appendChild(pubmedLink.cloneNode(true));
-            } else {
-              metricsDiv.remove();
-            }
-          }
-          listContainer.appendChild(clone);
-        });
-      } else {
-        listContainer.textContent = 'No publications found.';
-      }
-    } catch (err) {
-      console.error('Error loading publications:', err);
-      document.getElementById('publication-list').textContent = 'Error loading publications.';
-    }
-  }
-  document.addEventListener('DOMContentLoaded', loadPublications);
-</script>
 
 <div id="site-content" class="site-content">
 		<div class="customify-container">
