@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<title>Our Proteins &#8211; The Shaner Lab</title>
+	<title>Our Probes &#8211; The Shaner Lab</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="alternate" type="application/rss+xml" title="The Shaner Lab &raquo; Feed" href="./../feed/index.html">
 <link rel="alternate" type="application/rss+xml" title="The Shaner Lab &raquo; Comments Feed" href="./../comments/feed/index.html">
@@ -90,7 +90,63 @@ header {
 
 .elementor-93 .elementor-element.elementor-element-7fd0e30 > .elementor-widget-container > .elementor-text-editor {
 	background-color:rgba(0, 0, 0, 0.0);
-}</style>
+}
+
+/* Hide Addgene and FPbase heading sections */
+.elementor-element-53bf93d,
+.elementor-element-61825dc {
+    display: none !important;
+}
+/* Hide the 'View all FPs...' link below the table */
+.elementor-element-824a673 {
+    display: none !important;
+}
+</style>
+<style>
+  /* Center protein table headings except Name and Publication */
+  #proteinTable thead th {
+    text-align: center;
+  }
+  #proteinTable thead th:first-child,
+  #proteinTable thead th:last-child {
+    text-align: center;
+  }
+  /* Center protein table data cells except Name and Publication */
+  #proteinTable tbody td {
+    text-align: center;
+  }
+  /* Left-align first column data, right-align last column data */
+  #proteinTable tbody td:first-child {
+    text-align: left;
+  }
+  #proteinTable tbody td:last-child {
+    text-align: right;
+  }
+  /* Bold and adjust table headers */
+  #proteinTable thead th {
+    font-weight: bold;
+    font-size: 1em;
+    white-space: normal;
+    padding: 0.25rem 0.5rem;
+  }
+  /* Add sort indicator icons for sortable headers */
+  #proteinTable thead th:not(:first-child):not(:last-child)::after {
+    content: ' ↕';
+    font-size: 0.8em;
+    margin-left: 4px;
+    opacity: 0.6;
+  }
+  /* Style for the table title */
+  .table-title {
+    font-weight: bold !important;
+    color: #fff !important;
+  }
+  /* Reset padding for Name and Publication columns */
+  #proteinTable thead th:first-child,
+  #proteinTable thead th:last-child {
+    padding: 0.3rem !important;
+  }
+</style>
 		</head>
 
 <body class="page-template-default page page-id-141 content main-layout-content sidebar_vertical_border site-full-width menu_sidebar_slide_left elementor-default elementor-kit-46 elementor-page elementor-page-141">
@@ -117,7 +173,7 @@ header {
 		</div></div>
 <div class="col-v2 col-v2-right"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu"><nav id="site-navigation-main-desktop" class="site-navigation primary-menu primary-menu-main nav-menu-desktop primary-menu-desktop style-plain"><ul id="menu-pages" class="primary-menu-ul menu nav-menu">
 <li id="menu-item--main-desktop-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-98"><a href="./../index.html"><span class="link-before">Home</span></a></li>
-<li id="menu-item--main-desktop-146" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-141 current_page_item menu-item-146"><a href="./index.html" aria-current="page"><span class="link-before">Our Proteins</span></a></li>
+<li id="menu-item--main-desktop-146" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-141 current_page_item menu-item-146"><a href="./index.html" aria-current="page"><span class="link-before">OUR PROBES</span></a></li>
 <li id="menu-item--main-desktop-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="./../publications/index.html"><span class="link-before">Publications</span></a></li>
 <li id="menu-item--main-desktop-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="./../people/index.html"><span class="link-before">People</span></a></li>
 <li id="menu-item--main-desktop-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="./../contact/index.html"><span class="link-before">Contact</span></a></li>
@@ -148,7 +204,7 @@ header {
 <div class="builder-item-sidebar mobile-item--html"><div class="item--inner" data-item-id="html" data-section="header_html"><div class="builder-header-html-item item--html"></div></div></div>
 <div class="builder-item-sidebar mobile-item--primary-menu mobile-item--menu "><div class="item--inner" data-item-id="primary-menu" data-section="header_menu_primary"><nav id="site-navigation-sidebar-mobile" class="site-navigation primary-menu primary-menu-sidebar nav-menu-mobile primary-menu-mobile style-plain"><ul id="menu-pages" class="primary-menu-ul menu nav-menu">
 <li id="menu-item--sidebar-mobile-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-98"><a href="./../index.html"><span class="link-before">Home</span></a></li>
-<li id="menu-item--sidebar-mobile-146" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-141 current_page_item menu-item-146"><a href="./index.html" aria-current="page"><span class="link-before">Our Proteins</span></a></li>
+<li id="menu-item--sidebar-mobile-146" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-141 current_page_item menu-item-146"><a href="./index.html" aria-current="page"><span class="link-before">OUR PROBES</span></a></li>
 <li id="menu-item--sidebar-mobile-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="./../publications/index.html"><span class="link-before">Publications</span></a></li>
 <li id="menu-item--sidebar-mobile-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="./../people/index.html"><span class="link-before">People</span></a></li>
 <li id="menu-item--sidebar-mobile-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="./../contact/index.html"><span class="link-before">Contact</span></a></li>
@@ -174,7 +230,7 @@ header {
 					<div class="elementor-text-editor elementor-clearfix">
 <h1><!-- wp:themeisle-blocks/advanced-columns {"id":"wp-block-themeisle-blocks-advanced-columns-a71c1614"} --></h1>
 <div id="wp-block-themeisle-blocks-advanced-columns-a71c1614" class="wp-block-themeisle-blocks-advanced-columns has-undefined-columns has-desktop-undefined-layout has-tablet-equal-layout has-mobile-equal-layout has-default-gap has-vertical-unset">
-<div class="wp-block-themeisle-blocks-advanced-columns-overlay"> </div>
+<div class="wp-block-themeisle-blocks-advanced-columns-overlay"> </div>
 <p class="innerblocks-wrap"><strong>Our Protein Library</strong></p>
 </div>
 <!-- /wp:themeisle-blocks/advanced-columns -->
@@ -191,7 +247,7 @@ header {
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-af5c39d elementor-widget elementor-widget-heading" data-id="af5c39d" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Our Proteins</h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default">Our Probes</h2>		</div>
 				</div>
 					</div>
 		</div>
@@ -204,7 +260,7 @@ header {
 								<div class="elementor-element elementor-element-1cf5a5b elementor-widget elementor-widget-text-editor" data-id="1cf5a5b" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix">
-<p> </p>
+<p> </p>
 <p>View constructs on <a href="https://www.addgene.org/Nathan_Shaner/"><img decoding="async" class="alignnone" src="https://static.addgene.org/addgene-core/a275c5ea4a/images/common/svg/logo-addgene.svg" alt="" width="149" height="28"></a></p>
 </div>
 				</div>
@@ -223,611 +279,27 @@ header {
 				</div>
 				<div class="elementor-element elementor-element-7f7de14 elementor-widget elementor-widget-html" data-id="7f7de14" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<style>.table {
-    color: #212529;
-    margin-bottom: 1rem;
-}
-
-table {
-
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 2px;
-    border-color: gray;
-    background-color: none;
-}
-
-// Zebra-striping
-//
-// Default zebra-stripe styles (alternating gray and transparent backgrounds)
-
-.table-striped {
-  tbody tr:nth-of-type(#{$table-striped-order}) {
-    background-color: $table-accent-bg;
-  }
-}
-
-.hidden {
-    display: none;
-}</style>
 
 
-<table class="table table-sm table-striped " id="proteinTable" style="width:100%">
+<div class="elementor-widget-container">
+    <h2 class="table-title">Fluorescent Proteins from the Shaner Lab on <a href="https://www.fpbase.org" target="_blank">FPbase.org</a></h2>
+    <table class="table table-sm table-striped " id="proteinTable" style="width:100%; text-align:center;">
 	<thead>
 		<tr class="table-header">
-			
-			<th class="protein"><div style="background-color:none;">Name</div></th>
-			<th>λ<sub>ex</sub>
-</th>
-  			<th>λ<sub>em</sub>
-</th>
-        <th>
-<span class="d-none d-md-inline">Stokes</span><span class="d-block d-md-none">λ<sub>Δ</sub></span>
-</th>
-  			<th>EC</th>
-  			<th>QY</th>
-  			<th>Bright<span class="d-none d-lg-inline">ness</span>
-</th>
-  			<!-- <th data-sortable="true" >&#1642;EGFP</th> -->
-  			
-  			<th>pKa</th>
-  			<th class="agg_type">Agg<span class="d-none d-xl-inline">regation</span>
-</th>
-  			<th>Mat<span class="d-none d-xl-inline">uration</span>
-</th>
-  			<th>
-<span class="d-none d-xl-inline">Lifetime</span><span class="d-block d-xl-none">τ</span>
-</th>
-        <th>kDa</th>
-  			<th class="hidden switch_type">Switch Type</th>
-        <td class="hidden">Aliases</td>
-        
+			<th class="protein">Name</th>
+			<th>λ<sub>ex</sub></th>
+			<th>λ<sub>em</sub></th>
+			<th><span class="d-none d-md-inline">Stokes</span><span class="d-block d-md-none">λ<sub>Δ</sub></span></th>
+			<th>EC</th>
+			<th>QY</th>
+			<th>Bright<span class="d-none d-lg-inline">ness</span></th>
+			<th>pKa</th>
+			<th class="agg_type">Agg<span class="d-none d-xl-inline">regation</span></th>
+			<th><span class="d-none d-xl-inline">Lifetime</span><span class="d-block d-xl-none">τ</span></th>
+			<th>Publication</th>
 		</tr>
 	</thead>
-	<tbody>
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/rosmarinus/">
-								Rosmarinus
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #0c00f6; color:#eee">437</td>
-						<td class="numeric" style="opacity: 0.7;background: #00d6ff;color:#000">482</td>
-						<td class="numeric pl-2">45</td>
-						<td class="numeric">45,000</td>
-						<td class="numeric">0.85</td>
-						<td class="numeric">38.25</td>
-						<!-- <td class="numeric">113.83928571428571</td> -->
-						
-						<td class="numeric"></td>
-						<td class="numeric">t </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">26.05</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/mavicfp1/">
-								mAvicFP1
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #00ccff; color:#000">480</td>
-						<td class="numeric" style="opacity: 0.7;background: #00ff59;color:#000">503</td>
-						<td class="numeric pl-2">23</td>
-						<td class="numeric">65,000</td>
-						<td class="numeric">0.63</td>
-						<td class="numeric">40.95</td>
-						<!-- <td class="numeric">121.875</td> -->
-						
-						<td class="numeric">4.9</td>
-						<td class="numeric">m </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">26.82</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/aausgfp/">
-								AausGFP
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #5b0082; color:#eee">398</td>
-						<td class="numeric" style="opacity: 0.7;background: #00ff59;color:#000">503</td>
-						<td class="numeric pl-2">105</td>
-						<td class="numeric">29,000</td>
-						<td class="numeric">0.73</td>
-						<td class="numeric">21.17</td>
-						<!-- <td class="numeric">63.00595238095238</td> -->
-						
-						<td class="numeric">4.8</td>
-						<td class="numeric">d </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">27.45</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/avicfp1/">
-								AvicFP1
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #00d1ff; color:#000">481</td>
-						<td class="numeric" style="opacity: 0.7;background: #00ff59;color:#000">503</td>
-						<td class="numeric pl-2">22</td>
-						<td class="numeric">64,000</td>
-						<td class="numeric">0.63</td>
-						<td class="numeric">40.32</td>
-						<!-- <td class="numeric">120.0</td> -->
-						
-						<td class="numeric">4.9</td>
-						<td class="numeric">wd </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">26.80</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/aausfp1/">
-								AausFP1
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #00ff4c; color:#000">504</td>
-						<td class="numeric" style="opacity: 0.7;background: #00ff00;color:#000">510</td>
-						<td class="numeric pl-2">6</td>
-						<td class="numeric">170,000</td>
-						<td class="numeric">0.97</td>
-						<td class="numeric">164.9</td>
-						<!-- <td class="numeric">490.7738095238095</td> -->
-						
-						<td class="numeric">4.4</td>
-						<td class="numeric">d </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">25.72</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/avicfp4/">
-								AvicFP4
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #00ff7f; color:#000">500</td>
-						<td class="numeric" style="opacity: 0.7;background: #07ff00;color:#000">512</td>
-						<td class="numeric pl-2">12</td>
-						<td class="numeric">121,000</td>
-						<td class="numeric">0.1</td>
-						<td class="numeric">12.1</td>
-						<!-- <td class="numeric">36.01190476190476</td> -->
-						
-						<td class="numeric"></td>
-						<td class="numeric"> </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">25.50</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-      
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/aausfp4/">
-								AausFP4
-								 <small>(On)</small>
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #00bcff; color:#eee">477</td>
-						<td class="numeric" style="opacity: 0.7;background: #0aff00;color:#000">513</td>
-						<td class="numeric pl-2">36</td>
-						<td class="numeric">69,000</td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-						<!-- <td class="numeric">-</td> -->
-						
-						<td class="numeric"></td>
-						<td class="numeric">d </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">25.61</td>
-						<td class="hidden">ps</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-      
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/avicfp2/">
-								AvicFP2
-								 <small>(pre-conversion)</small>
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #00ccff; color:#000">480</td>
-						<td class="numeric" style="opacity: 0.7;background: #12ff00;color:#000">515</td>
-						<td class="numeric pl-2">35</td>
-						<td class="numeric">59,000</td>
-						<td class="numeric">0.04</td>
-						<td class="numeric">2.36</td>
-						<!-- <td class="numeric">7.023809523809523</td> -->
-						
-						<td class="numeric"></td>
-						<td class="numeric"> </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">25.61</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-      
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/avicfp3/">
-								AvicFP3
-								 <small>(pre-conversion)</small>
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #00ccff; color:#000">480</td>
-						<td class="numeric" style="opacity: 0.7;background: #b6ff00;color:#000">520</td>
-						<td class="numeric pl-2">40</td>
-						<td class="numeric">-</td>
-						<td class="numeric">0.001</td>
-						<td class="numeric"></td>
-						<!-- <td class="numeric">-</td> -->
-						
-						<td class="numeric"></td>
-						<td class="numeric"> </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">25.54</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/lssmcherry1/">
-								LSSmCherry1
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #0033ff; color:#eee">450</td>
-						<td class="numeric" style="opacity: 0.7;background: #f70000;color:#eee">610</td>
-						<td class="numeric pl-2">160</td>
-						<td class="numeric">35,000</td>
-						<td class="numeric">0.29</td>
-						<td class="numeric">10.15</td>
-						<!-- <td class="numeric">30.208333333333332</td> -->
-						
-						<td class="numeric">6.2</td>
-						<td class="numeric">m </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">26.69</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/mcherry2/">
-								mCherry2
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #ff3e00; color:#000">589</td>
-						<td class="numeric" style="opacity: 0.7;background: #f70000;color:#eee">610</td>
-						<td class="numeric pl-2">21</td>
-						<td class="numeric">79,400</td>
-						<td class="numeric">0.22</td>
-						<td class="numeric">17.47</td>
-						<!-- <td class="numeric">51.99404761904761</td> -->
-						
-						<td class="numeric">3.3</td>
-						<td class="numeric">m </td>
-						<td class="numeric">22.8</td>
-						<td class="numeric"></td>
-            <td class="numeric weight">26.74</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/rdsmcherry01/">
-								RDSmCherry0.1
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #ff1b00; color:#eee">598</td>
-						<td class="numeric" style="opacity: 0.7;background: #e20000;color:#eee">625</td>
-						<td class="numeric pl-2">27</td>
-						<td class="numeric">59,600</td>
-						<td class="numeric">0.1</td>
-						<td class="numeric">5.96</td>
-						<!-- <td class="numeric">17.738095238095237</td> -->
-						
-						<td class="numeric"></td>
-						<td class="numeric">m </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">26.59</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/rdsmcherry02/">
-								RDSmCherry0.2
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #ff1300; color:#eee">600</td>
-						<td class="numeric" style="opacity: 0.7;background: #db0000;color:#eee">630</td>
-						<td class="numeric pl-2">30</td>
-						<td class="numeric">34,400</td>
-						<td class="numeric">0.03</td>
-						<td class="numeric">1.03</td>
-						<!-- <td class="numeric">3.0654761904761902</td> -->
-						
-						<td class="numeric"></td>
-						<td class="numeric">m </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">26.65</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/rdsmcherry1/">
-								RDSmCherry1
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #ff1300; color:#eee">600</td>
-						<td class="numeric" style="opacity: 0.7;background: #db0000;color:#eee">630</td>
-						<td class="numeric pl-2">30</td>
-						<td class="numeric">55,400</td>
-						<td class="numeric">0.09</td>
-						<td class="numeric">4.99</td>
-						<!-- <td class="numeric">14.851190476190476</td> -->
-						
-						<td class="numeric">5.6</td>
-						<td class="numeric">m </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">26.64</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/rdsmcherry05/">
-								RDSmCherry0.5
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #ff0300; color:#eee">604</td>
-						<td class="numeric" style="opacity: 0.7;background: #d20000;color:#eee">636</td>
-						<td class="numeric pl-2">32</td>
-						<td class="numeric">23,300</td>
-						<td class="numeric">0.02</td>
-						<td class="numeric">0.47</td>
-						<!-- <td class="numeric">1.3988095238095237</td> -->
-						
-						<td class="numeric"></td>
-						<td class="numeric">m </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">26.69</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-                <tr class="data">
-                  
-                  <td class="protein">
-                    <a href="http://localhost/protein/mcherry15/">mCherry1.5</a>
-                  </td>
-                  <td class="numeric exmax"></td>
-                  <td class="numeric"></td>
-                  <td class="numeric"></td>
-                  <td class="numeric"></td>
-                  <td class="numeric"></td>
-                  <td class="numeric"></td>
-                  <!-- <td class="numeric">-</td> -->
-                  
-                  <td class="numeric"></td>
-                  <td class="numeric">m</td>
-                  <td class="numeric"></td>
-                  <td class="numeric"></td>
-                  <td class="numeric weight">26.71</td>
-                  <td class="hidden"></td>
-                  <td class="hidden"></td>
-                  
-                </tr>
-			
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/aausfp2/">
-								AausFP2
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #f90000; color:#eee">609</td>
-						<td class="numeric" style="opacity: 0.7;background: #000;color:#eee"></td>
-						<td class="numeric pl-2"></td>
-						<td class="numeric">52,000</td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-						<!-- <td class="numeric">-</td> -->
-						
-						<td class="numeric">6.0</td>
-						<td class="numeric"> </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">25.56</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-			
-				
-					<tr class="data">
-						
-						<td class="protein">
-							<a href="http://localhost/protein/aausfp3/">
-								AausFP3
-								
-							</a>
-						</td>
-						<td class="numeric exmax" style="opacity: 0.7;background: #ff4600; color:#000">587</td>
-						<td class="numeric" style="opacity: 0.7;background: #000;color:#eee"></td>
-						<td class="numeric pl-2"></td>
-						<td class="numeric">59,000</td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-						<!-- <td class="numeric">-</td> -->
-						
-						<td class="numeric">6.5</td>
-						<td class="numeric"> </td>
-						<td class="numeric"></td>
-						<td class="numeric"></td>
-            <td class="numeric weight">25.52</td>
-						<td class="hidden">b</td>
-            <td class="hidden">[]</td>
-            
-					</tr>
-				
-      
-		
-	</tbody>
+	<tbody></tbody>
 </table>		</div>
 				</div>
 				<div class="elementor-element elementor-element-824a673 elementor-widget elementor-widget-heading" data-id="824a673" data-element_type="widget" data-widget_type="heading.default">
@@ -899,6 +371,133 @@ var Customify_JS = {"is_rtl":"","css_media_queries":{"all":"%s","desktop":"%s","
 <script id="elementor-frontend-js-before" type="text/javascript">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false,"isImprovedAssetsLoading":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.1.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"landing-pages":true},"urls":{"assets":".\/\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":141,"title":"Our%20Proteins%20%E2%80%93%20The%20Shaner%20Lab","excerpt":"","featuredImage":false}};</script>
 <script type="text/javascript" src="./../wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.1.3" id="elementor-frontend-js"></script>
 <script type="text/javascript" src="./../wp-content/plugins/elementor/assets/js/preloaded-elements-handlers.min.js?ver=3.1.3" id="preloaded-elements-handlers-js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('FPbase loader script running');
+    const table = document.getElementById('proteinTable');
+    if (!table) {
+      console.error('proteinTable element not found');
+      return;
+    }
+    const tableBody = table.querySelector('tbody');
+    if (!tableBody) {
+      console.error('proteinTable tbody element not found');
+      return;
+    }
+    // Clear existing static rows
+    tableBody.innerHTML = '';
+    
+    // Fetch proteins authored by Shaner from the FPbase API
+    const apiUrl = 'https://api.fpbase.org/v1/proteins/?primary_reference__author__family__icontains=Shaner&page_size=200';
+    console.log('Loading proteins from local JSON');
+    fetch('proteins.json')
+       .then(response => {
+        return response.json();
+       })
+       .then(data => {
+        console.log('Loaded proteins count:', data.length);
+        data.forEach(protein => {
+          // Extract default state values
+          const state = (protein.states && protein.states.length) ? protein.states[0] : {};
+          // Skip entries without EC (extinction coefficient)
+          if (state.ext_coeff == null) {
+            return;
+          }
+          const row = document.createElement('tr');
+          row.classList.add('data');
+          const stokes = (state.ex_max != null && state.em_max != null) ? (state.em_max - state.ex_max) : '-';
+          // Extended color mapping: <400nm magenta (300–400→290°–270°), 400–600nm violet→red, 600–700nm red→black, >700nm black, white text >575nm
+          let exBg = '';
+          let exTextColor = 'black';
+          if (state.ex_max != null) {
+            const wl = state.ex_max;
+            if (wl < 400) {
+              const clamped = Math.max(wl, 300);
+              const hue = 290 - (clamped - 300) * 0.2;
+              exBg = 'hsl(' + hue + ',100%,50%)';
+            } else if (wl <= 600) {
+              const hue = (600 - wl) * 270 / 200;
+              exBg = 'hsl(' + hue + ',100%,50%)';
+            } else if (wl <= 700) {
+              const light = 50 * (1 - (wl - 600) / 100);
+              exBg = 'hsl(0,100%,' + light + '%)';
+            } else {
+              exBg = 'hsl(0,100%,0%)';
+            }
+            if (wl > 575) exTextColor = 'white';
+          }
+          let emBg = '';
+          let emTextColor = 'black';
+          if (state.em_max != null) {
+            const wl = state.em_max;
+            if (wl < 400) {
+              const clamped = Math.max(wl, 300);
+              const hue = 290 - (clamped - 300) * 0.2;
+              emBg = 'hsl(' + hue + ',100%,50%)';
+            } else if (wl <= 600) {
+              const hue = (600 - wl) * 270 / 200;
+              emBg = 'hsl(' + hue + ',100%,50%)';
+            } else if (wl <= 700) {
+              const light = 50 * (1 - (wl - 600) / 100);
+              emBg = 'hsl(0,100%,' + light + '%)';
+            } else {
+              emBg = 'hsl(0,100%,0%)';
+            }
+            if (wl > 575) emTextColor = 'white';
+          }
+          row.innerHTML = `
+            <td class="protein" style="text-align:left;"><a target="_blank" href="https://www.fpbase.org/protein/${protein.slug}/">${protein.name}</a></td>
+            <td class="numeric exmax" style="${exBg ? 'background-color:' + exBg + ';color:' + exTextColor + ';' : ''}font-weight:bold;">${state.ex_max || ''}</td>
+            <td class="numeric emmax" style="${emBg ? 'background-color:' + emBg + ';color:' + emTextColor + ';' : ''}font-weight:bold;">${state.em_max != null ? state.em_max : '-'}</td>
+            <td class="numeric pl-2">${stokes}</td>
+            <td class="numeric">${state.ext_coeff || ''}</td>
+            <td class="numeric">${state.qy != null ? state.qy : '-'}</td>
+            <td class="numeric">${state.brightness != null ? state.brightness : '-'}</td>
+            <td class="numeric">${state.pka != null ? state.pka : 'ND'}</td>
+            <td class="numeric">${protein.agg || 'ND'}</td>
+            <td class="numeric">${state.lifetime != null ? state.lifetime : 'ND'}</td>
+            <td class="numeric" style="text-align:right;">${protein.doi ? '<a target="_blank" href="https://doi.org/'+protein.doi+'">'+protein.doi+'</a>' : 'ND'}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+        // Default sort by excitation after populating rows
+        const headersForSort = table.querySelectorAll('thead th');
+        if (headersForSort[1]) headersForSort[1].click();
+      })
+      .catch(error => console.error('Error loading FPbase data:', error));
+    // Enable table sorting by clicking on headers (skip Name & Publication)
+    const tableElem = document.getElementById('proteinTable');
+    const headers = tableElem.querySelectorAll('thead th');
+    headers.forEach((th, index) => {
+      const lastIndex = headers.length - 1;
+      // Skip first (Name) and last (Publication) columns
+      if (index === 0 || index === lastIndex) {
+        th.style.cursor = 'default';
+        return;
+      }
+      let asc = true;
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const tbody = tableElem.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const sorted = rows.sort((a, b) => {
+          const aText = a.children[index].textContent.trim();
+          const bText = b.children[index].textContent.trim();
+          const aNum = parseFloat(aText.replace(/[^0-9.-]/g, ''));
+          const bNum = parseFloat(bText.replace(/[^0-9.-]/g, ''));
+          if (!isNaN(aNum) && !isNaN(bNum)) {
+            return (aNum - bNum) * (asc ? 1 : -1);
+          }
+          return aText.localeCompare(bText) * (asc ? 1 : -1);
+        });
+        asc = !asc;
+        tbody.innerHTML = '';
+        sorted.forEach(row => tbody.appendChild(row));
+      });
+    });
+  });
+</script>
 
 </body>
 </html>

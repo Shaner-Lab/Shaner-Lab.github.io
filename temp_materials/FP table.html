@@ -1,0 +1,3656 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112673074-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-112673074-1');
+  gtag('config', 'G-C8W3G31KL6');
+  ;
+  var trackOutboundLink = function(url) {
+    gtag('event', 'click', {
+      'event_category': 'outbound',
+      'event_label': url,
+      'transport_type': 'beacon',
+      'event_callback': function(){document.location = url;}
+    });
+  };
+</script>
+
+      
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>FPbase: Advanced Fluorescent Protein Search</title>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://www.fpbase.org",
+      "logo": "https://www.fpbase.org/static/images/circle_logo_full.a81b29fc2f64.png",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.fpbase.org/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    };
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Build complex queries to search for fluorescent proteins in FPbase using multiple filters.">
+    <link rel="canonical" href="https://www.fpbase.org/search/?primary_reference__author__family__icontains=Shaner&amp;display=l">
+    <meta name="author" content="Talley Lambert">
+    <meta name="copyright" content="Talley Lambert" />
+
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@FPbase" />
+      <meta property="og:site_name" content="FPbase">
+      <meta property="og:url" content="https://www.fpbase.org/search/?primary_reference__author__family__icontains=Shaner&amp;display=l">
+      <meta property="og:title" content="FPbase: Advanced Fluorescent Protein Search">
+      <meta property="og:description" content="Build complex queries to search for fluorescent proteins in FPbase using multiple filters.">
+      <meta property="og:image" content="https://www.fpbase.org/static/images/square_logo_white_on_green.e404046695fb.gif">
+    
+
+    <link rel="shortcut icon" href="/static/images/favicon.59dd96d2c293.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link href="/static/vendor.482782932bf0ecd010c5.css" rel="stylesheet" />
+<link href="/static/main.feccc4f0e2922069e725.css" rel="stylesheet" />
+
+      <script>
+        window.FPBASE = window.FPBASE || {};
+        window.FPBASE.imageDir = "/static/images/";
+        window.FPBASE.ALGOLIA = {
+          'appID': '9WAWQMVNTB',
+          'publicKey': '421b453d4f93e332ebd0c7f3ace29476',
+          'proteinIndex': 'Protein_prod',
+          'organismIndex': 'Organism_prod',
+          'referenceIndex': 'Reference_prod',
+        };
+        
+      </script>
+
+    
+    <link rel="preload" href="/static/images/GFP_spinner.76edb9c806ed.gif" as="image">
+
+  </head>
+
+  <body class="">
+    
+    
+
+    
+    <div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+          
+              
+
+<div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Brand -->
+    <a class="navbar-brand" href="/">
+    
+<svg xmlns="http://www.w3.org/2000/svg" class="logo-svg" width="72" viewBox="0 0 2947 1061">
+<path d="M2947,1060.88s-624.57-60.18-1103.06-405.741C1525.93,409.081,1419.45-13.191,1341.92.314c-95.24,10.978-78.62,259.289-202.86,656.871-130.38,402.445-420.5,403.7-420.5,403.7H2947Zm-1445.59,0s-201.41-.43-287.43-335.216C1110.65,323.49,1096.05,1,1047.32,1.221,977.2,1.535,902.926,557.3,647.811,769.037,308.211,1050.89,0,1060.88,0,1060.88H1501.41Z"></path>
+</svg>
+
+    <span class='brand-FP'>FP</span><span class='brand-base'>base</span>
+    </a>
+    <!-- Links -->
+    
+    <div class="collapse navbar-collapse" id="collapsingNavbar">
+        <ul class="nav navbar-nav navbar-dark ml-auto w-100 justify-content-end flex-column-reverse flex-md-row">
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">info</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/about/">about FPbase</a>
+                    <a class="dropdown-item" href="/help/">help &amp; FAQs</a>
+                    <a class="dropdown-item" href="/cite/">how to cite FPbase</a>
+                    
+                    <a class="dropdown-item" href="/contributing/">contributing</a>
+                    <a class="dropdown-item" href="/api/">API</a>
+                    <a class="dropdown-item" href="/activity">recent activity</a>
+                    <a class="dropdown-item" href="/problems/">how you can help</a>
+                    <a class="dropdown-item" href="/contact/">contact</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">tools</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/spectra/">spectra viewer</a>
+                    <a class="dropdown-item" href="/microscopes/">microscopes</a>
+                    <a class="dropdown-item" href="/blast/">FP BLAST</a>
+                    <a class="dropdown-item" href="/collections/">FP collections</a>
+                    <a class="dropdown-item" href="/fret/">FRET calculator</a>
+                </div>
+            </li>
+
+
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">explore</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <h6 class="dropdown-header">SEARCH</h6>
+                    <a class="dropdown-item" href="/search/">advanced search</a>
+                    <h6 class="dropdown-header">BROWSE</h6>
+                    <a class="dropdown-item" href="/table/">protein table</a>
+                    <a class="dropdown-item" href="/chart/">interactive chart</a>
+                    <a class="dropdown-item" href="/lineage/">lineages</a>
+                    <a class="dropdown-item" href="/organisms/">organisms</a>
+                    <a class="dropdown-item" href="/spectra/">spectra</a>
+                    <a class="dropdown-item" href="/references/">references</a>
+                    <h6 class="dropdown-header">SUBMIT</h6>
+                    <a class="dropdown-item" href="/submit/">submit a protein</a>
+                    <a class="dropdown-item" href="/spectra/submit/">submit a spectrum</a>
+                </div>
+            </li>
+            
+            <li class="nav-item">
+                
+                <a id="log-in-link" class="nav-link mr-2" href="/accounts/login/?next=/search/">sign in</a>
+            </li>
+            
+            
+            <form class="form-inline nav-search" method="get" action="/search/">
+                    <div class='input-group'>
+                      <input class="form-control" type="search" placeholder="Search" id='algolia-search-input' name="q" aria-label="Search" autocomplete="off">
+                    </div>
+            </form>
+            
+        </ul>
+    </div>
+
+</div>
+
+          
+        </nav>
+    </div>
+    <noscript>
+        <div class="container-fluid text-center mt-0 bg-danger text-white pt-3 pb-3"><strong>Javascript is disabled!&nbsp;  Many pages and features of FPbase will not work properly</strong>
+        </div>
+    </noscript>
+
+    <div class="container mt-4">
+
+
+      
+        
+      
+
+      
+
+<h2>Advanced Protein Search</h2>
+
+<p class="text-muted">Add additional rows to refine your search.  Each row is considered as an 'AND' clause in the search.  If a given search parameter is unknown for a protein in the database, that protein will be excluded from the results. If you find that you are not getting results, relax your query.</p>
+<p class='text-muted'>Note: organic dyes are not yet searchable in the database, but spectra for a selection of organic dyes are available on the <a href="/spectra/">spectra page</a>.</p>
+
+<div class="hidden" id="crispy-form">
+ 
+
+<div id="div_id_name__icontains" class="form-group"> <label for="id_name__icontains" class="col-form-label ">
+                Name  icontains
+            </label> <div class=""> <input type="text" name="name__icontains" class="textinput textInput form-control" id="id_name__icontains"> </div> </div> <div id="div_id_name__iendswith" class="form-group"> <label for="id_name__iendswith" class="col-form-label ">
+                Name ends with
+            </label> <div class=""> <input type="text" name="name__iendswith" class="textinput textInput form-control" id="id_name__iendswith"> </div> </div> <div id="div_id_name__istartswith" class="form-group"> <label for="id_name__istartswith" class="col-form-label ">
+                Name starts with
+            </label> <div class=""> <input type="text" name="name__istartswith" class="textinput textInput form-control" id="id_name__istartswith"> </div> </div> <div id="div_id_name__iexact" class="form-group"> <label for="id_name__iexact" class="col-form-label ">
+                Name
+            </label> <div class=""> <input type="text" name="name__iexact" class="textinput textInput form-control" id="id_name__iexact"> </div> </div> <div id="div_id_seq__icontains" class="form-group"> <label for="id_seq__icontains" class="col-form-label ">
+                Sequence contains
+            </label> <div class=""> <input type="text" name="seq__icontains" class="textinput textInput form-control" id="id_seq__icontains"> </div> </div> <div id="div_id_seq__iendswith" class="form-group"> <label for="id_seq__iendswith" class="col-form-label ">
+                Sequence ends with
+            </label> <div class=""> <input type="text" name="seq__iendswith" class="textinput textInput form-control" id="id_seq__iendswith"> </div> </div> <div id="div_id_seq__istartswith" class="form-group"> <label for="id_seq__istartswith" class="col-form-label ">
+                Sequence starts with
+            </label> <div class=""> <input type="text" name="seq__istartswith" class="textinput textInput form-control" id="id_seq__istartswith"> </div> </div> <div id="div_id_seq__cdna_contains" class="form-group"> <label for="id_seq__cdna_contains" class="col-form-label ">
+                Seq  cdna contains
+            </label> <div class=""> <input type="text" name="seq__cdna_contains" class="textinput textInput form-control" id="id_seq__cdna_contains"> <small id="hint_id_seq__cdna_contains" class="form-text text-muted">cDNA sequence (in frame)</small> </div> </div> <div id="div_id_default_state__ex_max__around" class="form-group"> <label for="id_default_state__ex_max__around" class="col-form-label ">
+                Default state ex max around
+            </label> <div class=""> <input type="number" name="default_state__ex_max__around" step="any" class="numberinput form-control" id="id_default_state__ex_max__around"> </div> </div> <div id="div_id_default_state__ex_max__range" class="form-group"> <label for="id_default_state__ex_max__range" class="col-form-label ">
+                Default state ex max is in range
+            </label> <div class=""> <input type="text" name="default_state__ex_max__range" class="csvwidget form-control" id="id_default_state__ex_max__range"> <small id="hint_id_default_state__ex_max__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_default_state__ex_max__lte" class="form-group"> <label for="id_default_state__ex_max__lte" class="col-form-label ">
+                Default state ex max is less than or equal to
+            </label> <div class=""> <input type="number" name="default_state__ex_max__lte" step="any" class="numberinput form-control" id="id_default_state__ex_max__lte"> </div> </div> <div id="div_id_default_state__ex_max__gte" class="form-group"> <label for="id_default_state__ex_max__gte" class="col-form-label ">
+                Default state ex max is greater than or equal to
+            </label> <div class=""> <input type="number" name="default_state__ex_max__gte" step="any" class="numberinput form-control" id="id_default_state__ex_max__gte"> </div> </div> <div id="div_id_default_state__ex_max" class="form-group"> <label for="id_default_state__ex_max" class="col-form-label ">
+                Default state ex max
+            </label> <div class=""> <input type="number" name="default_state__ex_max" step="any" class="numberinput form-control" id="id_default_state__ex_max"> </div> </div> <div id="div_id_default_state__em_max__around" class="form-group"> <label for="id_default_state__em_max__around" class="col-form-label ">
+                Default state em max around
+            </label> <div class=""> <input type="number" name="default_state__em_max__around" step="any" class="numberinput form-control" id="id_default_state__em_max__around"> </div> </div> <div id="div_id_default_state__em_max__range" class="form-group"> <label for="id_default_state__em_max__range" class="col-form-label ">
+                Default state em max is in range
+            </label> <div class=""> <input type="text" name="default_state__em_max__range" class="csvwidget form-control" id="id_default_state__em_max__range"> <small id="hint_id_default_state__em_max__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_default_state__em_max__lte" class="form-group"> <label for="id_default_state__em_max__lte" class="col-form-label ">
+                Default state em max is less than or equal to
+            </label> <div class=""> <input type="number" name="default_state__em_max__lte" step="any" class="numberinput form-control" id="id_default_state__em_max__lte"> </div> </div> <div id="div_id_default_state__em_max__gte" class="form-group"> <label for="id_default_state__em_max__gte" class="col-form-label ">
+                Default state em max is greater than or equal to
+            </label> <div class=""> <input type="number" name="default_state__em_max__gte" step="any" class="numberinput form-control" id="id_default_state__em_max__gte"> </div> </div> <div id="div_id_default_state__em_max" class="form-group"> <label for="id_default_state__em_max" class="col-form-label ">
+                Default state em max
+            </label> <div class=""> <input type="number" name="default_state__em_max" step="any" class="numberinput form-control" id="id_default_state__em_max"> </div> </div> <div id="div_id_default_state__lifetime__gte" class="form-group"> <label for="id_default_state__lifetime__gte" class="col-form-label ">
+                Default state lifetime is greater than or equal to
+            </label> <div class=""> <input type="number" name="default_state__lifetime__gte" step="any" class="numberinput form-control" id="id_default_state__lifetime__gte"> </div> </div> <div id="div_id_default_state__lifetime__lte" class="form-group"> <label for="id_default_state__lifetime__lte" class="col-form-label ">
+                Default state lifetime is less than or equal to
+            </label> <div class=""> <input type="number" name="default_state__lifetime__lte" step="any" class="numberinput form-control" id="id_default_state__lifetime__lte"> </div> </div> <div id="div_id_default_state__lifetime__range" class="form-group"> <label for="id_default_state__lifetime__range" class="col-form-label ">
+                Default state lifetime is in range
+            </label> <div class=""> <input type="text" name="default_state__lifetime__range" class="csvwidget form-control" id="id_default_state__lifetime__range"> <small id="hint_id_default_state__lifetime__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_default_state__lifetime" class="form-group"> <label for="id_default_state__lifetime" class="col-form-label ">
+                Default state lifetime
+            </label> <div class=""> <input type="number" name="default_state__lifetime" step="any" class="numberinput form-control" id="id_default_state__lifetime"> </div> </div> <div id="div_id_default_state__maturation__gte" class="form-group"> <label for="id_default_state__maturation__gte" class="col-form-label ">
+                Default state maturation is greater than or equal to
+            </label> <div class=""> <input type="number" name="default_state__maturation__gte" step="any" class="numberinput form-control" id="id_default_state__maturation__gte"> </div> </div> <div id="div_id_default_state__maturation__lte" class="form-group"> <label for="id_default_state__maturation__lte" class="col-form-label ">
+                Default state maturation is less than or equal to
+            </label> <div class=""> <input type="number" name="default_state__maturation__lte" step="any" class="numberinput form-control" id="id_default_state__maturation__lte"> </div> </div> <div id="div_id_default_state__maturation__range" class="form-group"> <label for="id_default_state__maturation__range" class="col-form-label ">
+                Default state maturation is in range
+            </label> <div class=""> <input type="text" name="default_state__maturation__range" class="csvwidget form-control" id="id_default_state__maturation__range"> <small id="hint_id_default_state__maturation__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_default_state__maturation" class="form-group"> <label for="id_default_state__maturation" class="col-form-label ">
+                Default state maturation
+            </label> <div class=""> <input type="number" name="default_state__maturation" step="any" class="numberinput form-control" id="id_default_state__maturation"> </div> </div> <div id="div_id_default_state__ext_coeff__gte" class="form-group"> <label for="id_default_state__ext_coeff__gte" class="col-form-label ">
+                Default state Extinction Coefficient is greater than or equal to
+            </label> <div class=""> <input type="number" name="default_state__ext_coeff__gte" step="any" class="numberinput form-control" id="id_default_state__ext_coeff__gte"> </div> </div> <div id="div_id_default_state__ext_coeff__lte" class="form-group"> <label for="id_default_state__ext_coeff__lte" class="col-form-label ">
+                Default state Extinction Coefficient is less than or equal to
+            </label> <div class=""> <input type="number" name="default_state__ext_coeff__lte" step="any" class="numberinput form-control" id="id_default_state__ext_coeff__lte"> </div> </div> <div id="div_id_default_state__ext_coeff__range" class="form-group"> <label for="id_default_state__ext_coeff__range" class="col-form-label ">
+                Default state Extinction Coefficient is in range
+            </label> <div class=""> <input type="text" name="default_state__ext_coeff__range" class="csvwidget form-control" id="id_default_state__ext_coeff__range"> <small id="hint_id_default_state__ext_coeff__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_default_state__ext_coeff" class="form-group"> <label for="id_default_state__ext_coeff" class="col-form-label ">
+                Default state Extinction Coefficient
+            </label> <div class=""> <input type="number" name="default_state__ext_coeff" step="any" class="numberinput form-control" id="id_default_state__ext_coeff"> </div> </div> <div id="div_id_default_state__qy__gte" class="form-group"> <label for="id_default_state__qy__gte" class="col-form-label ">
+                Default state Quantum Yield is greater than or equal to
+            </label> <div class=""> <input type="number" name="default_state__qy__gte" step="any" class="numberinput form-control" id="id_default_state__qy__gte"> </div> </div> <div id="div_id_default_state__qy__lte" class="form-group"> <label for="id_default_state__qy__lte" class="col-form-label ">
+                Default state Quantum Yield is less than or equal to
+            </label> <div class=""> <input type="number" name="default_state__qy__lte" step="any" class="numberinput form-control" id="id_default_state__qy__lte"> </div> </div> <div id="div_id_default_state__qy__range" class="form-group"> <label for="id_default_state__qy__range" class="col-form-label ">
+                Default state Quantum Yield is in range
+            </label> <div class=""> <input type="text" name="default_state__qy__range" class="csvwidget form-control" id="id_default_state__qy__range"> <small id="hint_id_default_state__qy__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_default_state__qy" class="form-group"> <label for="id_default_state__qy" class="col-form-label ">
+                Default state Quantum Yield
+            </label> <div class=""> <input type="number" name="default_state__qy" step="any" class="numberinput form-control" id="id_default_state__qy"> </div> </div> <div id="div_id_default_state__brightness__gte" class="form-group"> <label for="id_default_state__brightness__gte" class="col-form-label ">
+                Default state brightness is greater than or equal to
+            </label> <div class=""> <input type="number" name="default_state__brightness__gte" step="any" class="numberinput form-control" id="id_default_state__brightness__gte"> </div> </div> <div id="div_id_default_state__brightness__lte" class="form-group"> <label for="id_default_state__brightness__lte" class="col-form-label ">
+                Default state brightness is less than or equal to
+            </label> <div class=""> <input type="number" name="default_state__brightness__lte" step="any" class="numberinput form-control" id="id_default_state__brightness__lte"> </div> </div> <div id="div_id_default_state__brightness__range" class="form-group"> <label for="id_default_state__brightness__range" class="col-form-label ">
+                Default state brightness is in range
+            </label> <div class=""> <input type="text" name="default_state__brightness__range" class="csvwidget form-control" id="id_default_state__brightness__range"> <small id="hint_id_default_state__brightness__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_default_state__brightness" class="form-group"> <label for="id_default_state__brightness" class="col-form-label ">
+                Default state brightness
+            </label> <div class=""> <input type="number" name="default_state__brightness" step="any" class="numberinput form-control" id="id_default_state__brightness"> </div> </div> <div id="div_id_default_state__pka__gte" class="form-group"> <label for="id_default_state__pka__gte" class="col-form-label ">
+                Default state pKa is greater than or equal to
+            </label> <div class=""> <input type="number" name="default_state__pka__gte" step="any" class="numberinput form-control" id="id_default_state__pka__gte"> </div> </div> <div id="div_id_default_state__pka__lte" class="form-group"> <label for="id_default_state__pka__lte" class="col-form-label ">
+                Default state pKa is less than or equal to
+            </label> <div class=""> <input type="number" name="default_state__pka__lte" step="any" class="numberinput form-control" id="id_default_state__pka__lte"> </div> </div> <div id="div_id_default_state__pka__range" class="form-group"> <label for="id_default_state__pka__range" class="col-form-label ">
+                Default state pKa is in range
+            </label> <div class=""> <input type="text" name="default_state__pka__range" class="csvwidget form-control" id="id_default_state__pka__range"> <small id="hint_id_default_state__pka__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_default_state__pka" class="form-group"> <label for="id_default_state__pka" class="col-form-label ">
+                Default state pKa
+            </label> <div class=""> <input type="number" name="default_state__pka" step="any" class="numberinput form-control" id="id_default_state__pka"> </div> </div> <div id="div_id_default_state__bleach_measurements__rate__gte" class="form-group"> <label for="id_default_state__bleach_measurements__rate__gte" class="col-form-label ">
+                Default state bleach measurements Bleach Rate is greater than or equal to
+            </label> <div class=""> <input type="number" name="default_state__bleach_measurements__rate__gte" step="any" class="numberinput form-control" id="id_default_state__bleach_measurements__rate__gte"> </div> </div> <div id="div_id_default_state__bleach_measurements__rate__lte" class="form-group"> <label for="id_default_state__bleach_measurements__rate__lte" class="col-form-label ">
+                Default state bleach measurements Bleach Rate is less than or equal to
+            </label> <div class=""> <input type="number" name="default_state__bleach_measurements__rate__lte" step="any" class="numberinput form-control" id="id_default_state__bleach_measurements__rate__lte"> </div> </div> <div id="div_id_default_state__bleach_measurements__rate__range" class="form-group"> <label for="id_default_state__bleach_measurements__rate__range" class="col-form-label ">
+                Default state bleach measurements Bleach Rate is in range
+            </label> <div class=""> <input type="text" name="default_state__bleach_measurements__rate__range" class="csvwidget form-control" id="id_default_state__bleach_measurements__rate__range"> <small id="hint_id_default_state__bleach_measurements__rate__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_default_state__bleach_measurements__rate" class="form-group"> <label for="id_default_state__bleach_measurements__rate" class="col-form-label ">
+                Default state bleach measurements Bleach Rate
+            </label> <div class=""> <input type="number" name="default_state__bleach_measurements__rate" step="any" class="numberinput form-control" id="id_default_state__bleach_measurements__rate"> </div> </div> <div id="div_id_agg" class="form-group"> <label for="id_agg" class="col-form-label ">
+                Oligomerization
+            </label> <div class=""> <select name="agg" class="select form-control" id="id_agg"> <option value="" selected>---------</option> <option value="m">Monomer</option> <option value="d">Dimer</option> <option value="td">Tandem dimer</option> <option value="wd">Weak dimer</option> <option value="t">Tetramer</option>
+
+</select> </div> </div> <div id="div_id_uuid__iexact" class="form-group"> <label for="id_uuid__iexact" class="col-form-label ">
+                FPbase ID
+            </label> <div class=""> <input type="text" name="uuid__iexact" class="textinput textInput form-control" id="id_uuid__iexact"> </div> </div> <div id="div_id_genbank__iexact" class="form-group"> <label for="id_genbank__iexact" class="col-form-label ">
+                Genbank Accession
+            </label> <div class=""> <input type="text" name="genbank__iexact" class="textinput textInput form-control" id="id_genbank__iexact"> </div> </div> <div id="div_id_pdb__contains" class="form-group"> <label for="id_pdb__contains" class="col-form-label ">
+                Pdb  contains
+            </label> <div class=""> <input type="text" name="pdb__contains" class="csvtextinput form-control" id="id_pdb__contains"> <small id="hint_id_pdb__contains" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_uniprot__iexact" class="form-group"> <label for="id_uniprot__iexact" class="col-form-label ">
+                UniProtKB Accession
+            </label> <div class=""> <input type="text" name="uniprot__iexact" class="textinput textInput form-control" id="id_uniprot__iexact"> </div> </div> <div id="div_id_status" class="form-group"> <label for="id_status" class="col-form-label ">
+                Status
+            </label> <div class=""> <select name="status" class="select form-control" id="id_status"> <option value="" selected>---------</option> <option value="pending">pending</option> <option value="approved">approved</option> <option value="hidden">hidden</option>
+
+</select> </div> </div> <div id="div_id_switch_type" class="form-group"> <label for="id_switch_type" class="col-form-label ">
+                Switching Type
+            </label> <div class=""> <select name="switch_type" class="select form-control" id="id_switch_type"> <option value="" selected>---------</option> <option value="b">Basic</option> <option value="pa">Photoactivatable</option> <option value="ps">Photoswitchable</option> <option value="pc">Photoconvertible</option> <option value="mp">Multi-photochromic</option> <option value="o">Multistate</option> <option value="t">Timer</option>
+
+</select> </div> </div> <div id="div_id_switch_type__ne" class="form-group"> <label for="id_switch_type__ne" class="col-form-label ">
+                Switch type  ne
+            </label> <div class=""> <select name="switch_type__ne" class="select form-control" id="id_switch_type__ne"> <option value="" selected>---------</option> <option value="b">Basic</option> <option value="pa">Photoactivatable</option> <option value="ps">Photoswitchable</option> <option value="pc">Photoconvertible</option> <option value="mp">Multi-photochromic</option> <option value="o">Multistate</option> <option value="t">Timer</option>
+
+</select> </div> </div> <div id="div_id_cofactor" class="form-group"> <label for="id_cofactor" class="col-form-label ">
+                Cofactor
+            </label> <div class=""> <select name="cofactor" class="select form-control" id="id_cofactor"> <option value="" selected>---------</option> <option value="br">Bilirubin</option> <option value="bv">Biliverdin</option> <option value="fl">Flavin</option> <option value="pc">Phycocyanobilin</option> <option value="rl">ribityl-lumazine</option>
+
+</select> </div> </div> <div id="div_id_cofactor__ne" class="form-group"> <label for="id_cofactor__ne" class="col-form-label ">
+                Cofactor  ne
+            </label> <div class=""> <select name="cofactor__ne" class="select form-control" id="id_cofactor__ne"> <option value="" selected>---------</option> <option value="br">Bilirubin</option> <option value="bv">Biliverdin</option> <option value="fl">Flavin</option> <option value="pc">Phycocyanobilin</option> <option value="rl">ribityl-lumazine</option>
+
+</select> </div> </div> <div id="div_id_parent_organism" class="form-group"> <label for="id_parent_organism" class="col-form-label ">
+                Parental organism
+            </label> <div class=""> <select name="parent_organism" class="select form-control" id="id_parent_organism"> <option value="" selected>---------</option> <option value="287157">Acropora aculeus</option> <option value="70779">Acropora digitifera</option> <option value="526283">Acropora eurystoma</option> <option value="55974">Acropora hyacinthus</option> <option value="45264">Acropora millepora</option> <option value="70781">Acropora nobilis</option> <option value="513076">Acropora polystoma</option> <option value="140239">Acropora pulchra</option> <option value="258444">Acropora sp. #30</option> <option value="70783">Acropora tenuis</option> <option value="55976">Acropora valida</option> <option value="6106">Actinia equina</option> <option value="1246302">Aequorea australis</option> <option value="210840">Aequorea coerulescens</option> <option value="147615">Aequorea macrodactyla</option> <option value="6100">Aequorea victoria</option> <option value="89882">Agaricia agaricites</option> <option value="165097">Agaricia fragilis</option> <option value="105399">Anemonia majano</option> <option value="6108">Anemonia sulcata</option> <option value="7937">Anguilla japonica</option> <option value="406427">Anthoathecata</option> <option value="328397">Anthomedusae sp. DC-2005</option> <option value="3702">Arabidopsis thaliana</option> <option value="262533">Astrangia lajollaensis</option> <option value="376">Bradyrhizobium sp.</option> <option value="7739">Branchiostoma floridae</option> <option value="7740">Branchiostoma lanceolatum</option> <option value="1531918">Broad host range vector vector pCVD060</option> <option value="37512">Ceriantharia</option> <option value="208460">Cerianthus membranaceus</option> <option value="51771">Cerianthus sp.</option> <option value="286301">Chiridius poppei</option> <option value="3055">Chlamydomonas reinhardtii</option> <option value="152260">Chloroflexus aggregans</option> <option value="54298">Chroococcidiopsis</option> <option value="86521">Clavularia sp.</option> <option value="27801">Clytia gregaria</option> <option value="252671">Clytia hemisphaerica</option> <option value="380085">Cnidopus</option> <option value="47073">Condylactis gigantea</option> <option value="175772">Condylactis passiflora</option> <option value="44298">Corynactis californica</option> <option value="1799150">Cribrinopsis japonica</option> <option value="570133">Cyphastrea microphthalma</option> <option value="1254443">Cytaeis uchidae</option> <option value="486202">Danafungia horrida</option> <option value="1299">Deinococcus radiodurans</option> <option value="51110">Dendronephthya sp.</option> <option value="215813">Dinoroseobacter shibae</option> <option value="86599">Discosoma</option> <option value="86600">Discosoma sp.</option> <option value="105400">Discosoma striata</option> <option value="351729">Echinophyllia echinata</option> <option value="301887">Echinophyllia sp. SC22</option> <option value="526284">Echinopora forskaliana</option> <option value="6118">Entacmaea quadricolor</option> <option value="46750">Euphyllia ancora</option> <option value="214972">Eusmilia fastigiata</option> <option value="102203">Favia favus</option> <option value="126655">Favites abdita</option> <option value="498483">Favites complanata</option> <option value="46745">Galaxea fascicularis</option> <option value="351727">Goniopora djiboutiensis</option> <option value="75301">Goniopora tenuidens</option> <option value="1053">Halorhodospira halophila</option> <option value="92645">Herbaspirillum frisingense</option> <option value="175771">Heteractis crispa</option> <option value="38281">Heteractis magnifica</option> <option value="46740">Hydnophora rigida</option> <option value="163467">Labidocera aestiva</option> <option value="46758">Lobophyllia hemprichii</option> <option value="51056">Meandrina meandrites</option> <option value="63558">Montastraea cavernosa</option> <option value="105610">Montipora efflorescens</option> <option value="591990">Montipora foliosa</option> <option value="351731">Montipora millepora</option> <option value="1150133">Montipora monasteriata</option> <option value="321802">Montipora sp. 20</option> <option value="51060">Mycedium elephantotus</option> <option value="272131">Nostoc punctiforme</option> <option value="70918">Obelia sp.</option> <option value="1495449">Olindias formosus</option> <option value="727944">Oplophorus gracilirostris</option> <option value="48500">Orbicella annularis</option> <option value="48498">Orbicella faveolata</option> <option value="1955689">Phacidium sp.</option> <option value="258839">Phialidium sp. SL-2003</option> <option value="553611">Photobacterium leiognathi</option> <option value="242771">Platygyra lamellina</option> <option value="46731">Pocillopora damicornis</option> <option value="239965">Pontella meadi</option> <option value="661578">Pontella mimocerami</option> <option value="239967">Pontellidae sp. SL-2003</option> <option value="239963">Pontellina plumata</option> <option value="104759">Porites lobata</option> <option value="104760">Porites porites</option> <option value="526285">Psammocora sp. NA-2008</option> <option value="371657">Psammocora superficialis</option> <option value="303">Pseudomonas putida</option> <option value="148587">Ptilosarcus sp. CSG-2001</option> <option value="6136">Renilla reniformis</option> <option value="1076">Rhodopseudomonas palustris</option> <option value="258594">Rhodopseudomonas palustris CGA009</option> <option value="165100">Ricordea florida</option> <option value="1725356">Ricordea sp. FP2-3</option> <option value="283036">Sander vitreus</option> <option value="2047402">Sarcophyton sp.</option> <option value="666643">Scleractinia sp. Lizard Island 28</option> <option value="666644">Scleractinia sp. Lizard Island 30</option> <option value="666646">Scleractinia sp. Lizard Island 37</option> <option value="666648">Scleractinia sp. Lizard Island 38</option> <option value="666649">Scleractinia sp. Lizard Island 39</option> <option value="165099">Scolymia cubensis</option> <option value="51070">Seriatopora hystrix</option> <option value="230562">Stichodactyla gigantea</option> <option value="475174">Stichodactyla haddoni</option> <option value="55999">Stigeoclonium helveticum</option> <option value="1917266">Stylocoeniella armata</option> <option value="351728">Stylocoeniella sp. NOA-2005</option> <option value="50429">Stylophora pistillata</option> <option value="32630">synthetic construct</option> <option value="196280">Trachyphyllia geoffroyi</option> <option value="203124">Trichodesmium erythraeum IMS101</option> <option value="496660">Verrillofungia concinna</option> <option value="62">Vitreoscilla beggiatoides</option> <option value="105402">Zoanthus sp.</option>
+
+</select> </div> </div> <div id="div_id_parent_organism__ne" class="form-group"> <label for="id_parent_organism__ne" class="col-form-label ">
+                Parent organism  ne
+            </label> <div class=""> <select name="parent_organism__ne" class="select form-control" id="id_parent_organism__ne"> <option value="" selected>---------</option> <option value="287157">Acropora aculeus</option> <option value="70779">Acropora digitifera</option> <option value="526283">Acropora eurystoma</option> <option value="55974">Acropora hyacinthus</option> <option value="45264">Acropora millepora</option> <option value="70781">Acropora nobilis</option> <option value="513076">Acropora polystoma</option> <option value="140239">Acropora pulchra</option> <option value="258444">Acropora sp. #30</option> <option value="70783">Acropora tenuis</option> <option value="55976">Acropora valida</option> <option value="6106">Actinia equina</option> <option value="1246302">Aequorea australis</option> <option value="210840">Aequorea coerulescens</option> <option value="147615">Aequorea macrodactyla</option> <option value="6100">Aequorea victoria</option> <option value="89882">Agaricia agaricites</option> <option value="165097">Agaricia fragilis</option> <option value="105399">Anemonia majano</option> <option value="6108">Anemonia sulcata</option> <option value="7937">Anguilla japonica</option> <option value="406427">Anthoathecata</option> <option value="328397">Anthomedusae sp. DC-2005</option> <option value="3702">Arabidopsis thaliana</option> <option value="262533">Astrangia lajollaensis</option> <option value="376">Bradyrhizobium sp.</option> <option value="7739">Branchiostoma floridae</option> <option value="7740">Branchiostoma lanceolatum</option> <option value="1531918">Broad host range vector vector pCVD060</option> <option value="37512">Ceriantharia</option> <option value="208460">Cerianthus membranaceus</option> <option value="51771">Cerianthus sp.</option> <option value="286301">Chiridius poppei</option> <option value="3055">Chlamydomonas reinhardtii</option> <option value="152260">Chloroflexus aggregans</option> <option value="54298">Chroococcidiopsis</option> <option value="86521">Clavularia sp.</option> <option value="27801">Clytia gregaria</option> <option value="252671">Clytia hemisphaerica</option> <option value="380085">Cnidopus</option> <option value="47073">Condylactis gigantea</option> <option value="175772">Condylactis passiflora</option> <option value="44298">Corynactis californica</option> <option value="1799150">Cribrinopsis japonica</option> <option value="570133">Cyphastrea microphthalma</option> <option value="1254443">Cytaeis uchidae</option> <option value="486202">Danafungia horrida</option> <option value="1299">Deinococcus radiodurans</option> <option value="51110">Dendronephthya sp.</option> <option value="215813">Dinoroseobacter shibae</option> <option value="86599">Discosoma</option> <option value="86600">Discosoma sp.</option> <option value="105400">Discosoma striata</option> <option value="351729">Echinophyllia echinata</option> <option value="301887">Echinophyllia sp. SC22</option> <option value="526284">Echinopora forskaliana</option> <option value="6118">Entacmaea quadricolor</option> <option value="46750">Euphyllia ancora</option> <option value="214972">Eusmilia fastigiata</option> <option value="102203">Favia favus</option> <option value="126655">Favites abdita</option> <option value="498483">Favites complanata</option> <option value="46745">Galaxea fascicularis</option> <option value="351727">Goniopora djiboutiensis</option> <option value="75301">Goniopora tenuidens</option> <option value="1053">Halorhodospira halophila</option> <option value="92645">Herbaspirillum frisingense</option> <option value="175771">Heteractis crispa</option> <option value="38281">Heteractis magnifica</option> <option value="46740">Hydnophora rigida</option> <option value="163467">Labidocera aestiva</option> <option value="46758">Lobophyllia hemprichii</option> <option value="51056">Meandrina meandrites</option> <option value="63558">Montastraea cavernosa</option> <option value="105610">Montipora efflorescens</option> <option value="591990">Montipora foliosa</option> <option value="351731">Montipora millepora</option> <option value="1150133">Montipora monasteriata</option> <option value="321802">Montipora sp. 20</option> <option value="51060">Mycedium elephantotus</option> <option value="272131">Nostoc punctiforme</option> <option value="70918">Obelia sp.</option> <option value="1495449">Olindias formosus</option> <option value="727944">Oplophorus gracilirostris</option> <option value="48500">Orbicella annularis</option> <option value="48498">Orbicella faveolata</option> <option value="1955689">Phacidium sp.</option> <option value="258839">Phialidium sp. SL-2003</option> <option value="553611">Photobacterium leiognathi</option> <option value="242771">Platygyra lamellina</option> <option value="46731">Pocillopora damicornis</option> <option value="239965">Pontella meadi</option> <option value="661578">Pontella mimocerami</option> <option value="239967">Pontellidae sp. SL-2003</option> <option value="239963">Pontellina plumata</option> <option value="104759">Porites lobata</option> <option value="104760">Porites porites</option> <option value="526285">Psammocora sp. NA-2008</option> <option value="371657">Psammocora superficialis</option> <option value="303">Pseudomonas putida</option> <option value="148587">Ptilosarcus sp. CSG-2001</option> <option value="6136">Renilla reniformis</option> <option value="1076">Rhodopseudomonas palustris</option> <option value="258594">Rhodopseudomonas palustris CGA009</option> <option value="165100">Ricordea florida</option> <option value="1725356">Ricordea sp. FP2-3</option> <option value="283036">Sander vitreus</option> <option value="2047402">Sarcophyton sp.</option> <option value="666643">Scleractinia sp. Lizard Island 28</option> <option value="666644">Scleractinia sp. Lizard Island 30</option> <option value="666646">Scleractinia sp. Lizard Island 37</option> <option value="666648">Scleractinia sp. Lizard Island 38</option> <option value="666649">Scleractinia sp. Lizard Island 39</option> <option value="165099">Scolymia cubensis</option> <option value="51070">Seriatopora hystrix</option> <option value="230562">Stichodactyla gigantea</option> <option value="475174">Stichodactyla haddoni</option> <option value="55999">Stigeoclonium helveticum</option> <option value="1917266">Stylocoeniella armata</option> <option value="351728">Stylocoeniella sp. NOA-2005</option> <option value="50429">Stylophora pistillata</option> <option value="32630">synthetic construct</option> <option value="196280">Trachyphyllia geoffroyi</option> <option value="203124">Trichodesmium erythraeum IMS101</option> <option value="496660">Verrillofungia concinna</option> <option value="62">Vitreoscilla beggiatoides</option> <option value="105402">Zoanthus sp.</option>
+
+</select> </div> </div> <div id="div_id_primary_reference__year__gte" class="form-group"> <label for="id_primary_reference__year__gte" class="col-form-label ">
+                Primary Reference year is greater than or equal to
+            </label> <div class=""> <input type="number" name="primary_reference__year__gte" step="any" class="numberinput form-control" id="id_primary_reference__year__gte"> </div> </div> <div id="div_id_primary_reference__year__gt" class="form-group"> <label for="id_primary_reference__year__gt" class="col-form-label ">
+                Primary Reference year is greater than
+            </label> <div class=""> <input type="number" name="primary_reference__year__gt" step="any" class="numberinput form-control" id="id_primary_reference__year__gt"> </div> </div> <div id="div_id_primary_reference__year__lt" class="form-group"> <label for="id_primary_reference__year__lt" class="col-form-label ">
+                Primary Reference year is less than
+            </label> <div class=""> <input type="number" name="primary_reference__year__lt" step="any" class="numberinput form-control" id="id_primary_reference__year__lt"> </div> </div> <div id="div_id_primary_reference__year__lte" class="form-group"> <label for="id_primary_reference__year__lte" class="col-form-label ">
+                Primary Reference year is less than or equal to
+            </label> <div class=""> <input type="number" name="primary_reference__year__lte" step="any" class="numberinput form-control" id="id_primary_reference__year__lte"> </div> </div> <div id="div_id_primary_reference__year__range" class="form-group"> <label for="id_primary_reference__year__range" class="col-form-label ">
+                Primary Reference year is in range
+            </label> <div class=""> <input type="text" name="primary_reference__year__range" class="csvwidget form-control" id="id_primary_reference__year__range"> <small id="hint_id_primary_reference__year__range" class="form-text text-muted">Multiple values may be separated by commas.</small> </div> </div> <div id="div_id_primary_reference__year" class="form-group"> <label for="id_primary_reference__year" class="col-form-label ">
+                Primary Reference year
+            </label> <div class=""> <input type="number" name="primary_reference__year" step="any" class="numberinput form-control" id="id_primary_reference__year"> </div> </div> <div id="div_id_primary_reference__author__family__icontains" class="form-group"> <label for="id_primary_reference__author__family__icontains" class="col-form-label ">
+                [invalid name] contains
+            </label> <div class=""> <input type="text" name="primary_reference__author__family__icontains" value="Shaner" class="textinput textInput form-control" id="id_primary_reference__author__family__icontains"> </div> </div> <div id="div_id_slug" class="form-group"> <label for="id_slug" class="col-form-label ">
+                Slug
+            </label> <div class=""> <input type="text" name="slug" class="textinput textInput form-control" id="id_slug"> </div> </div> <div id="div_id_id" class="form-group"> <label for="id_id" class="col-form-label ">
+                ID
+            </label> <div class=""> <input type="number" name="id" step="any" class="numberinput form-control" id="id_id"> </div> </div> <div id="div_id_spectral_brightness" class="form-group"> <label for="id_spectral_brightness" class="col-form-label ">
+                Spectral brightness
+            </label> <div class=""> <input type="number" name="spectral_brightness" step="any" class="numberinput form-control" id="id_spectral_brightness"> <small id="hint_id_spectral_brightness" class="form-text text-muted">fold brightness relative to spectral neighbors</small> </div> </div> <div id="div_id_spectral_brightness__gt" class="form-group"> <label for="id_spectral_brightness__gt" class="col-form-label ">
+                Spectral brightness  gt
+            </label> <div class=""> <input type="number" name="spectral_brightness__gt" step="any" class="numberinput form-control" id="id_spectral_brightness__gt"> <small id="hint_id_spectral_brightness__gt" class="form-text text-muted">fold brightness relative to spectral neighbors</small> </div> </div> <div id="div_id_spectral_brightness__lt" class="form-group"> <label for="id_spectral_brightness__lt" class="col-form-label ">
+                Spectral brightness  lt
+            </label> <div class=""> <input type="number" name="spectral_brightness__lt" step="any" class="numberinput form-control" id="id_spectral_brightness__lt"> <small id="hint_id_spectral_brightness__lt" class="form-text text-muted">fold brightness relative to spectral neighbors</small> </div> </div>
+
+</div>
+
+<form action="" method="get" class="mb-2">
+    <div id="query_builder">Building form... <img width=60 src="/static/images/GFP_spinner.76edb9c806ed.gif"></i></div>
+    <div class='clearfix button-row'>
+    <button type="submit" class="btn btn-sm btn-primary form-group"><i class="fas fa-search"></i> Search</button>
+    <button type="button" class="btn btn-sm btn-info form-group" id="add-row-btn"><i class="fas fa-filter"></i> Add Filter</button>
+
+    
+    <div class="btn-group float-sm-right displaybuttons btn-group-toggle mb-3" data-toggle="buttons" >
+      <label class="btn btn-info btn-sm btn-secondary active">
+        <input type="radio" name="display" id="lbutton" autocomplete="off" checked value='l'><i class="fas fa-th"></i> display blocks
+      </label>
+      <label class="btn btn-info btn-sm btn-secondary">
+        <input type="radio" name="display" id="tbutton" autocomplete="off" value='t'><i class="fas fa-table"></i> display table
+      </label>
+    </div>
+    </div>
+    
+</form>
+
+
+    
+        <div class="d-flex flex-column-reverse flex-sm-row justify-content-between">
+            <div class="">
+                <h3 style="font-weight: 300">Search Results</h3>
+            </div>
+            <div class="">
+                <form action='/collection/create/' method='post' class='float-sm-right'>
+                    <input type="hidden" name="csrfmiddlewaretoken" value="ch2G7utH3iag0tJOvJGFy6CARc5PqiNBbYItqYgyauugTU6MUeEV39x0mc3a7GUw">
+                    
+                        <input type="hidden" name="protein" value="70">
+                    
+                        <input type="hidden" name="protein" value="72">
+                    
+                        <input type="hidden" name="protein" value="71">
+                    
+                        <input type="hidden" name="protein" value="345">
+                    
+                        <input type="hidden" name="protein" value="375">
+                    
+                        <input type="hidden" name="protein" value="346">
+                    
+                        <input type="hidden" name="protein" value="1211">
+                    
+                        <input type="hidden" name="protein" value="903">
+                    
+                        <input type="hidden" name="protein" value="898">
+                    
+                        <input type="hidden" name="protein" value="899">
+                    
+                        <input type="hidden" name="protein" value="16">
+                    
+                        <input type="hidden" name="protein" value="904">
+                    
+                        <input type="hidden" name="protein" value="902">
+                    
+                        <input type="hidden" name="protein" value="907">
+                    
+                        <input type="hidden" name="protein" value="900">
+                    
+                        <input type="hidden" name="protein" value="384">
+                    
+                        <input type="hidden" name="protein" value="901">
+                    
+                        <input type="hidden" name="protein" value="277">
+                    
+                        <input type="hidden" name="protein" value="128">
+                    
+                        <input type="hidden" name="protein" value="2121">
+                    
+                        <input type="hidden" name="protein" value="2120">
+                    
+                        <input type="hidden" name="protein" value="343">
+                    
+                        <input type="hidden" name="protein" value="388">
+                    
+                        <input type="hidden" name="protein" value="369">
+                    
+                        <input type="hidden" name="protein" value="389">
+                    
+                        <input type="hidden" name="protein" value="280">
+                    
+                        <input type="hidden" name="protein" value="511">
+                    
+                        <input type="hidden" name="protein" value="182">
+                    
+                        <input type="hidden" name="protein" value="420">
+                    
+                        <input type="hidden" name="protein" value="341">
+                    
+                        <input type="hidden" name="protein" value="411">
+                    
+                        <input type="hidden" name="protein" value="352">
+                    
+                        <input type="hidden" name="protein" value="529">
+                    
+                        <input type="hidden" name="protein" value="921">
+                    
+                        <input type="hidden" name="protein" value="595">
+                    
+                        <input type="hidden" name="protein" value="366">
+                    
+                        <input type="hidden" name="protein" value="745">
+                    
+                        <input type="hidden" name="protein" value="746">
+                    
+                        <input type="hidden" name="protein" value="734">
+                    
+                        <input type="hidden" name="protein" value="748">
+                    
+                        <input type="hidden" name="protein" value="747">
+                    
+                        <input type="hidden" name="protein" value="367">
+                    
+                        <input type="hidden" name="protein" value="368">
+                    
+                        <input type="hidden" name="protein" value="735">
+                    
+                        <input type="hidden" name="protein" value="135">
+                    
+                        <input type="hidden" name="protein" value="385">
+                    
+                        <input type="hidden" name="protein" value="768">
+                    
+                        <input type="hidden" name="protein" value="767">
+                    
+                        <input type="hidden" name="protein" value="766">
+                    
+                        <input type="hidden" name="protein" value="744">
+                    
+                        <input type="hidden" name="protein" value="708">
+                    
+                        <input type="hidden" name="protein" value="905">
+                    
+                        <input type="hidden" name="protein" value="906">
+                    
+                        <input type="hidden" name="protein" value="707">
+                    
+                        <input type="hidden" name="protein" value="706">
+                    
+                        <input type="hidden" name="protein" value="597">
+                    
+                        <input type="hidden" name="protein" value="596">
+                    
+                        <input type="hidden" name="protein" value="769">
+                    
+                    <button class='btn btn-info btn-sm btn-block-xs mb-3' type='submit'>Create collection from results</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container protein_results pl-0 pr-0">
+            
+                <div id="ldisplay" >
+                
+                    <div class="row ml-0 mr-0">
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/ebfp12/" class='protein_result_item'>
+            <div style="background: #001eff">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                EBFP1.2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      379 / 446
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/ebfp2/" class='protein_result_item'>
+            <div style="background: #0028ff">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                EBFP2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      383 / 448
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/ebfp15/" class='protein_result_item'>
+            <div style="background: #002dff">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                EBFP1.5
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      381 / 449
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mblueberry1/" class='protein_result_item'>
+            <div style="background: #003dff">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mBlueberry1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      398 / 452
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mkalama1/" class='protein_result_item'>
+            <div style="background: #0051ff">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mKalama1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      385 / 456
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mblueberry2/" class='protein_result_item'>
+            <div style="background: #0089ff">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mBlueberry2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      402 / 467
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/rosmarinus/" class='protein_result_item'>
+            <div style="background: #00d6ff">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                Rosmarinus
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      437 / 482
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/aausgfp/" class='protein_result_item'>
+            <div style="background: #00ff59">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                AausGFP
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      398 / 503
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/avicfp1/" class='protein_result_item'>
+            <div style="background: #00ff59">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                AvicFP1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      481 / 503
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mavicfp1/" class='protein_result_item'>
+            <div style="background: #00ff59">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mAvicFP1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      480 / 503
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mclavgr2/" class='protein_result_item'>
+            <div style="background: linear-gradient(90deg, #00ff4c 33%, #ff5600 66%)">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mClavGR2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      488 / 504
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/aausfp1/" class='protein_result_item'>
+            <div style="background: #00ff00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                AausFP1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      504 / 510
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/avicfp4/" class='protein_result_item'>
+            <div style="background: #07ff00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                AvicFP4
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      500 / 512
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/aausfp4/" class='protein_result_item'>
+            <div style="background: linear-gradient(90deg, #000 15%, #0aff00 48%)">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                AausFP4
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      477 / 513
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/avicfp2/" class='protein_result_item'>
+            <div style="background: linear-gradient(90deg, #000 15%, #12ff00 48%)">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                AvicFP2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      480 / 515
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mneongreen/" class='protein_result_item'>
+            <div style="background: #19ff00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mNeonGreen
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      506 / 517
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/avicfp3/" class='protein_result_item'>
+            <div style="background: linear-gradient(90deg, #000 15%, #b6ff00 48%)">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                AvicFP3
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      480 / 520
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/dlanyfp/" class='protein_result_item'>
+            <div style="background: #c4ff00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                dLanYFP
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      513 / 524
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/lanyfp/" class='protein_result_item'>
+            <div style="background: #c4ff00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                LanYFP
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      513 / 524
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mgold2t/" class='protein_result_item'>
+            <div style="background: #cfff00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mGold2t
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      515 / 527
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mgold2s/" class='protein_result_item'>
+            <div style="background: #d6ff00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mGold2s
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      517 / 529
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mbanana/" class='protein_result_item'>
+            <div style="background: #ffcc00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mBanana
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      540 / 553
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/morange/" class='protein_result_item'>
+            <div style="background: #ffa800">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mOrange
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      548 / 562
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mhoneydew/" class='protein_result_item'>
+            <div style="background: #ffa800">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mHoneydew
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      487 / 562
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/morange2/" class='protein_result_item'>
+            <div style="background: #ff9c00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mOrange2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      549 / 565
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/dtomato/" class='protein_result_item'>
+            <div style="background: #ff5e00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                dTomato
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      554 / 581
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/tdtomato/" class='protein_result_item'>
+            <div style="background: #ff5e00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                tdTomato
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      554 / 581
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/tagrfp-t/" class='protein_result_item'>
+            <div style="background: #ff5200">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                TagRFP-T
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      555 / 584
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mtangerine/" class='protein_result_item'>
+            <div style="background: #ff4e00">
+              <h4 style="color:
+                
+                    #222
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mTangerine
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #222
+                  
+                  ;">
+                  
+                      568 / 585
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mapple/" class='protein_result_item'>
+            <div style="background: #ff3300">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mApple
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      568 / 592
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mstrawberry/" class='protein_result_item'>
+            <div style="background: #ff2300">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mStrawberry
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      574 / 596
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mcherry/" class='protein_result_item'>
+            <div style="background: #f70000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mCherry
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      587 / 610
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mcherry2/" class='protein_result_item'>
+            <div style="background: #f70000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mCherry2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      589 / 610
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/lssmcherry1/" class='protein_result_item'>
+            <div style="background: #f70000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                LSSmCherry1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      450 / 610
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mrfp11/" class='protein_result_item'>
+            <div style="background: #f50000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mRFP1.1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      589 / 612
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mgrape1/" class='protein_result_item'>
+            <div style="background: #e20000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mGrape1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      595 / 625
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/rdsmcherry01/" class='protein_result_item'>
+            <div style="background: #e20000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                RDSmCherry0.1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      598 / 625
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/rdsmcherry02/" class='protein_result_item'>
+            <div style="background: #db0000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                RDSmCherry0.2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      600 / 630
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mkate-s158c/" class='protein_result_item'>
+            <div style="background: #db0000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mKate S158C
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      586 / 630
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/rdsmcherry1/" class='protein_result_item'>
+            <div style="background: #db0000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                RDSmCherry1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      600 / 630
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/rdsmcherry05/" class='protein_result_item'>
+            <div style="background: #d20000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                RDSmCherry0.5
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      604 / 636
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mgrape2/" class='protein_result_item'>
+            <div style="background: #d20000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mGrape2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      605 / 636
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mgrape3/" class='protein_result_item'>
+            <div style="background: #c40000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mGrape3
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      608 / 646
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mkate-m41g-s158c/" class='protein_result_item'>
+            <div style="background: #c10000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mKate M41G S158C
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      593 / 648
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/neptune/" class='protein_result_item'>
+            <div style="background: #be0000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                Neptune
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      600 / 650
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mneptune/" class='protein_result_item'>
+            <div style="background: #be0000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mNeptune
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      600 / 650
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/dclavgr16/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                dClavGR1.6
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mclavgr11/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mClavGR1.1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mclavgr1/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mClavGR1
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mcherry15/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mCherry1.5
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mrfp15/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mRFP1.5
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/aausfp2/" class='protein_result_item'>
+            <div style="background: #000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                AausFP2
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      609 / None
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/aausfp3/" class='protein_result_item'>
+            <div style="background: #000">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                AausFP3
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+                      587 / None
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mofpt8/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mOFP.T.8
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mofpt12/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mOFP.T.12
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mrfp14/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mRFP1.4
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mrfp13/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mRFP1.3
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ml-0 mr-0 pl-1 pr-1">
+        <a href="/protein/mclavgr18/" class='protein_result_item'>
+            <div style="background: repeating-linear-gradient(-45deg,#333,#333 8px,#444 8px,#444 16px);">
+              <h4 style="color:
+                
+                    #eee
+                
+                ; text-shadow: 0px 0px 2px #ddd;">
+                mClavGR1.8
+              </h4>
+              <span class='attributes' style="color:
+                  
+                      #eee
+                  
+                  ;">
+                  
+              </span>
+            </div>
+        </a>
+    </div>
+    
+</div>
+
+                
+                </div>
+                <div id="tdisplay" class="hidden">
+                
+                    <div class="table-responsive">
+                      
+
+
+
+<table class="table table-sm table-striped " id="proteinTable" style="width:100%">
+	<thead>
+		<tr class="table-header">
+			
+			<th class="protein">Name</th>
+			<th>&lambda;<sub>ex</sub></th>
+  			<th>&lambda;<sub>em</sub></th>
+        <th><span class="d-none d-md-inline">Stokes</span><span class="d-block d-md-none">&lambda;<sub>&Delta;</sub></span></th>
+  			<th>EC</th>
+  			<th>QY</th>
+  			<th>Bright<span class="d-none d-lg-inline">ness</span></th>
+  			<!-- <th data-sortable="true" >&#1642;EGFP</th> -->
+  			
+  			<th>pKa</th>
+  			<th class='agg_type'>Agg<span class="d-none d-xl-inline">regation</span></th>
+  			<th>Mat<span class="d-none d-xl-inline">uration</span></th>
+  			<th><span class="d-none d-xl-inline">Lifetime</span><span class="d-block d-xl-none">&tau;</span></th>
+        <th>kDa</th>
+  			<th class='hidden switch_type'>Switch Type</th>
+        <td class='hidden'>Aliases</td>
+        
+		</tr>
+	</thead>
+	<tbody>
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/ebfp12/">
+								EBFP1.2
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #0c0026; color:#eee">379</td>
+						<td class="numeric" style="opacity: 0.7;background: #001eff;color:#eee">446</td>
+						<td class="numeric pl-2">67</td>
+						<td class="numeric">41,000</td>
+						<td class="numeric">0.45</td>
+						<td class="numeric">18.45</td>
+						<!-- <td class="numeric">54.91071428571428</td> -->
+						
+						<td class="numeric">6.6</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.86</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/ebfp2/">
+								EBFP2
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #510055; color:#eee">383</td>
+						<td class="numeric" style="opacity: 0.7;background: #0028ff;color:#eee">448</td>
+						<td class="numeric pl-2">65</td>
+						<td class="numeric">32,000</td>
+						<td class="numeric">0.56</td>
+						<td class="numeric">17.92</td>
+						<!-- <td class="numeric">53.333333333333336</td> -->
+						
+						<td class="numeric">5.3</td>
+						<td class="numeric">m </td>
+						<td class="numeric">25.0</td>
+						<td class="numeric">3.0</td>
+            <td class="numeric weight">26.90</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/ebfp15/">
+								EBFP1.5
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #4e004f; color:#eee">381</td>
+						<td class="numeric" style="opacity: 0.7;background: #002dff;color:#eee">449</td>
+						<td class="numeric pl-2">68</td>
+						<td class="numeric">43,000</td>
+						<td class="numeric">0.53</td>
+						<td class="numeric">22.79</td>
+						<!-- <td class="numeric">67.82738095238095</td> -->
+						
+						<td class="numeric">4.8</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.77</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mblueberry1/">
+								mBlueberry1
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #5b0082; color:#eee">398</td>
+						<td class="numeric" style="opacity: 0.7;background: #003dff;color:#eee">452</td>
+						<td class="numeric pl-2">54</td>
+						<td class="numeric">11,000</td>
+						<td class="numeric">0.48</td>
+						<td class="numeric">5.28</td>
+						<!-- <td class="numeric">15.714285714285714</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.72</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mkalama1/">
+								mKalama1
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #53005b; color:#eee">385</td>
+						<td class="numeric" style="opacity: 0.7;background: #0051ff;color:#eee">456</td>
+						<td class="numeric pl-2">71</td>
+						<td class="numeric">36,000</td>
+						<td class="numeric">0.45</td>
+						<td class="numeric">16.2</td>
+						<!-- <td class="numeric">48.21428571428571</td> -->
+						
+						<td class="numeric">5.5</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.79</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mblueberry2/">
+								mBlueberry2
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #59008d; color:#eee">402</td>
+						<td class="numeric" style="opacity: 0.7;background: #0089ff;color:#eee">467</td>
+						<td class="numeric pl-2">65</td>
+						<td class="numeric">51,000</td>
+						<td class="numeric">0.48</td>
+						<td class="numeric">24.48</td>
+						<!-- <td class="numeric">72.85714285714285</td> -->
+						
+						<td class="numeric">2.5</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.76</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/rosmarinus/">
+								Rosmarinus
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #0c00f6; color:#eee">437</td>
+						<td class="numeric" style="opacity: 0.7;background: #00d6ff;color:#000">482</td>
+						<td class="numeric pl-2">45</td>
+						<td class="numeric">45,000</td>
+						<td class="numeric">0.85</td>
+						<td class="numeric">38.25</td>
+						<!-- <td class="numeric">113.83928571428571</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric">t </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.05</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/aausgfp/">
+								AausGFP
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #5b0082; color:#eee">398</td>
+						<td class="numeric" style="opacity: 0.7;background: #00ff59;color:#000">503</td>
+						<td class="numeric pl-2">105</td>
+						<td class="numeric">29,000</td>
+						<td class="numeric">0.73</td>
+						<td class="numeric">21.17</td>
+						<!-- <td class="numeric">63.00595238095238</td> -->
+						
+						<td class="numeric">4.8</td>
+						<td class="numeric">d </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">27.45</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/avicfp1/">
+								AvicFP1
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00d1ff; color:#000">481</td>
+						<td class="numeric" style="opacity: 0.7;background: #00ff59;color:#000">503</td>
+						<td class="numeric pl-2">22</td>
+						<td class="numeric">64,000</td>
+						<td class="numeric">0.63</td>
+						<td class="numeric">40.32</td>
+						<!-- <td class="numeric">120.0</td> -->
+						
+						<td class="numeric">4.9</td>
+						<td class="numeric">wd </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.80</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mavicfp1/">
+								mAvicFP1
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00ccff; color:#000">480</td>
+						<td class="numeric" style="opacity: 0.7;background: #00ff59;color:#000">503</td>
+						<td class="numeric pl-2">23</td>
+						<td class="numeric">65,000</td>
+						<td class="numeric">0.63</td>
+						<td class="numeric">40.95</td>
+						<!-- <td class="numeric">121.875</td> -->
+						
+						<td class="numeric">4.9</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.82</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mclavgr2/">
+								mClavGR2
+								 <small>(Green)</small>
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00f4ff; color:#000">488</td>
+						<td class="numeric" style="opacity: 0.7;background: #00ff4c;color:#000">504</td>
+						<td class="numeric pl-2">16</td>
+						<td class="numeric">19,000</td>
+						<td class="numeric">0.77</td>
+						<td class="numeric">14.63</td>
+						<!-- <td class="numeric">43.541666666666664</td> -->
+						
+						<td class="numeric">8.0</td>
+						<td class="numeric">m </td>
+						<td class="numeric">27.0</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">27.08</td>
+						<td class='hidden'>pc</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mclavgr2/">
+								mClavGR2
+								 <small>(Red)</small>
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff9900; color:#000">566</td>
+						<td class="numeric" style="opacity: 0.7;background: #ff5600;color:#000">583</td>
+						<td class="numeric pl-2">17</td>
+						<td class="numeric">32,000</td>
+						<td class="numeric">0.53</td>
+						<td class="numeric">16.96</td>
+						<!-- <td class="numeric">50.476190476190474</td> -->
+						
+						<td class="numeric">7.3</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">27.08</td>
+						<td class='hidden'>pc</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/aausfp1/">
+								AausFP1
+								 <small>(AausFP1)</small>
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00ff4c; color:#000">504</td>
+						<td class="numeric" style="opacity: 0.7;background: #00ff00;color:#000">510</td>
+						<td class="numeric pl-2">6</td>
+						<td class="numeric">170,000</td>
+						<td class="numeric">0.97</td>
+						<td class="numeric">164.9</td>
+						<!-- <td class="numeric">490.7738095238095</td> -->
+						
+						<td class="numeric">4.4</td>
+						<td class="numeric">d </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.72</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/avicfp4/">
+								AvicFP4
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00ff7f; color:#000">500</td>
+						<td class="numeric" style="opacity: 0.7;background: #07ff00;color:#000">512</td>
+						<td class="numeric pl-2">12</td>
+						<td class="numeric">121,000</td>
+						<td class="numeric">0.1</td>
+						<td class="numeric">12.1</td>
+						<!-- <td class="numeric">36.01190476190476</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric"> </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.50</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+      
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/aausfp4/">
+								AausFP4
+								 <small>(On)</small>
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00bcff; color:#eee">477</td>
+						<td class="numeric" style="opacity: 0.7;background: #0aff00;color:#000">513</td>
+						<td class="numeric pl-2">36</td>
+						<td class="numeric">69,000</td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+						<!-- <td class="numeric">-</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric">d </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.61</td>
+						<td class='hidden'>ps</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+      
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/avicfp2/">
+								AvicFP2
+								 <small>(pre-conversion)</small>
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00ccff; color:#000">480</td>
+						<td class="numeric" style="opacity: 0.7;background: #12ff00;color:#000">515</td>
+						<td class="numeric pl-2">35</td>
+						<td class="numeric">59,000</td>
+						<td class="numeric">0.04</td>
+						<td class="numeric">2.36</td>
+						<!-- <td class="numeric">7.023809523809523</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric"> </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.61</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mneongreen/">
+								mNeonGreen
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00ff33; color:#000">506</td>
+						<td class="numeric" style="opacity: 0.7;background: #19ff00;color:#000">517</td>
+						<td class="numeric pl-2">11</td>
+						<td class="numeric">116,000</td>
+						<td class="numeric">0.8</td>
+						<td class="numeric">92.8</td>
+						<!-- <td class="numeric">276.19047619047615</td> -->
+						
+						<td class="numeric">5.7</td>
+						<td class="numeric">m </td>
+						<td class="numeric">10.0</td>
+						<td class="numeric">3.1</td>
+            <td class="numeric weight">26.65</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[&#x27;mNG&#x27;]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+      
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/avicfp3/">
+								AvicFP3
+								 <small>(pre-conversion)</small>
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00ccff; color:#000">480</td>
+						<td class="numeric" style="opacity: 0.7;background: #b6ff00;color:#000">520</td>
+						<td class="numeric pl-2">40</td>
+						<td class="numeric">-</td>
+						<td class="numeric">0.001</td>
+						<td class="numeric"></td>
+						<!-- <td class="numeric">-</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric"> </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.54</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/dlanyfp/">
+								dLanYFP
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #0aff00; color:#000">513</td>
+						<td class="numeric" style="opacity: 0.7;background: #c4ff00;color:#000">524</td>
+						<td class="numeric pl-2">11</td>
+						<td class="numeric">125,000</td>
+						<td class="numeric">0.9</td>
+						<td class="numeric">112.5</td>
+						<!-- <td class="numeric">334.82142857142856</td> -->
+						
+						<td class="numeric">3.9</td>
+						<td class="numeric">d </td>
+						<td class="numeric"></td>
+						<td class="numeric">3.1</td>
+            <td class="numeric weight">26.66</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/lanyfp/">
+								LanYFP
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #0aff00; color:#000">513</td>
+						<td class="numeric" style="opacity: 0.7;background: #c4ff00;color:#000">524</td>
+						<td class="numeric pl-2">11</td>
+						<td class="numeric">150,000</td>
+						<td class="numeric">0.95</td>
+						<td class="numeric">142.5</td>
+						<!-- <td class="numeric">424.10714285714283</td> -->
+						
+						<td class="numeric">3.5</td>
+						<td class="numeric">t </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">24.72</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mgold2t/">
+								mGold2t
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #12ff00; color:#000">515</td>
+						<td class="numeric" style="opacity: 0.7;background: #cfff00;color:#000">527</td>
+						<td class="numeric pl-2">12</td>
+						<td class="numeric">126,000</td>
+						<td class="numeric">0.7</td>
+						<td class="numeric">88.2</td>
+						<!-- <td class="numeric">262.5</td> -->
+						
+						<td class="numeric">5.4</td>
+						<td class="numeric">m </td>
+						<td class="numeric">13.1</td>
+						<td class="numeric">2.95</td>
+            <td class="numeric weight">26.92</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mgold2s/">
+								mGold2s
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #19ff00; color:#000">517</td>
+						<td class="numeric" style="opacity: 0.7;background: #d6ff00;color:#000">529</td>
+						<td class="numeric pl-2">12</td>
+						<td class="numeric">131,000</td>
+						<td class="numeric">0.69</td>
+						<td class="numeric">90.39</td>
+						<!-- <td class="numeric">269.0178571428571</td> -->
+						
+						<td class="numeric">5.1</td>
+						<td class="numeric">m </td>
+						<td class="numeric">14.8</td>
+						<td class="numeric">3.04</td>
+            <td class="numeric weight">26.90</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mbanana/">
+								mBanana
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ffff00; color:#000">540</td>
+						<td class="numeric" style="opacity: 0.7;background: #ffcc00;color:#000">553</td>
+						<td class="numeric pl-2">13</td>
+						<td class="numeric">6,000</td>
+						<td class="numeric">0.7</td>
+						<td class="numeric">4.2</td>
+						<!-- <td class="numeric">12.5</td> -->
+						
+						<td class="numeric">6.7</td>
+						<td class="numeric">m </td>
+						<td class="numeric">60.0</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.57</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/morange/">
+								mOrange
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ffdf00; color:#000">548</td>
+						<td class="numeric" style="opacity: 0.7;background: #ffa800;color:#000">562</td>
+						<td class="numeric pl-2">14</td>
+						<td class="numeric">71,000</td>
+						<td class="numeric">0.69</td>
+						<td class="numeric">48.99</td>
+						<!-- <td class="numeric">145.80357142857142</td> -->
+						
+						<td class="numeric">6.5</td>
+						<td class="numeric">m </td>
+						<td class="numeric">150.0</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.74</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mhoneydew/">
+								mHoneydew
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #00efff; color:#000">487</td>
+						<td class="numeric" style="opacity: 0.7;background: #ffa800;color:#000">562</td>
+						<td class="numeric pl-2">75</td>
+						<td class="numeric">17,000</td>
+						<td class="numeric">0.12</td>
+						<td class="numeric">2.04</td>
+						<!-- <td class="numeric">6.071428571428571</td> -->
+						
+						<td class="numeric">4.0</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.36</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/morange2/">
+								mOrange2
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ffdb00; color:#000">549</td>
+						<td class="numeric" style="opacity: 0.7;background: #ff9c00;color:#000">565</td>
+						<td class="numeric pl-2">16</td>
+						<td class="numeric">58,000</td>
+						<td class="numeric">0.6</td>
+						<td class="numeric">34.8</td>
+						<!-- <td class="numeric">103.57142857142856</td> -->
+						
+						<td class="numeric">6.5</td>
+						<td class="numeric">m </td>
+						<td class="numeric">270.0</td>
+						<td class="numeric">2.7</td>
+            <td class="numeric weight">26.82</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/dtomato/">
+								dTomato
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ffc800; color:#000">554</td>
+						<td class="numeric" style="opacity: 0.7;background: #ff5e00;color:#000">581</td>
+						<td class="numeric pl-2">27</td>
+						<td class="numeric">69,000</td>
+						<td class="numeric">0.69</td>
+						<td class="numeric">47.61</td>
+						<!-- <td class="numeric">141.69642857142856</td> -->
+						
+						<td class="numeric">4.7</td>
+						<td class="numeric">d </td>
+						<td class="numeric">60.0</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.96</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/tdtomato/">
+								tdTomato
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ffc800; color:#000">554</td>
+						<td class="numeric" style="opacity: 0.7;background: #ff5e00;color:#000">581</td>
+						<td class="numeric pl-2">27</td>
+						<td class="numeric">138,000</td>
+						<td class="numeric">0.69</td>
+						<td class="numeric">95.22</td>
+						<!-- <td class="numeric">283.3928571428571</td> -->
+						
+						<td class="numeric">4.7</td>
+						<td class="numeric">td </td>
+						<td class="numeric">60.0</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">54.19</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/tagrfp-t/">
+								TagRFP-T
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ffc400; color:#000">555</td>
+						<td class="numeric" style="opacity: 0.7;background: #ff5200;color:#000">584</td>
+						<td class="numeric pl-2">29</td>
+						<td class="numeric">81,000</td>
+						<td class="numeric">0.41</td>
+						<td class="numeric">33.21</td>
+						<!-- <td class="numeric">98.83928571428571</td> -->
+						
+						<td class="numeric">4.6</td>
+						<td class="numeric">m </td>
+						<td class="numeric">100.0</td>
+						<td class="numeric">2.3</td>
+            <td class="numeric weight">27.58</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mtangerine/">
+								mTangerine
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff9100; color:#000">568</td>
+						<td class="numeric" style="opacity: 0.7;background: #ff4e00;color:#000">585</td>
+						<td class="numeric pl-2">17</td>
+						<td class="numeric">38,000</td>
+						<td class="numeric">0.3</td>
+						<td class="numeric">11.4</td>
+						<!-- <td class="numeric">33.92857142857143</td> -->
+						
+						<td class="numeric">5.7</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.37</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mapple/">
+								mApple
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff9100; color:#000">568</td>
+						<td class="numeric" style="opacity: 0.7;background: #ff3300;color:#eee">592</td>
+						<td class="numeric pl-2">24</td>
+						<td class="numeric">75,000</td>
+						<td class="numeric">0.49</td>
+						<td class="numeric">36.75</td>
+						<!-- <td class="numeric">109.375</td> -->
+						
+						<td class="numeric">6.5</td>
+						<td class="numeric">m </td>
+						<td class="numeric">30.0</td>
+						<td class="numeric">2.9</td>
+            <td class="numeric weight">26.96</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mstrawberry/">
+								mStrawberry
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff7900; color:#000">574</td>
+						<td class="numeric" style="opacity: 0.7;background: #ff2300;color:#eee">596</td>
+						<td class="numeric pl-2">22</td>
+						<td class="numeric">90,000</td>
+						<td class="numeric">0.29</td>
+						<td class="numeric">26.1</td>
+						<!-- <td class="numeric">77.67857142857143</td> -->
+						
+						<td class="numeric">4.5</td>
+						<td class="numeric">m </td>
+						<td class="numeric">50.0</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.64</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mcherry/">
+								mCherry
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff4600; color:#000">587</td>
+						<td class="numeric" style="opacity: 0.7;background: #f70000;color:#eee">610</td>
+						<td class="numeric pl-2">23</td>
+						<td class="numeric">72,000</td>
+						<td class="numeric">0.22</td>
+						<td class="numeric">15.84</td>
+						<!-- <td class="numeric">47.14285714285714</td> -->
+						
+						<td class="numeric">4.5</td>
+						<td class="numeric">m </td>
+						<td class="numeric">15.0</td>
+						<td class="numeric">1.4</td>
+            <td class="numeric weight">26.72</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mcherry2/">
+								mCherry2
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff3e00; color:#000">589</td>
+						<td class="numeric" style="opacity: 0.7;background: #f70000;color:#eee">610</td>
+						<td class="numeric pl-2">21</td>
+						<td class="numeric">79,400</td>
+						<td class="numeric">0.22</td>
+						<td class="numeric">17.47</td>
+						<!-- <td class="numeric">51.99404761904761</td> -->
+						
+						<td class="numeric">3.3</td>
+						<td class="numeric">m </td>
+						<td class="numeric">22.8</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.74</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/lssmcherry1/">
+								LSSmCherry1
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #0033ff; color:#eee">450</td>
+						<td class="numeric" style="opacity: 0.7;background: #f70000;color:#eee">610</td>
+						<td class="numeric pl-2">160</td>
+						<td class="numeric">35,000</td>
+						<td class="numeric">0.29</td>
+						<td class="numeric">10.15</td>
+						<!-- <td class="numeric">30.208333333333332</td> -->
+						
+						<td class="numeric">6.2</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.69</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mrfp11/">
+								mRFP1.1
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff3e00; color:#000">589</td>
+						<td class="numeric" style="opacity: 0.7;background: #f50000;color:#eee">612</td>
+						<td class="numeric pl-2">23</td>
+						<td class="numeric">-</td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+						<!-- <td class="numeric">-</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.41</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mgrape1/">
+								mGrape1
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff2700; color:#eee">595</td>
+						<td class="numeric" style="opacity: 0.7;background: #e20000;color:#eee">625</td>
+						<td class="numeric pl-2">30</td>
+						<td class="numeric">50,000</td>
+						<td class="numeric">0.03</td>
+						<td class="numeric">1.5</td>
+						<!-- <td class="numeric">4.464285714285714</td> -->
+						
+						<td class="numeric">4.5</td>
+						<td class="numeric">m </td>
+						<td class="numeric">70.0</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.43</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/rdsmcherry01/">
+								RDSmCherry0.1
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff1b00; color:#eee">598</td>
+						<td class="numeric" style="opacity: 0.7;background: #e20000;color:#eee">625</td>
+						<td class="numeric pl-2">27</td>
+						<td class="numeric">59,600</td>
+						<td class="numeric">0.1</td>
+						<td class="numeric">5.96</td>
+						<!-- <td class="numeric">17.738095238095237</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.59</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/rdsmcherry02/">
+								RDSmCherry0.2
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff1300; color:#eee">600</td>
+						<td class="numeric" style="opacity: 0.7;background: #db0000;color:#eee">630</td>
+						<td class="numeric pl-2">30</td>
+						<td class="numeric">34,400</td>
+						<td class="numeric">0.03</td>
+						<td class="numeric">1.03</td>
+						<!-- <td class="numeric">3.0654761904761902</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.65</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mkate-s158c/">
+								mKate S158C
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff4a00; color:#000">586</td>
+						<td class="numeric" style="opacity: 0.7;background: #db0000;color:#eee">630</td>
+						<td class="numeric pl-2">44</td>
+						<td class="numeric">63,000</td>
+						<td class="numeric">0.33</td>
+						<td class="numeric">20.79</td>
+						<!-- <td class="numeric">61.87499999999999</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.04</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/rdsmcherry1/">
+								RDSmCherry1
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff1300; color:#eee">600</td>
+						<td class="numeric" style="opacity: 0.7;background: #db0000;color:#eee">630</td>
+						<td class="numeric pl-2">30</td>
+						<td class="numeric">55,400</td>
+						<td class="numeric">0.09</td>
+						<td class="numeric">4.99</td>
+						<!-- <td class="numeric">14.851190476190476</td> -->
+						
+						<td class="numeric">5.6</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.64</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/rdsmcherry05/">
+								RDSmCherry0.5
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff0300; color:#eee">604</td>
+						<td class="numeric" style="opacity: 0.7;background: #d20000;color:#eee">636</td>
+						<td class="numeric pl-2">32</td>
+						<td class="numeric">23,300</td>
+						<td class="numeric">0.02</td>
+						<td class="numeric">0.47</td>
+						<!-- <td class="numeric">1.3988095238095237</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.69</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mgrape2/">
+								mGrape2
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff0000; color:#eee">605</td>
+						<td class="numeric" style="opacity: 0.7;background: #d20000;color:#eee">636</td>
+						<td class="numeric pl-2">31</td>
+						<td class="numeric">33,000</td>
+						<td class="numeric">0.03</td>
+						<td class="numeric">0.99</td>
+						<!-- <td class="numeric">2.946428571428571</td> -->
+						
+						<td class="numeric">6.3</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.80</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mgrape3/">
+								mGrape3
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #fa0000; color:#eee">608</td>
+						<td class="numeric" style="opacity: 0.7;background: #c40000;color:#eee">646</td>
+						<td class="numeric pl-2">38</td>
+						<td class="numeric">40,000</td>
+						<td class="numeric">0.03</td>
+						<td class="numeric">1.2</td>
+						<!-- <td class="numeric">3.571428571428571</td> -->
+						
+						<td class="numeric">7.0</td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">26.77</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mkate-m41g-s158c/">
+								mKate M41G S158C
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff2f00; color:#eee">593</td>
+						<td class="numeric" style="opacity: 0.7;background: #c10000;color:#eee">648</td>
+						<td class="numeric pl-2">55</td>
+						<td class="numeric">73,000</td>
+						<td class="numeric">0.22</td>
+						<td class="numeric">16.06</td>
+						<!-- <td class="numeric">47.797619047619044</td> -->
+						
+						<td class="numeric"></td>
+						<td class="numeric">m </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.96</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/neptune/">
+								Neptune
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff1300; color:#eee">600</td>
+						<td class="numeric" style="opacity: 0.7;background: #be0000;color:#eee">650</td>
+						<td class="numeric pl-2">50</td>
+						<td class="numeric">72,000</td>
+						<td class="numeric">0.18</td>
+						<td class="numeric">12.96</td>
+						<!-- <td class="numeric">38.57142857142857</td> -->
+						
+						<td class="numeric">5.8</td>
+						<td class="numeric">d </td>
+						<td class="numeric">35.0</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">27.44</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/mneptune/">
+								mNeptune
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff1300; color:#eee">600</td>
+						<td class="numeric" style="opacity: 0.7;background: #be0000;color:#eee">650</td>
+						<td class="numeric pl-2">50</td>
+						<td class="numeric">67,000</td>
+						<td class="numeric">0.2</td>
+						<td class="numeric">13.4</td>
+						<!-- <td class="numeric">39.88095238095238</td> -->
+						
+						<td class="numeric">5.4</td>
+						<td class="numeric">m </td>
+						<td class="numeric">35.0</td>
+						<td class="numeric"></td>
+            <td class="numeric weight">27.41</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[&#x27;mNeptune1&#x27;]</td>
+            
+					</tr>
+				
+      
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/dclavgr16/">dClavGR1.6</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">d</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">27.07</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/mclavgr11/">mClavGR1.1</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">m</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">27.10</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/mclavgr1/">mClavGR1</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">m</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">26.99</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/mcherry15/">mCherry1.5</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">m</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">26.71</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/mrfp15/">mRFP1.5</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">m</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">26.74</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/aausfp2/">
+								AausFP2
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #f90000; color:#eee">609</td>
+						<td class="numeric" style="opacity: 0.7;background: #000;color:#eee"></td>
+						<td class="numeric pl-2"></td>
+						<td class="numeric">52,000</td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+						<!-- <td class="numeric">-</td> -->
+						
+						<td class="numeric">6.0</td>
+						<td class="numeric"> </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.56</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+				
+					<tr class="data">
+						
+						<td class="protein">
+							<a href="/protein/aausfp3/">
+								AausFP3
+								
+							</a>
+						</td>
+						<td class="numeric exmax" style="opacity: 0.7;background: #ff4600; color:#000">587</td>
+						<td class="numeric" style="opacity: 0.7;background: #000;color:#eee"></td>
+						<td class="numeric pl-2"></td>
+						<td class="numeric">59,000</td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+						<!-- <td class="numeric">-</td> -->
+						
+						<td class="numeric">6.5</td>
+						<td class="numeric"> </td>
+						<td class="numeric"></td>
+						<td class="numeric"></td>
+            <td class="numeric weight">25.52</td>
+						<td class='hidden'>b</td>
+            <td class='hidden'>[]</td>
+            
+					</tr>
+				
+      
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/mofpt8/">mOFP.T.8</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">m</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">26.73</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/mofpt12/">mOFP.T.12</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">m</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">26.70</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/mrfp14/">mRFP1.4</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">m</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">26.76</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/mrfp13/">mRFP1.3</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">m</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">26.75</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+			
+                <tr class="data">
+                  
+                  <td class="protein">
+                    <a href="/protein/mclavgr18/">mClavGR1.8</a>
+                  </td>
+                  <td class="numeric exmax"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <!-- <td class="numeric">-</td> -->
+                  
+                  <td class="numeric"></td>
+                  <td class="numeric">m</td>
+                  <td class="numeric"></td>
+                  <td class="numeric"></td>
+                  <td class="numeric weight">27.10</td>
+                  <td class='hidden'></td>
+                  <td class='hidden'></td>
+                  
+                </tr>
+			
+		
+	</tbody>
+</table>
+
+                    </div>
+                
+                </div>
+            
+        </div>
+        
+    
+
+
+    </div> <!-- /container -->
+
+    
+    <footer class="footer container-fluid pl-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-right">
+
+            <p>©FPbase, <span id='curyear'>2018</span>
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" id="licenselink">
+                <picture><source srcset="/static/images/by-sa.d05e0670ea91.webp" type="image/webp"><img src="/static/images/by-sa.8638929a4063.png" class="ml-2 mb-1 mt-1" alt="BY-SA Creative Commons License"></picture></a><br>
+            <a href="/terms/">Terms</a> &amp; <a href="/privacy/">Privacy</a><br>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">document.getElementById("curyear").innerHTML = (new Date()).getFullYear();</script>
+    </footer>
+    
+
+    
+
+    
+
+      <!-- place project specific Javascript -->
+      <script src="/static/vendor.45a3f0015246180abf93.js" ></script>
+<script src="/static/main.02c186e5d678635b0b05.js" ></script>
+      <script>
+        FPBASE.initAutocomplete();
+      </script>
+
+
+      
+
+<script>
+  $(function(){
+    initSearch(JSON.parse('{"name": ["icontains", "iendswith", "istartswith", "iexact"], "seq": ["icontains", "iendswith", "istartswith", "cdna_contains"], "default_state__ex_max": ["around", "range", "lte", "gte", "exact"], "default_state__em_max": ["around", "range", "lte", "gte", "exact"], "default_state__lifetime": ["gte", "lte", "range", "exact"], "default_state__maturation": ["gte", "lte", "range", "exact"], "default_state__ext_coeff": ["gte", "lte", "range", "exact"], "default_state__qy": ["gte", "lte", "range", "exact"], "default_state__brightness": ["gte", "lte", "range", "exact"], "default_state__pka": ["gte", "lte", "range", "exact"], "default_state__bleach_measurements__rate": ["gte", "lte", "range", "exact"], "agg": ["exact"], "uuid": ["iexact"], "genbank": ["iexact"], "pdb": ["contains"], "uniprot": ["iexact"], "status": ["exact"], "switch_type": ["exact", "ne"], "cofactor": ["exact", "ne"], "parent_organism": ["exact", "ne"], "primary_reference__year": ["gte", "gt", "lt", "lte", "range", "exact"], "primary_reference__author__family": ["icontains"], "slug": ["exact"], "id": ["exact"], "spectral_brightness": ["gt", "lt"]}'), JSON.parse('{"lt": "is less than", "gt": "is greater than", "lte": "is less than or equal to", "gte": "is greater than or equal to", "around": "is around", "exact": "is", "ne": "is not", "iexact": "is", "range": "is between", "contains": "contains (case sensitive)", "icontains": "contains", "iendswith": "ends with", "istartswith": "starts with", "cdna_contains": "cDNA could contain"}'), JSON.parse('{"default_state__ex_max": "Excitation Maximum", "default_state__em_max": "Emission Maximum", "default_state__lifetime": "Lifetime (ns)", "default_state__maturation": "Maturation (min)", "default_state__ext_coeff": "Extinction Coefficient", "default_state__qy": "Quantum Yield", "default_state__brightness": "Brightness", "default_state__pka": "pKa", "uniprot": "UniProtKB ID", "genbank": "GenBank ID", "pdb": "PDB ID", "uuid": "FPbase ID", "seq": "Sequence", "name": "Name or Alias", "agg": "Oligomerization", "primary_reference__year": "Year published", "default_state__bleach_measurements__rate": "Photostability (s)", "primary_reference__author__family": "Author"}'))
+  });
+</script>
+
+
+
+  </body>
+</html>

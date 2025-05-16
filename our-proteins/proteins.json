@@ -1,0 +1,1582 @@
+[
+  {
+    "uuid": "C2FJQ",
+    "name": "AausFP1",
+    "slug": "aausfp1",
+    "seq": "MSYGALLFREKIPYVVEMEGDVEGMKFSVRGKGHGDANTGKIEASFICTTGELPVPWSSILTTVTYGAQCFAKYPNDIKDYPKSAMPEGYVQERTITFENDGVYKTRAEVTYEKGSVYNRVTLNGSGFKKGGNILGKKLEFNYNPHCIYVLPDVQNNGIKCYINIVHDVIGGGQIIAAHQQLNTPLGGGPVDIPHYHHIQAHTILSKDPKETRDHMNVVEVFRAIDCKTAYA",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "d",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "aausfp1_aausfp1",
+        "name": "AausFP1",
+        "ex_max": 504,
+        "em_max": 510,
+        "ext_coeff": 170000,
+        "qy": 0.97,
+        "pka": 4.4,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 164.9
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "UHNQV",
+    "name": "AausFP2",
+    "slug": "aausfp2",
+    "seq": "MACGALLFKGKIPFVVELEGDVNGEVFSVRGNGWGDGSTGKLEIKFVCTTGEVPLAWESLICSMAYGALVFCKYPSNINDFFKSTMPRGYIQERKISYENDGTFDVRQEVTYENGALYNRVKFNGSGFRKDGNVLGKKLDLTSIGTCIYIMGNDEGTGLKGVFNKAFKVIGGNRQIASHVQTQTPIGDGLVSIPDYHVMHNHIACSKDPSETRDHIIVKESLRAVDCNTEYM",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "aausfp2_default",
+        "name": "default",
+        "ex_max": 609,
+        "em_max": null,
+        "ext_coeff": 52000,
+        "qy": null,
+        "pka": 6.0,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": null
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "OEVJT",
+    "name": "AausFP3",
+    "slug": "aausfp3",
+    "seq": "MACGALLFKGKIPFVVELEGDVNGEVFSVRGNGWGDGSTGKIEIKFVCTTGEIPVAWESLVCSLAYGALVFAKYPSNINDFFKSTMPKGYIQERNIQFENDGQYVTRAEVTYENGTLYNRVKLNGSGFRKDGNILGKKLDSTSLGTCIYIMGNDQGNGLKGVYNKAYKVIGGNRQLASHQQTHTPIGDGLVSIPDYHVMHNHIACSKDPSETRDHIIVKESLRAVDCNTEYM",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "aausfp3_default",
+        "name": "default",
+        "ex_max": 587,
+        "em_max": null,
+        "ext_coeff": 59000,
+        "qy": null,
+        "pka": 6.5,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": null
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "F5F6H",
+    "name": "AausFP4",
+    "slug": "aausfp4",
+    "seq": "MNCGALLFQQKVPFIVEMEGDVNGEIFSVRGNGFGNATTGKLDILFVCTTGEIPVAWESLISSLAYGAFVFAKYPSNIADFFKSTMPEGYIQERKVTFENDGTYETHATVTYENGAIFERVKLTGTGFREDGNILGKKLEITSLGTPLSIMADDEGKGLRSVFNQAIKVVGGNRQIAIHEQRNRPIGDGLISVPDYHTLHNHLKCSKVSTEKRDHMMVNETLKAIDCQTAYL",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "d",
+    "switch_type": "ps",
+    "states": [
+      {
+        "slug": "aausfp4_on",
+        "name": "On",
+        "ex_max": 477,
+        "em_max": 513,
+        "ext_coeff": 69000,
+        "qy": null,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": null
+      },
+      {
+        "slug": "aausfp4_off",
+        "name": "Off",
+        "ex_max": null,
+        "em_max": null,
+        "ext_coeff": null,
+        "qy": 0.001,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": null
+      }
+    ],
+    "transitions": [
+      {
+        "from_state": "aausfp4_off",
+        "to_state": "aausfp4_on",
+        "trans_wave": 340
+      },
+      {
+        "from_state": "aausfp4_on",
+        "to_state": "aausfp4_off",
+        "trans_wave": 480
+      }
+    ],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "D7QYG",
+    "name": "AausGFP",
+    "slug": "aausgfp",
+    "seq": "MKIYCEGEKLFKGIVPIQIELNGDVNGHKFSVHGEGQGEAEMGRLTLRFVCTTGKMPVPWPTLVTTFSYGVQCFSRYPEHMKMHDFFKSAMPEGYTQERTIFFDKDGTYKTRAEVKFEGDTLVNRIELTGTGFKEDGNILGHKMEYNYNSHNVYIMSDKAKNGIKVNFKIRHNIEDGTVQLADHYQANYPLGKGPVLLPEDHYLSTQSALTKDPHETRDHMLLLEFVTAAGITHGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "d",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "aausgfp_default",
+        "name": "default",
+        "ex_max": 398,
+        "em_max": 503,
+        "ext_coeff": 29000,
+        "qy": 0.73,
+        "pka": 4.8,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 21.17
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "VE1RL",
+    "name": "AvicFP1",
+    "slug": "avicfp1",
+    "seq": "MSKGAELFNGIVPILIELNGDVHGHKFSVRGEGEGDAGSGKIEIKFVCTTGTLPVPWPTLVTTFCYGVQCFTRYPEHMKQHDFYKSAMPDGYIQKRTISFQDDGHYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGNKMEYNYNSHSVYVLSDKANNGIKVNFKIRHNLKGEGIQLADHDQQNIPIGDGPVLLPDYHYLSTQTAITKDPNEKRDHMNLVEFVTACGITHGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "wd",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "avicfp1_default",
+        "name": "default",
+        "ex_max": 481,
+        "em_max": 503,
+        "ext_coeff": 64000,
+        "qy": 0.63,
+        "pka": 4.9,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 40.32
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "FHG23",
+    "name": "AvicFP2",
+    "slug": "avicfp2",
+    "seq": "MNCGALLFKQKIPFIVELDGDVNGQVFSVRGNGFGDGSIGKIEIKFVCTTGEIPVAWESLVCSLAYGALVFTKYPSNINDFFKSTMPKGYIQERKITFENDGQYETRAEVTYENGALYNRVKLNGSGFRKDGNILGKKLDATSLGTCIYILSNDEGNGLKGVYNMAYKVIDGNRQIVSHQQTNTPIGDGLVSIPDYHVMHNHISCSKDPTEPRDHLILKESVTAVDCQTAYM",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "avicfp2_pre-conversion",
+        "name": "pre-conversion",
+        "ex_max": 480,
+        "em_max": 515,
+        "ext_coeff": 59000,
+        "qy": 0.04,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 2.36
+      },
+      {
+        "slug": "avicfp2_post-conversion",
+        "name": "post-conversion",
+        "ex_max": null,
+        "em_max": null,
+        "ext_coeff": 41000,
+        "qy": 0.0,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": null
+      }
+    ],
+    "transitions": [
+      {
+        "from_state": "avicfp2_pre-conversion",
+        "to_state": "avicfp2_post-conversion",
+        "trans_wave": 480
+      }
+    ],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "ZJWZK",
+    "name": "AvicFP3",
+    "slug": "avicfp3",
+    "seq": "MNCGALLFKQKIPFIVELDGDVNGQVFSVRGNGFGDGSTGKIEIKFVCTTGEIPVAWESLVCSLAYGALVFTKYPSNINDFFKSTMPKGYIQERKITFENDGQYETRAEVTYENGALYNRVKLNGSGFRKDGNILGKKLDATSLGTCIYIMSNDQGNGLKGVYNKAYKVIGGNRQLASHQQTHTPIGDGLVSIPDYHVMHNHTSCSKDPTEPRDHLILKESVTAVDCQTAYM",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "avicfp3_pre-conversion",
+        "name": "pre-conversion",
+        "ex_max": 480,
+        "em_max": 520,
+        "ext_coeff": null,
+        "qy": 0.001,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": null
+      },
+      {
+        "slug": "avicfp3_post-conversion",
+        "name": "post-conversion",
+        "ex_max": null,
+        "em_max": null,
+        "ext_coeff": null,
+        "qy": null,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": null
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "LTRTO",
+    "name": "AvicFP4",
+    "slug": "avicfp4",
+    "seq": "MDSGALLFKQKIPLVVEFEGDVEGMKFSVRGKGHGDATNGRIEASFICTTGELPVPWSSIISSLTYGFLCFTKYPDGIKDFPKSAMPEGYVQERTISFENDGTYKTRAEVTFENGSVYNRVKLNGEGFNKGGNILGKKLEYSFNPHCIYVLGDKENNGIRCCFNVVHNIVGGGQLIASHSQLNTPLGGGPIAIPEYHHICNHTTLSKDPREPRDHMTVAEVLKAVDCKTAYL",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "avicfp4_default",
+        "name": "default",
+        "ex_max": 500,
+        "em_max": 512,
+        "ext_coeff": 121000,
+        "qy": 0.1,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 12.1
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "9YVT9",
+    "name": "dClavGR1.6",
+    "slug": "dclavgr16",
+    "seq": "MVSKGEETIMSVIKPDMKIKLRMEGNVNGHAFVIEGEGSGKPFEGIQTIDLEVKEGAPLPFAYDILTTAFHYGNRVFTKYPEDIPDYFKQSFPEGYSWERSMTYEDGGICIATNDITMEEDSFINKIHFKGVNFPPNGPVMQKRTVGWEASTEKMYVRDGVLKGDVKMKLLLKGGGHYRCDFRTTYKVKQKAVKLPDYHFVDHRIEILSHDKDYNKVKLYEHAVAHSGLPGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "d",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1016/j.jmb.2010.06.056"
+  },
+  {
+    "uuid": "SKHT2",
+    "name": "dLanYFP",
+    "slug": "dlanyfp",
+    "seq": "MVSKGEEDNMASLPATHELHIFGSFNGVDFDMVGRGTGNPNDGYEELNLKSTKGDLQFSPWILVPQIGYGFHQYLPFPDGMSPFQAAMKDGSGYQVHRTMQFEDGASLTSNYRYTYEGSHIKGEFQVKGTGFPADGPVMTNSLTAADWCVTKMLYPNDKTIISTFDWTYTTGNGKRYQSTARTTYTFAKPMAANILKNQPMFVFRKTELKHSKTELNFKEWQKAFTDVMGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "d",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "dlanyfp_default",
+        "name": "default",
+        "ex_max": 513,
+        "em_max": 524,
+        "ext_coeff": 125000,
+        "qy": 0.9,
+        "pka": 3.9,
+        "maturation": null,
+        "lifetime": 3.1,
+        "brightness": 112.5
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nmeth.2413"
+  },
+  {
+    "uuid": "G1DQY",
+    "name": "dTomato",
+    "slug": "dtomato",
+    "seq": "MVSKGEEVIKEFMRFKVRMEGSMNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYKKLSFPEGFKWERVMNFEDGGLVTVTQDSSLQDGTLIYKVKMRGTNFPPDGPVMQKKTMGWEASTERLYPRDGVLKGEIHQALKLKDGGHYLVEFKTIYMAKKPVQLPGYYYVDTKLDITSHNEDYTIVEQYERSEGRHHLFLYGMDELYK",
+    "ipg_id": "3838230",
+    "genbank": "AAV52168",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "d",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "dtomato_default",
+        "name": "default",
+        "ex_max": 554,
+        "em_max": 581,
+        "ext_coeff": 69000,
+        "qy": 0.69,
+        "pka": 4.7,
+        "maturation": 60.0,
+        "lifetime": null,
+        "brightness": 47.61
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "514KE",
+    "name": "EBFP1.2",
+    "slug": "ebfp12",
+    "seq": "MVSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLSHGVQCFARYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYIMADKQKNGIKVNFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDSHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITLGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "ebfp12_default",
+        "name": "default",
+        "ex_max": 379,
+        "em_max": 446,
+        "ext_coeff": 41000,
+        "qy": 0.45,
+        "pka": 6.6,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 18.45
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1021/bi700199g"
+  },
+  {
+    "uuid": "XBGJO",
+    "name": "EBFP1.5",
+    "slug": "ebfp15",
+    "seq": "MVSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLSHGVQCFARYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNHNSNNVYIAADKQKNGIKVNFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDSHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITLGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "ebfp15_default",
+        "name": "default",
+        "ex_max": 381,
+        "em_max": 449,
+        "ext_coeff": 43000,
+        "qy": 0.53,
+        "pka": 4.8,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 22.79
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1021/bi700199g"
+  },
+  {
+    "uuid": "DVMQ7",
+    "name": "EBFP2",
+    "slug": "ebfp2",
+    "seq": "MVSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLSHGVQCFARYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGTYKTRAEVKFEGDTLVNRIELKGVDFKEDGNILGHKLEYNFNSHNIYIMAVKQKNGIKVNFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDSHYLSTQSVLSKDPNEKRDHMVLLEFRTAAGITLGMDELYK",
+    "ipg_id": "12966089",
+    "genbank": "ABP88743",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "ebfp2_default",
+        "name": "default",
+        "ex_max": 383,
+        "em_max": 448,
+        "ext_coeff": 32000,
+        "qy": 0.56,
+        "pka": 5.3,
+        "maturation": 25.0,
+        "lifetime": 3.0,
+        "brightness": 17.92
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1021/bi700199g"
+  },
+  {
+    "uuid": "WK5F6",
+    "name": "LanYFP",
+    "slug": "lanyfp",
+    "seq": "MSLPATHELHIFGSFNGVDFDMVGRGTGNPNDGYEELNLKSTKGALQFSPWILVPQIGYGFHQYLPFPDGMSPFQAAMKDGSGYQVHRTMQFEDGASLTSNYRYTYEGSHIKGEFQVIGTGFPADGPVMTNSLTAADWCVTKMLYPNDKTIISTFDWTYTTGSGKRYQSTVRTNYTFAKPMAANILKNQPMFVFRKTELKHSKTELNFKEWQKAFTDVM",
+    "ipg_id": "14640227",
+    "genbank": "ACA48232",
+    "uniprot": "B1PNC0",
+    "pdb": [
+      "5LTQ"
+    ],
+    "agg": "t",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "lanyfp_default",
+        "name": "default",
+        "ex_max": 513,
+        "em_max": 524,
+        "ext_coeff": 150000,
+        "qy": 0.95,
+        "pka": 3.5,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 142.5
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nmeth.2413"
+  },
+  {
+    "uuid": "EY2GX",
+    "name": "LSSmCherry1",
+    "slug": "lssmcherry1",
+    "seq": "MVSKGEEDNMTIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFNWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQCRTMGLEASTERMYPEDGALKGESKERLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNVDIKLDILSHNEDYTIVEQYERSEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "lssmchery1_default",
+        "name": "default",
+        "ex_max": 450,
+        "em_max": 610,
+        "ext_coeff": 35000,
+        "qy": 0.29,
+        "pka": 6.2,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 10.15
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1371/journal.pone.0171257"
+  },
+  {
+    "uuid": "T5UGO",
+    "name": "mApple",
+    "slug": "mapple",
+    "seq": "MVSKGEENNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEAFQTAKLKVTKGGPLPFAWDILSPQFMYGSKVYIKHPADIPDYFKLSFPEGFRWERVMNFEDGGIIHVNQDSSLQDGVFIYKVKLRGTNFPSDGPVMQKKTMGWEASEERMYPEDGALKSEIKKRLKLKDGGHYAAEVKTTYKAKKPVQLPGAYIVDIKLDIVSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": "ABC66097",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mapple_default",
+        "name": "default",
+        "ex_max": 568,
+        "em_max": 592,
+        "ext_coeff": 75000,
+        "qy": 0.49,
+        "pka": 6.5,
+        "maturation": 30.0,
+        "lifetime": 2.9,
+        "brightness": 36.75
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nmeth.1209"
+  },
+  {
+    "uuid": "SXYKQ",
+    "name": "mAvicFP1",
+    "slug": "mavicfp1",
+    "seq": "MSKGAELFNGIVPILIELNGDVHGHKFSVRGEGEGDAGSGKIEIKFVCTTGTLPVPWPTLVTTLCYGVQCFTRYPEHMKQHDFYKSAMPDGYIQKRTISFQDDGHYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGNKMEYNYNSHSVYVLSDKANNGIKVNFKIRHNLKGEGIQLADHDQQNIPIGDGPVLLPDYHYLSTQTKITKDPNEKRDHMNLVEFVTACGITHGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mavicfp1_default",
+        "name": "default",
+        "ex_max": 480,
+        "em_max": 503,
+        "ext_coeff": 65000,
+        "qy": 0.63,
+        "pka": 4.9,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 40.95
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1101/677344"
+  },
+  {
+    "uuid": "9GUD2",
+    "name": "mBanana",
+    "slug": "mbanana",
+    "seq": "MVSKGEENNMAVIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFCYGSKAYVKHPTGIPDYFKLSFPEGFKWERVMNFEDGGVVTVAQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKMRLKLKDGGHYSAETKTTYKAKKPVQLPGAYIAGEKIDITSHNEDYTIVELYERAEGRHSTGGMDELYK",
+    "ipg_id": "3838242",
+    "genbank": "AAV52167",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mbanana_default",
+        "name": "default",
+        "ex_max": 540,
+        "em_max": 553,
+        "ext_coeff": 6000,
+        "qy": 0.7,
+        "pka": 6.7,
+        "maturation": 60.0,
+        "lifetime": null,
+        "brightness": 4.2
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "WNJAS",
+    "name": "mBlueberry1",
+    "slug": "mblueberry1",
+    "seq": "MVSKGEEDNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFLFGSRAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMRRKTMGWEASSERMCPEDGALKGEIKLRLKLRDGGHYDAEVKTTYKAKKPVQLPGAYNVNIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mblueberry1_default",
+        "name": "default",
+        "ex_max": 398,
+        "em_max": 452,
+        "ext_coeff": 11000,
+        "qy": 0.48,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 5.28
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1021/bi700199g"
+  },
+  {
+    "uuid": "NYYN4",
+    "name": "mBlueberry2",
+    "slug": "mblueberry2",
+    "seq": "MVSKGEENNVAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFLFGSKVYIKHPADIPDYFKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGVFIYKVKLRGTNFPSDGPVMQKKTMGWEAFSERMYPEDGALKSEIKTRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNVNIKLDIVSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mblueberry2_default",
+        "name": "default",
+        "ex_max": 402,
+        "em_max": 467,
+        "ext_coeff": 51000,
+        "qy": 0.48,
+        "pka": 2.5,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 24.48
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1021/bi700199g"
+  },
+  {
+    "uuid": "ZERB6",
+    "name": "mCherry",
+    "slug": "mcherry",
+    "seq": "MVSKGEEDNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKQRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNVNIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": "3838123",
+    "genbank": "AAV52164",
+    "uniprot": "X5DSL3",
+    "pdb": [
+      "2H5Q"
+    ],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mcherry_default",
+        "name": "default",
+        "ex_max": 587,
+        "em_max": 610,
+        "ext_coeff": 72000,
+        "qy": 0.22,
+        "pka": 4.5,
+        "maturation": 15.0,
+        "lifetime": 1.4,
+        "brightness": 15.84
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "Z7ZOF",
+    "name": "mCherry1.5",
+    "slug": "mcherry15",
+    "seq": "MVSKGEEDNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFNWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQCRTMGWEASSERMYPEDGALKGEIKQRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNVDIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1371/journal.pone.0171257"
+  },
+  {
+    "uuid": "CN92E",
+    "name": "mCherry2",
+    "slug": "mcherry2",
+    "seq": "MVSKGEEDNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFNWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQCRTMGWEASTERMYPEDGALKGEIKQRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNVDIKLDILSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mcherry2_default",
+        "name": "default",
+        "ex_max": 589,
+        "em_max": 610,
+        "ext_coeff": 79400,
+        "qy": 0.22,
+        "pka": 3.3,
+        "maturation": 22.8,
+        "lifetime": null,
+        "brightness": 17.47
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1371/journal.pone.0171257"
+  },
+  {
+    "uuid": "9BUDR",
+    "name": "mClavGR1",
+    "slug": "mclavgr1",
+    "seq": "MVSKGEETTMSVIKPDMKIKLRMEGNVNGHAFVIEGEGSGKPFEGTQTIDLEVKEGAPLPFAYDILTTAFHYGNRVFTKYPDDIPDYFKQSFPEGYSWERSMTFEDGGICIATNDITMEKDSFINKIHFKGENFPPNGPVMQKKTVGWEASTEKMYVRDGVLKGDVKMKLLLKGGGHYRCDFRTTYKAKQKAVKLPDYHFVDHRIEILSHDKDYNKVKLYEHAVAHSGLPGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1016/j.jmb.2010.06.056"
+  },
+  {
+    "uuid": "68QLV",
+    "name": "mClavGR1.1",
+    "slug": "mclavgr11",
+    "seq": "MVSKGEETIMSVIKPDMKIKLRMEGNVNGHAFVIEGEGRGRPFEGTQTIDLEVKEGAPLPFAYDILTTAFHYGNRVFTRYPDDIPDYFKQSFPEGYSWERSMTFEDGGICIATNDITIEKDSFINKIHFKGENFPPNGPVMQKKTVGWEASTEKMYVRDGVLKGDVKMKLQLKGGGHHRCDFRTTYKAKQKAVKLPDYHFVDHRIEILSHDKDYNKVKLYEHAVAHSGLPGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1016/j.jmb.2010.06.056"
+  },
+  {
+    "uuid": "KMYOV",
+    "name": "mClavGR1.8",
+    "slug": "mclavgr18",
+    "seq": "MVSKGEETIMSVIKPDMKIKLRMEGNVNGHAFVIEGEGSGKPFEGIQTIDLEVKEGAPLPFAYDILTTAFHYGNRVFTKYPEDIPDYFKQSFPEGYSWERSMTYEDGGICIATNDITMEEDSFINKIHFKGENFPPNGPVMQKRTVGWEASTEKMYVRDGVLKGDVKMKLLLKGGGHYRCDFRTTYKVKQKAVKLPDYHFVDHRIEILSHDKDYNKVKLYEHAVAHSGLPGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1016/j.jmb.2010.06.056"
+  },
+  {
+    "uuid": "6LRFZ",
+    "name": "mClavGR2",
+    "slug": "mclavgr2",
+    "seq": "MVSKGEETIMSVIKPDMKIKLRMEGNVNGHAFVIEGEGSGKPFEGIQTIDLEVKEGAPLPFAYDILTTAFHYGNRVFTKYPEDIPDYFKQSFPEGYSWERSMTYEDGGICIATNDITMEEDSFINKIHFKGTNFPPNGPVMQKRTVGWEASTEKMYVRDGVLKGDVKMKLLLKGGGHYRCDFRTTYKVKQKAVKLPDYHFVDHRIEILSHDKDYNKVKLYEHAVAHSGLPGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "pc",
+    "states": [
+      {
+        "slug": "mclavgr2_green",
+        "name": "Green",
+        "ex_max": 488,
+        "em_max": 504,
+        "ext_coeff": 19000,
+        "qy": 0.77,
+        "pka": 8.0,
+        "maturation": 27.0,
+        "lifetime": null,
+        "brightness": 14.63
+      },
+      {
+        "slug": "mclavgr2_red",
+        "name": "Red",
+        "ex_max": 566,
+        "em_max": 583,
+        "ext_coeff": 32000,
+        "qy": 0.53,
+        "pka": 7.3,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 16.96
+      }
+    ],
+    "transitions": [
+      {
+        "from_state": "mclavgr2_green",
+        "to_state": "mclavgr2_red",
+        "trans_wave": 405
+      }
+    ],
+    "doi": "10.1016/j.jmb.2010.06.056"
+  },
+  {
+    "uuid": "CGRMD",
+    "name": "mGold2s",
+    "slug": "mgold2s",
+    "seq": "MASKGEELFTGVVPILVELDGDINGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTSLGYGLQCFARYPDNMKRHDFFKSAMPEGYVQERTIFFEDDGNYKTRAEVKFEGGTLVNRVELKGIDFKEDGNILGHKLEYNYNCHNVFITADRQQNGIKVNFKIRHNIEVGGVQLADHYQQNTPIGDGPVLLPDNHYLSYQSKLSKDPNEKRDHMVLLEFVTAAGITLSMDELYK",
+    "ipg_id": null,
+    "genbank": "PP826965",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mgold2s_default",
+        "name": "default",
+        "ex_max": 517,
+        "em_max": 529,
+        "ext_coeff": 131000,
+        "qy": 0.69,
+        "pka": 5.1,
+        "maturation": 14.8,
+        "lifetime": 3.04,
+        "brightness": 90.39
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/s41467-025-58223-5"
+  },
+  {
+    "uuid": "HUE6V",
+    "name": "mGold2t",
+    "slug": "mgold2t",
+    "seq": "MASKGEELFTGVVPILVELDGDINGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTSLGYGLQCFARYPDNMKRHDFFKSAMPEGYVQERTIFFEDDGNYKTRAEVKFEGGTLVNRVELKGIDFKEDGNILGHKLEYNYNCHNVFITADRQQNGIKVNFKIRHNIEVGGVQLADHYQQNTPIGDGPVLLPDNHYLSYQTKLSKDPNEKRDHMVLLEFVTAAGITLSMDELYK",
+    "ipg_id": null,
+    "genbank": "PP826966",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mgold2t_default",
+        "name": "default",
+        "ex_max": 515,
+        "em_max": 527,
+        "ext_coeff": 126000,
+        "qy": 0.7,
+        "pka": 5.4,
+        "maturation": 13.1,
+        "lifetime": 2.95,
+        "brightness": 88.2
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/s41467-025-58223-5"
+  },
+  {
+    "uuid": "AL871",
+    "name": "mGrape1",
+    "slug": "mgrape1",
+    "seq": "MASSEDVIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERLYPEDGALKGEIKMRLKLKDGGHYDAEAKTTYMAKKPVQLPGAYKLDYKLDITSHNEDYTIVEQYERAEGRHSTGA",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mgrape1_default",
+        "name": "default",
+        "ex_max": 595,
+        "em_max": 625,
+        "ext_coeff": 50000,
+        "qy": 0.03,
+        "pka": 4.5,
+        "maturation": 70.0,
+        "lifetime": null,
+        "brightness": 1.5
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1016/j.chembiol.2009.10.009"
+  },
+  {
+    "uuid": "H6RGM",
+    "name": "mGrape2",
+    "slug": "mgrape2",
+    "seq": "MVSKGEENNMAVIKEFMRFKVRMEGSVNGHEFEIEGKGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPPDIPDYMKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLHGTNFPSDGPVMQKKTMGWEASSERLYPEDGALKGEVKMRLKLKDGGHYDAEVKTTYMAKKPVQLPGAYKLDYKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mgrape2_default",
+        "name": "default",
+        "ex_max": 605,
+        "em_max": 636,
+        "ext_coeff": 33000,
+        "qy": 0.03,
+        "pka": 6.3,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 0.99
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1016/j.chembiol.2009.10.009"
+  },
+  {
+    "uuid": "O351D",
+    "name": "mGrape3",
+    "slug": "mgrape3",
+    "seq": "MVSKGEENNMAVIKEFMRFKTHMEGSVNGHEFEIEGKGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQMMYGSKAYVKHPPDIPDYMKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLHGTNFPSDGPVMQKKTMGWEASSERLYPEDGALKGEVKMRLKLKDGGHYDAEVKTTYMAKKPVQLPGAYKLDYKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mgrape3_default",
+        "name": "default",
+        "ex_max": 608,
+        "em_max": 646,
+        "ext_coeff": 40000,
+        "qy": 0.03,
+        "pka": 7.0,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 1.2
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1016/j.chembiol.2009.10.009"
+  },
+  {
+    "uuid": "FLO5T",
+    "name": "mHoneydew",
+    "slug": "mhoneydew",
+    "seq": "MASSEDVIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMWGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWAATTERMYPEDGALKGEIKMRLKLKDGGHYDAEVKTTYMAKKPVQLPGAYKIDGKLDITSHNEDYTIVEQYERAEGRHSTGA",
+    "ipg_id": "3838140",
+    "genbank": "AAV52171",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mhoneydew_default",
+        "name": "default",
+        "ex_max": 487,
+        "em_max": 562,
+        "ext_coeff": 17000,
+        "qy": 0.12,
+        "pka": 4.0,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 2.04
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "TUONH",
+    "name": "mKalama1",
+    "slug": "mkalama1",
+    "seq": "MVSKGEELFTGVVPILVEMDGDVNGRKFSVRGVGEGDATHGKLTLKFICTSGKLPVPWPTLVTTLSYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGSYKTRAEVKFEGDTLVNRIVLKGTDFKEDGNILGHKLEYNMNVGNVYITADKQKNGIKANFEIRHNVEDGGVQLADHYQQNTPIGDGSVLLPDNHYLSVQVKLSKDPNEKRDHMVLLEFRTAAGITPGMDELYK",
+    "ipg_id": "12966091",
+    "genbank": "ABP88742",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mkalama1_default",
+        "name": "default",
+        "ex_max": 385,
+        "em_max": 456,
+        "ext_coeff": 36000,
+        "qy": 0.45,
+        "pka": 5.5,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 16.2
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1021/bi700199g"
+  },
+  {
+    "uuid": "26VNF",
+    "name": "mKate M41G S158C",
+    "slug": "mkate-m41g-s158c",
+    "seq": "MSELIKENMHMKLYMEGTVNNHHFKCTSEGEGKPYEGTQTGRIKVVEGGPLPFAFDILATSFMYGSKTFINHTQGIPDFFKQSFPEGFTWERVTTYEDGGVLTATQDTSLQDGCLIYNVKIRGVNFPSNGPVMQKKTLGWEASTEMLYPADGGLEGRCDMALKLVGGGHLICNLKTTYRSKKPAKNLKMPGVYYVDRRLERIKEADKETYVEQHEVAVARYCDLPSKLGHK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mkate-m41g-s158c_default",
+        "name": "default",
+        "ex_max": 593,
+        "em_max": 648,
+        "ext_coeff": 73000,
+        "qy": 0.22,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 16.06
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1016/j.chembiol.2009.10.009"
+  },
+  {
+    "uuid": "W34KB",
+    "name": "mKate S158C",
+    "slug": "mkate-s158c",
+    "seq": "MSELIKENMHMKLYMEGTVNNHHFKCTSEGEGKPYEGTQTMRIKVVEGGPLPFAFDILATSFMYGSKTFINHTQGIPDFFKQSFPEGFTWERVTTYEDGGVLTATQDTSLQDGCLIYNVKIRGVNFPSNGPVMQKKTLGWEASTEMLYPADGGLEGRCDMALKLVGGGHLICNLKTTYRSKKPAKNLKMPGVYYVDRRLERIKEADKETYVEQHEVAVARYCDLPSKLGHK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mkate-s158c_default",
+        "name": "default",
+        "ex_max": 586,
+        "em_max": 630,
+        "ext_coeff": 63000,
+        "qy": 0.33,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 20.79
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1016/j.chembiol.2009.10.009"
+  },
+  {
+    "uuid": "ZRKRV",
+    "name": "mNeonGreen",
+    "slug": "mneongreen",
+    "seq": "MVSKGEEDNMASLPATHELHIFGSINGVDFDMVGQGTGNPNDGYEELNLKSTKGDLQFSPWILVPHIGYGFHQYLPYPDGMSPFQAAMVDGSGYQVHRTMQFEDGASLTVNYRYTYEGSHIKGEAQVKGTGFPADGPVMTNSLTAADWCRSKKTYPNDKTIISTFKWSYTTGNGKRYRSTARTTYTFAKPMAANYLKNQPMYVFRKTELKHSKTELNFKEWQKAFTDVMGMDELYK",
+    "ipg_id": "34051755",
+    "genbank": "AGG56535",
+    "uniprot": null,
+    "pdb": [
+      "5LTP",
+      "5LTR"
+    ],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mneongreen_default",
+        "name": "default",
+        "ex_max": 506,
+        "em_max": 517,
+        "ext_coeff": 116000,
+        "qy": 0.8,
+        "pka": 5.7,
+        "maturation": 10.0,
+        "lifetime": 3.1,
+        "brightness": 92.8
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nmeth.2413"
+  },
+  {
+    "uuid": "1LT8G",
+    "name": "mNeptune",
+    "slug": "mneptune",
+    "seq": "MVSKGEELIKENMHMKLYMEGTVNNHHFKCTSEGEGKPYEGTQTGRIKVVEGGPLPFAFDILATCFMYGSKTFINHTQGIPDFFKQSFPEGFTWERVTTYEDGGVLTATQDTSLQDGCLIYNVKIRGVNFPSNGPVMQKKTLGWEASTETLYPADGGLEGRCDMALKLVGGGHLICNLKTTYRSKKPAKNLKMPGVYFVDRRLERIKEADKETYVEQHEVAVARYCDLPSKLGHKLNGMDELYK",
+    "ipg_id": "19025958",
+    "genbank": "ACZ95826",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mneptune_default",
+        "name": "default",
+        "ex_max": 600,
+        "em_max": 650,
+        "ext_coeff": 67000,
+        "qy": 0.2,
+        "pka": 5.4,
+        "maturation": 35.0,
+        "lifetime": null,
+        "brightness": 13.4
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1016/j.chembiol.2009.10.009"
+  },
+  {
+    "uuid": "B55T2",
+    "name": "mOFP.T.12",
+    "slug": "mofpt12",
+    "seq": "MVSKGEENNMAIIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFTYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKMRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYMVSIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": null,
+    "agg": "m",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "DUY7T",
+    "name": "mOFP.T.8",
+    "slug": "mofpt8",
+    "seq": "MVSKGEENNMAIIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFTYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKMRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYKVDIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": null,
+    "agg": "m",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "G6HDH",
+    "name": "mOrange",
+    "slug": "morange",
+    "seq": "MVSKGEENNMAIIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGFQTAKLKVTKGGPLPFAWDILSPQFTYGSKAYVKHPADIPDYFKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKMRLKLKDGGHYTSEVKTTYKAKKPVQLPGAYIVGIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": "3838262",
+    "genbank": "AAV52165",
+    "uniprot": null,
+    "pdb": [
+      "2H5O"
+    ],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "morange_default",
+        "name": "default",
+        "ex_max": 548,
+        "em_max": 562,
+        "ext_coeff": 71000,
+        "qy": 0.69,
+        "pka": 6.5,
+        "maturation": 150.0,
+        "lifetime": null,
+        "brightness": 48.99
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "5GR1V",
+    "name": "mOrange2",
+    "slug": "morange2",
+    "seq": "MVSKGEENNMAIIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGFQTAKLKVTKGGPLPFAWDILSPHFTYGSKAYVKHPADIPDYFKLSFPEGFKWERVMNYEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGKIKMRLKLKDGGHYTSEVKTTYKAKKPVQLPGAYIVDIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": "5194148",
+    "genbank": "ABC66096",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "morange2_default",
+        "name": "default",
+        "ex_max": 549,
+        "em_max": 565,
+        "ext_coeff": 58000,
+        "qy": 0.6,
+        "pka": 6.5,
+        "maturation": 270.0,
+        "lifetime": 2.7,
+        "brightness": 34.8
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nmeth.1209"
+  },
+  {
+    "uuid": "EY795",
+    "name": "mRFP1.1",
+    "slug": "mrfp11",
+    "seq": "MASSEDVIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKMRLKLKDGGHYDAEVKTTYMAKKPVQLPGAYKTDIKLDITSHNEDYTIVEQYERAEGRHSTGA",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mrfp11_default",
+        "name": "default",
+        "ex_max": 589,
+        "em_max": 612,
+        "ext_coeff": null,
+        "qy": null,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": null
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "5OR4S",
+    "name": "mRFP1.3",
+    "slug": "mrfp13",
+    "seq": "MVSKGEENNMAVIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKMRLKLKDGGHYDAEVKTTYMAKKPVQLPGAYKTDIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "NWMCV",
+    "name": "mRFP1.4",
+    "slug": "mrfp14",
+    "seq": "MVSKGEENNMAIIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKMRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYKTDIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "MO63Q",
+    "name": "mRFP1.5",
+    "slug": "mrfp15",
+    "seq": "MVSKGEENNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKQRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYKTDIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": null,
+    "agg": "m",
+    "switch_type": "",
+    "states": [],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "TN3DM",
+    "name": "mStrawberry",
+    "slug": "mstrawberry",
+    "seq": "MVSKGEENNMAIIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILTPNFTYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKMRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYIVGIKLDITSHNEDYTIVELYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [
+      "2H5R"
+    ],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mstrawberry_default",
+        "name": "default",
+        "ex_max": 574,
+        "em_max": 596,
+        "ext_coeff": 90000,
+        "qy": 0.29,
+        "pka": 4.5,
+        "maturation": 50.0,
+        "lifetime": null,
+        "brightness": 26.1
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "N63O3",
+    "name": "mTangerine",
+    "slug": "mtangerine",
+    "seq": "MASSEDVIKEFMRFKVRMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFCYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEIKMRLKLKDGGHYDAEVKTTYMAKKPVQLPGAYKTDIKLDITSHNEDYTIVELYERAEGRHSTGA",
+    "ipg_id": "3838142",
+    "genbank": "AAV52170",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "mtangerine_default",
+        "name": "default",
+        "ex_max": 568,
+        "em_max": 585,
+        "ext_coeff": 38000,
+        "qy": 0.3,
+        "pka": 5.7,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 11.4
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  },
+  {
+    "uuid": "Z3GLX",
+    "name": "Neptune",
+    "slug": "neptune",
+    "seq": "MVSKGEELIKENMHMKLYMEGTVNNHHFKCTSEGEGKPYEGTQTGRIKVVEGGPLPFAFDILATCFMYGSKTFINHTQGIPDFFKQSFPEGFTWERVTTYEDGGVLTATQDTSLQDGCLIYNVKIRGVNFPSNGPVMQKKTLGWEASTEMLYPADGGLEGRCDMALKLVGGGHLICNLKTTYRSKKPAKNLKMPGVYFVDRRLERIKEADKETYVEQHEVAVARYCDLPSKLGHKLNGMDELYK",
+    "ipg_id": "19025957",
+    "genbank": "ACZ95825",
+    "uniprot": null,
+    "pdb": [
+      "3IP2"
+    ],
+    "agg": "d",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "neptune_default",
+        "name": "default",
+        "ex_max": 600,
+        "em_max": 650,
+        "ext_coeff": 72000,
+        "qy": 0.18,
+        "pka": 5.8,
+        "maturation": 35.0,
+        "lifetime": null,
+        "brightness": 12.96
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1016/j.chembiol.2009.10.009"
+  },
+  {
+    "uuid": "JVYE5",
+    "name": "RDSmCherry0.1",
+    "slug": "rdsmcherry01",
+    "seq": "MVSKGEEDNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEGKGRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNVNIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "rdsmcherry01_default",
+        "name": "default",
+        "ex_max": 598,
+        "em_max": 625,
+        "ext_coeff": 59600,
+        "qy": 0.1,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 5.96
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1371/journal.pone.0171257"
+  },
+  {
+    "uuid": "XOVUP",
+    "name": "RDSmCherry0.2",
+    "slug": "rdsmcherry02",
+    "seq": "MVSKGEEDNMAIIKEFMRFKVHMEGSVNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEASSERMYPEDGALKGEGKGRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNCNYKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "rdsmcherry02_default",
+        "name": "default",
+        "ex_max": 600,
+        "em_max": 630,
+        "ext_coeff": 34400,
+        "qy": 0.03,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 1.03
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1371/journal.pone.0171257"
+  },
+  {
+    "uuid": "CS45L",
+    "name": "RDSmCherry0.5",
+    "slug": "rdsmcherry05",
+    "seq": "MVSKGEEDNMAIIKEFMRFKSHMEGSVNGHEFEIEGEGEGRPYEGTQTCKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEPSSERMYPEDGALKGEGKGRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNCNYKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "rdsmcherry05_default",
+        "name": "default",
+        "ex_max": 604,
+        "em_max": 636,
+        "ext_coeff": 23300,
+        "qy": 0.02,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 0.47
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1371/journal.pone.0171257"
+  },
+  {
+    "uuid": "CC2YL",
+    "name": "RDSmCherry1",
+    "slug": "rdsmcherry1",
+    "seq": "MVSKGEEDNMAIIKEFMRFKSHMEGSVNGHEFEIEGEGEGRPYEGTQTCKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYLKLSFPEGFKWERVMNFEDGGVVTVTQDSSLQDGEFIYKVKLRGTNFPSDGPVMQKKTMGWEPSSERMYPEDGALKGEGKGRLKLKDGGHYDAEVKTTYKAKKPVQLPGAYNCNIKLDITSHNEDYTIVEQYERAEGRHSTGGMDELYK",
+    "ipg_id": null,
+    "genbank": null,
+    "uniprot": null,
+    "pdb": [],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "rdsmcherry1_default",
+        "name": "default",
+        "ex_max": 600,
+        "em_max": 630,
+        "ext_coeff": 55400,
+        "qy": 0.09,
+        "pka": 5.6,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 4.99
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1371/journal.pone.0171257"
+  },
+  {
+    "uuid": "GNU4X",
+    "name": "Rosmarinus",
+    "slug": "rosmarinus",
+    "seq": "MSVIKSVMKIKLHMDGIVNGHKFMITGEGEGKPFEGTHTIILKVKEGGPLPFAYDILTTAFQYGNRVFTKYPKDIPDYFKQSFPEGYSWERSMTFEDQGVCTVTSDIKLEGDYFTYDIRFHGVNFPAGGPVMQKKTLRWEPSTENMYVRDGVLVGEVERTLLLEGNKHHRCNFRTTYKAKKEVVLPEYHFVDHRIEILGHDKDYNNVVVYENAVARQQASTLPSKAK",
+    "ipg_id": null,
+    "genbank": "KY931461",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "t",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "rosmarinus_default",
+        "name": "default",
+        "ex_max": 437,
+        "em_max": 482,
+        "ext_coeff": 45000,
+        "qy": 0.85,
+        "pka": null,
+        "maturation": null,
+        "lifetime": null,
+        "brightness": 38.25
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1021/acs.jpclett.7b00960"
+  },
+  {
+    "uuid": "LF3LJ",
+    "name": "TagRFP-T",
+    "slug": "tagrfp-t",
+    "seq": "MVSKGEELIKENMHMKLYMEGTVNNHHFKCTSEGEGKPYEGTQTMRIKVVEGGPLPFAFDILATSFMYGSRTFINHTQGIPDFFKQSFPEGFTWERVTTYEDGGVLTATQDTSLQDGCLIYNVKIRGVNFPSNGPVMQKKTLGWEANTEMLYPADGGLEGRTDMALKLVGGGHLICNFKTTYRSKKPAKNLKMPGVYYVDHRLERIKEADKETYVEQHEVAVARYCDLPSKLGHKLNGMDELYK",
+    "ipg_id": null,
+    "genbank": "ACD03281",
+    "uniprot": null,
+    "pdb": [
+      "5JVA"
+    ],
+    "agg": "m",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "tagrfp-t_default",
+        "name": "default",
+        "ex_max": 555,
+        "em_max": 584,
+        "ext_coeff": 81000,
+        "qy": 0.41,
+        "pka": 4.6,
+        "maturation": 100.0,
+        "lifetime": 2.3,
+        "brightness": 33.21
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nmeth.1209"
+  },
+  {
+    "uuid": "PGG5S",
+    "name": "tdTomato",
+    "slug": "tdtomato",
+    "seq": "MVSKGEEVIKEFMRFKVRMEGSMNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYKKLSFPEGFKWERVMNFEDGGLVTVTQDSSLQDGTLIYKVKMRGTNFPPDGPVMQKKTMGWEASTERLYPRDGVLKGEIHQALKLKDGGHYLVEFKTIYMAKKPVQLPGYYYVDTKLDITSHNEDYTIVEQYERSEGRHHLFLGHGTGSTGSGSSGTASSEDNNMAVIKEFMRFKVRMEGSMNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFAWDILSPQFMYGSKAYVKHPADIPDYKKLSFPEGFKWERVMNFEDGGLVTVTQDSSLQDGTLIYKVKMRGTNFPPDGPVMQKKTMGWEASTERLYPRDGVLKGEIHQALKLKDGGHYLVEFKTIYMAKKPVQLPGYYYVDTKLDITSHNEDYTIVEQYERSEGRHHLFLYGMDELYK",
+    "ipg_id": "3838287",
+    "genbank": "AAV52169",
+    "uniprot": null,
+    "pdb": [],
+    "agg": "td",
+    "switch_type": "b",
+    "states": [
+      {
+        "slug": "tdtomato_default",
+        "name": "default",
+        "ex_max": 554,
+        "em_max": 581,
+        "ext_coeff": 138000,
+        "qy": 0.69,
+        "pka": 4.7,
+        "maturation": 60.0,
+        "lifetime": null,
+        "brightness": 95.22
+      }
+    ],
+    "transitions": [],
+    "doi": "10.1038/nbt1037"
+  }
+]
