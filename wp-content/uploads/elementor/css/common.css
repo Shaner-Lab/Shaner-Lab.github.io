@@ -1,0 +1,145 @@
+/* Common styles for index.html and contact/index.html */
+
+.customify-container, .layout-contained, .site-framed .site, .site-boxed .site {
+    max-width: 2000px;
+}
+
+.main-layout-content .entry-content > .alignwide {
+    width: calc(2000px - 4em);
+    max-width: 100vw;
+}
+
+#page-cover {
+    background-image: url("./wp-content/themes/customify/assets/images/default-cover.jpg");
+}
+
+.header--row:not(.header--transparent).header-main .header--row-inner {
+    background-color: #00001c;
+    background-image: url("/wp-content/uploads/2021/04/LMB-14_1.25x_composite.jpg");
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 3px;
+    border-left-width: 0px;
+    border-color: #0a0000;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.header--row:not(.header--transparent).header-bottom .header--row-inner {
+    background-color: #1e73be;
+    border-style: none;
+}
+
+.sub-menu .li-duplicator {
+    display: none !important;
+}
+
+.header-search_icon-item .header-search-modal, .header-search_icon-item .search-field, .dark-mode .header-search_box-item .search-form-fields, .header-search_box-item .search-form-fields {
+    border-style: solid;
+}
+
+.builder-item--footer_copyright, .builder-item--footer_copyright p {
+    font-size: 19px;
+}
+
+/* CSS for desktop */
+#page-cover .page-cover-inner {
+    min-height: 300px;
+}
+
+#page-titlebar {
+    text-align: left;
+}
+
+.header--row.header-top .customify-grid, .header--row.header-top .style-full-height .primary-menu-ul > li > a {
+    min-height: 33px;
+}
+
+.header--row.header-main .customify-grid, .header--row.header-main .style-full-height .primary-menu-ul > li > a {
+    min-height: 162px;
+}
+
+.header--row.header-bottom .customify-grid, .header--row.header-bottom .style-full-height .primary-menu-ul > li > a {
+    min-height: 55px;
+}
+
+.header--row .builder-item--logo, .builder-item.builder-item--group .item--inner.builder-item--logo {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.header--row .builder-first--nav-icon {
+    text-align: right;
+}
+
+.header-search_icon-item .search-submit, .header-search_box-item .search-submit, .header-search_box-item .woo_bootster_search .search-submit, .header-search_box-item .header-search-form button.search-submit {
+    margin-left: -40px;
+}
+
+.header--row .builder-first--primary-menu {
+    text-align: right;
+}
+
+.footer-social-icons.customify-builder-social-icons li a {
+    font-size: 17px;
+    padding: 0.5em;
+}
+
+.footer-social-icons.customify-builder-social-icons li {
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+/* CSS for tablet */
+@media screen and (max-width: 1024px) {
+    #page-cover .page-cover-inner {
+        min-height: 250px;
+    }
+
+    .header--row .builder-item--nav-icon, .builder-item.builder-item--group .item--inner.builder-item--nav-icon {
+        margin-top: 0px;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        margin-left: -10px;
+    }
+
+    .header--row .builder-first--nav-icon {
+        text-align: right;
+    }
+
+    .header-search_icon-item .search-submit, .header-search_box-item .search-submit, .header-search_box-item .woo_bootster_search .search-submit, .header-search_box-item .header-search-form button.search-submit {
+        margin-left: -40px;
+    }
+}
+
+/* CSS for mobile */
+@media screen and (max-width: 568px) {
+    #page-cover .page-cover-inner {
+        min-height: 200px;
+    }
+
+    .header--row.header-top .customify-grid, .header--row.header-top .style-full-height .primary-menu-ul > li > a {
+        min-height: 33px;
+    }
+
+    .header--row .builder-item--nav-icon, .builder-item.builder-item--group .item--inner.builder-item--nav-icon {
+        margin-top: 0px;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        margin-left: -30px;
+    }
+
+    .header--row .builder-first--nav-icon {
+        text-align: right;
+    }
+
+    .header-search_icon-item .search-submit, .header-search_box-item .search-submit, .header-search_box-item .woo_bootster_search .search-submit, .header-search_box-item .header-search-form button.search-submit {
+        margin-left: -40px;
+    }
+} 
