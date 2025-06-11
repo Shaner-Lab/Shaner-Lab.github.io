@@ -156,32 +156,7 @@ header {
 </div></div></div>
 </div></header>	
 
-<style type="text/css">.wrapper, html, body {
-    margin: 0;
-}
-.wrapper {
-    display: flex;
-    flex-direction: column;
-}
-#row3 {
-    flex:2;
-    display: flex;
-}
-#col1 {
 
-    flex: 0 0 1%;
-    min-height: 100%;/* chrome needed it a question time , not anymore */
-}
-#col2 {
-
-    flex: 1 1;
-    min-height: 100%;/* chrome needed it a question time , not anymore */
-}
-#col3 {
-
-    flex: 0 0 1%;
-    min-height: 100%;/* chrome needed it a question time , not anymore */
-}</style>
 
 <style>
   /* Add half-line spacing between publications */
@@ -189,10 +164,13 @@ header {
     margin-bottom: 0.5em;
     color: white;
   }
+  /* Hide list container until it is relocated below the violet bar */
+  #publications-container {
+    display:none;
+  }
 </style>
 
-<div id="publications-container" style="padding: 0 20px;">
-  <h3 style="color:white;"><b style="font-size:1.5em; padding-left:20px;">Publications</b></h3>
+<div id="publications-container" style="padding:0 1em 0;margin-top:0;">
   <ol id="publication-list" style="list-style: decimal inside; margin: 0; padding: 0;">
     <li>Bright and photostable yellow fluorescent proteins for extended imaging. Nat Commun. 2025 Apr 04; 16(1):3241. Lee J, Lai S, Yang S, Zhao S, Blanco FA, Lyons AC, Merino-Urteaga R, Ahrens JF, Nguyen NA, Liu H, Liu Z, Lambert GG, <b>Shaner NC</b>, Chen L, Tolias KF, Zhang J, Ha T, St-Pierre F. PMID: 40185748; PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11971446" target="_blank">PMC11971446</a>.</li>
     <li>CaBLAM! A high-contrast bioluminescent Ca2+ indicator derived from an engineered Oplophorus gracilirostris luciferase. bioRxiv. 2025 Jan 02. Lambert GG, Crespo EL, Murphy J, Boassa D, Luong S, Celinskis D, Venn S, Nguyen DK, Hu J, Sprecher B, Tree MO, Orcutt R, Heydari D, Bell AB, Torreblanca-Zanca A, Hakimi A, Lipscombe D, Moore CI, Hochgeschwender U, <b>Shaner NC</b>. PMID: 37425712; PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10327125" target="_blank">PMC10327125</a>.</li>
@@ -254,35 +232,42 @@ header {
 	<div class="entry-content">
 				<div data-elementor-type="wp-post" data-elementor-id="44" class="elementor elementor-44" data-elementor-settings="[]">
 							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-02734b6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="02734b6" data-element_type="section">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-02734b6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="02734b6" data-element_type="section" style="padding-top:0;margin-top:-35px;">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d3a49e1" data-id="d3a49e1" data-element_type="column">
-			<div class="elementor-widget-wrap">
-									</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-f863ea3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f863ea3" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-84e435a" data-id="84e435a" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-805509f elementor-widget elementor-widget-html" data-id="805509f" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-
-
-
-
-
-
-
-</div>
-				</div>
+				<div class="elementor-element elementor-element-publications-heading elementor-widget elementor-widget-heading" data-id="publications-heading" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+						<h2 class="elementor-heading-title elementor-size-default" style="color:#ffffff;margin:0;font-size:2.9em;font-weight:600;">Publications</h2>
 					</div>
+				</div>
+			</div>
 		</div>
 							</div>
 		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f863ea3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f863ea3" data-element_type="section" style="background-color:#5039CA;height:10px;margin:0;">
+				</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-publist elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section">
+					<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-pubcol" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-pubhtml elementor-widget elementor-widget-html" data-element_type="widget" data-widget_type="html.default">
+									<div class="elementor-widget-container" id="pub-anchor"></div>
+								</div>
+							</div>
 						</div>
 					</div>
+				</section>
+				<script>
+				document.addEventListener('DOMContentLoaded',function(){
+					var pc=document.getElementById('publications-container');
+					var anchor=document.getElementById('pub-anchor');
+					if(pc&&anchor){
+						anchor.appendChild(pc);
+						pc.style.display='block';
+					}
+				});
+				</script>
 			</div>
 <!-- .entry-content -->
 
