@@ -55,6 +55,9 @@ img.emoji {
 	padding-left : 1em;
 	padding-right : 1em;
 }
+#site-navigation-sidebar-mobile .primary-menu-ul.menu.nav-menu li a {
+    text-transform: uppercase !important;
+}
 .site-content {
 	 background-color: transparent;
 }
@@ -85,7 +88,7 @@ header {
 }</style>
 		</head>
 
-<body style="min-height:100vh;display:flex;flex-direction:column;background-color:#0c0212;">
+<body class="content main-layout-content sidebar_vertical_border site-full-width menu_sidebar_slide_left" style="min-height:100vh;display:flex;flex-direction:column;background-color:#0c0212;">
 <div id="page" style="flex:1 0 auto;display:flex;flex-direction:column;min-height:100vh;">
 	<a class="skip-link screen-reader-text" href="#site-content">Skip to content</a>
 	<a class="close is-size-medium  close-panel close-sidebar-panel" href="#">
@@ -302,6 +305,8 @@ header {
 <!-- #page -->
 
 
+<script type="text/javascript" src="./../wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="./../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script>jQuery(document).ready(function($) {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) { 
@@ -321,8 +326,6 @@ var Customify_JS = {"is_rtl":"","css_media_queries":{"all":"%s","desktop":"%s","
 </script>
 <script type="text/javascript" src="./../wp-content/themes/customify/assets/js/theme.min.js?ver=0.3.6" id="customify-themejs-js"></script>
 <script type="text/javascript" src="./../wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.1.3" id="elementor-webpack-runtime-js"></script>
-<script type="text/javascript" src="./../wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
-<script type="text/javascript" src="./../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script type="text/javascript" src="./../wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.1.3" id="elementor-frontend-modules-js"></script>
 <script type="text/javascript" src="./../wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
 <script type="text/javascript" src="./../wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1" id="elementor-dialog-js"></script>
