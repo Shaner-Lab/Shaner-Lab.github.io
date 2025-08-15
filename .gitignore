@@ -1,0 +1,4 @@
+
+# Ignore old and simplified HTML files
+people/index_old.html
+people/index_simplified.html
