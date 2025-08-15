@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<title>People &#8211; The Shaner Lab</title>
+	<link rel="stylesheet" id="customify-style-css" href="./../wp-content/themes/customify/style.min.css?ver=0.3.6" type="text/css" media="all">
+	<style type="text/css" id="wp-custom-css">
+		.customify-container {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+		.site-content {
+			background-color: transparent;
+		}
+		.site-title {
+			font-size: 2em !important;
+		}
+		.site-description {
+			font-size: .85em !important;
+		}
+		[data-item-id="primary-menu"] {
+			font-size: 1.4em !important;
+		}
+		header {
+			z-index: 0;
+		}
+		
+		/* People Gallery Styles */
+		.people-gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 2rem;
+			padding: 2rem 0;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		.person-card {
+			text-align: center;
+			background: rgba(255, 255, 255, 0.05);
+			border-radius: 15px;
+			padding: 1.5rem;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			border: 1px solid rgba(80, 57, 202, 0.3);
+		}
+		.person-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+			border-color: #5039CA;
+		}
+		.person-image {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin: 0 auto 1rem;
+			border: 3px solid #5039CA;
+		}
+		.person-name {
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: #ffffff;
+			margin-bottom: 0.5rem;
+		}
+		.person-title {
+			font-size: 1.1rem;
+			color: #cfe7fe;
+			margin-bottom: 0.5rem;
+			line-height: 1.4;
+		}
+		.person-links {
+			display: flex;
+			justify-content: center;
+			gap: 1rem;
+			flex-wrap: wrap;
+			margin-top: 1rem;
+		}
+		.person-links a {
+			color: #cfe7fe;
+			text-decoration: underline;
+			font-size: 0.9rem;
+			transition: color 0.3s ease;
+			padding: 0.5rem 1rem;
+			border-radius: 5px;
+			background: rgba(80, 57, 202, 0.2);
+		}
+		.person-links a:hover {
+			color: #ffffff;
+			background: rgba(80, 57, 202, 0.4);
+		}
+		.page-title {
+			color: #ffffff;
+			margin: 0;
+			font-size: 2.9em;
+			font-weight: 600;
+			text-align: center;
+			padding: 2rem 0 1rem 0;
+		}
+		.accent-bar {
+			background-color: #5039CA;
+			height: 10px;
+			margin: 0 auto 2rem auto;
+			max-width: 200px;
+			border-radius: 5px;
+		}
+		@media (max-width: 768px) {
+			.people-gallery {
+				grid-template-columns: 1fr;
+				gap: 1.5rem;
+				padding: 1rem;
+			}
+			.person-image {
+				width: 150px;
+				height: 150px;
+			}
+			.page-title {
+				font-size: 2.2em;
+				padding: 1.5rem 0 1rem 0;
+			}
+		}
+	</style>
+</head>
+
+<body class="content main-layout-content sidebar_vertical_border site-full-width menu_sidebar_slide_left" style="min-height:100vh;display:flex;flex-direction:column;background-color:#0c0212;">
+<div id="page" style="flex:1 0 auto;display:flex;flex-direction:column;min-height:100vh;">
+	<header id="masthead" class="site-header header-v2">
+		<div id="masthead-inner" class="site-header-inner">
+			<div class="header-main header--row" id="cb-row--header-main" data-row-id="main" data-show-on="desktop mobile">
+				<div class="header--row-inner header-main-inner dark-mode">
+					<div class="customify-container">
+						<div class="customify-grid cb-row--desktop hide-on-mobile hide-on-tablet customify-grid-middle">
+							<div class="row-v2 row-v2-main no-center">
+								<div class="col-v2 col-v2-left">
+									<div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+										<div class="site-branding logo-">
+											<div class="site-name-desc">
+												<p class="site-title">
+													<a href="./../index.html" rel="home">The Shaner Lab</a>
+												</p>
+												<p class="site-description text-uppercase text-xsmall">UCSD Department of Neurosciences</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-v2 col-v2-right">
+									<div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+										<nav id="site-navigation-main-desktop" class="site-navigation primary-menu primary-menu-main nav-menu-desktop primary-menu-desktop style-plain">
+											<ul id="menu-pages" class="primary-menu-ul menu nav-menu">
+												<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home"><a href="./../index.html"><span class="link-before">Home</span></a></li>
+												<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./../our-proteins/index.html"><span class="link-before">OUR PROBES</span></a></li>
+												<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./../publications/index.html"><span class="link-before">Publications</span></a></li>
+												<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-103 current_page_item"><a href="./index.html" aria-current="page"><span class="link-before">People</span></a></li>
+												<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./../contact/index.html"><span class="link-before">Contact</span></a></li>
+												<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="./../news/index.html"><span class="link-before">News</span></a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="site-content" class="site-content">
+		<div class="customify-container">
+			<div class="customify-grid">
+				<main id="main" class="content-area customify-col-12">
+					<div class="content-inner">
+						<article id="post-103" class="post-103 page type-page status-publish hentry">
+							<div class="entry-content">
+								<h1 class="page-title">People</h1>
+								<div class="accent-bar"></div>
+								
+								<div class="people-gallery">
+									<div class="person-card">
+										<img src="./../wp-content/uploads/2021/03/Nathan-Shaner-972x1024.jpeg" alt="Nathan Shaner" class="person-image">
+										<div class="person-name">Nathan Shaner, PhD</div>
+										<div class="person-title">Principal Investigator</div>
+										<div class="person-title">Associate Professor at UCSD, Department of Neurosciences</div>
+										<div class="person-links">
+											<a href="./../wp-content/uploads/2023/10/CV_NCS_2021.pdf">C.V.</a>
+											<a href="https://scholar.google.com/citations?user=vDMLzNoAAAAJ&hl=en">Publications</a>
+											<a href="https://twitter.com/NathanShaner">Twitter</a>
+										</div>
+									</div>
+									
+									<div class="person-card">
+										<img src="./../wp-content/uploads/2022/03/Screenshot-2022-03-26-192330.jpg" alt="Gerard Lambert" class="person-image">
+										<div class="person-name">Gerard Lambert</div>
+										<div class="person-title">Senior Scientist</div>
+										<div class="person-title">Wet Lab Coordinator & Training Specialist</div>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<footer class="site-footer" id="site-footer">
+		<div class="footer-main footer--row layout-full-contained" id="cb-row--footer-main" data-row-id="main" data-show-on="desktop">
+			<div class="footer--row-inner footer-main-inner dark-mode">
+				<div class="customify-container">
+					<div class="customify-grid customify-grid-top">
+						<div class="customify-col-1_md-1_sm-6_xs-12 builder-item builder-first--footer-social-icons" data-push-left="_sm-0">
+							<div class="item--inner builder-item--footer-social-icons" data-section="footer_social_icons" data-item-id="footer-social-icons">
+								<ul class="footer-social-icons customify-builder-social-icons color-default">
+									<li><a class="social-icon-twitter shape-circle" rel="nofollow" target="_blank" href="https://twitter.com/NathanShaner"><i class="icon fa fa-twitter" title="Twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="customify-col-11_md-11_sm-6_xs-12 builder-item builder-first--footer_copyright" data-push-left="_sm-0">
+							<div class="item--inner builder-item--footer_copyright" data-section="footer_copyright" data-item-id="footer_copyright">
+								<div class="builder-footer-copyright-item footer-copyright">
+									<p>Nathan Shaner &#8211; <a href="mailto:ncshaner@ucsd.edu">ncshaner@ucsd.edu</a> &#8211; 9500 Gilman Drive La Jolla CA 92093 &#8211; UCSD Department of Neurosciences</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
