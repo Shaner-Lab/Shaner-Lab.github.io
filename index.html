@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -89,6 +91,8 @@ header {
 </style>
 <link rel="stylesheet" href="./wp-content/uploads/elementor/css/common.css" type="text/css" media="all">
 <style id="shaner-scrollbar-fix">html{overflow-y:scroll;}</style>
+
+
 		</head>
 
 <body class="home page-template-default page page-id-93 content main-layout-content sidebar_vertical_border site-full-width menu_sidebar_slide_left elementor-default elementor-kit-46 elementor-page elementor-page-93" style="min-height:100vh;display:flex;flex-direction:column;background-color:#0c0212;">
@@ -155,6 +159,11 @@ header {
 </div></div></div>
 </div></header>
 <!-- Main content removed for redesign -->
+<!-- Slideshow Section - Jekyll powered -->
+{% assign slides = site.data.slideshow.slides %}
+{% assign settings = site.data.slideshow.settings %}
+{% include slideshow.html %}
+
 <footer class="site-footer" id="site-footer" style="margin-top:auto;">                            <div class="footer-main footer--row layout-full-contained" id="cb-row--footer-main" data-row-id="main" data-show-on="desktop">
                                 <div class="footer--row-inner footer-main-inner dark-mode">
                                     <div class="customify-container">
@@ -182,6 +191,8 @@ header {
         }
     });
 });</script>
+
+
 
 <script type="text/javascript" id="customify-themejs-js-extra">
 /* <![CDATA[ */

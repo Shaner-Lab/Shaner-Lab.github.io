@@ -1,0 +1,40 @@
+# Slideshow Configuration
+# This file contains metadata for each slide
+# Images should be placed in assets/images/slideshow/
+
+slides:
+  - id: 1
+    image: "01_fluorescence_imaging.jpg"
+    title: "Advanced Fluorescence Imaging"
+    description: "Cutting-edge research in coral fluorescence and protein engineering"
+    alt_text: "Fungia fungites fluorescence imaging"
+    link: "./publications/index.html"
+    
+  - id: 2
+    image: "02_protein_probes.jpg"
+    title: "Innovative Protein Probes"
+    description: "Developing next-generation fluorescent proteins for scientific discovery"
+    alt_text: "LMB-14 composite image"
+    link: "./our-proteins/index.html"
+    
+  - id: 3
+    image: "03_research_excellence.jpg"
+    title: "Research Excellence"
+    description: "Pioneering work in neuroscience and fluorescence microscopy"
+    alt_text: "Research microscopy"
+    link: "./people/index.html"
+    
+  - id: 4
+    image: "04_marine_biology.jpg"
+    title: "Marine Biology Research"
+    description: "Exploring the fascinating world of coral fluorescence"
+    alt_text: "Coral edge fluorescence"
+    link: "./news/index.html"
+
+# Slideshow settings
+settings:
+  auto_advance: true
+  interval: 5000
+  transition_duration: 1000
+  show_navigation: true
+  show_dots: true

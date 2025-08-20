@@ -1,0 +1,46 @@
+# Jekyll Configuration for Shaner Lab Website
+title: "The Shaner Lab"
+description: "UCSD Department of Neurosciences"
+baseurl: ""
+url: "https://shaner-lab.github.io"
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  slideshow:
+    output: true
+    permalink: /slideshow/:name/
+
+# Data files
+data_dir: _data
+
+# Build settings
+destination: _site
+source: .
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - _site
+  - node_modules
+  - .git
+  - .DS_Store
+  - "*.py"
+  - "*.bat"
+  - "*.sh"
+  - README.md
+  - SLIDESHOW_README.md
+  - generate_slideshow.py
+  - update_slideshow.bat
+  - update_slideshow.sh
+  - slideshow.html
+  - slide_titles.json

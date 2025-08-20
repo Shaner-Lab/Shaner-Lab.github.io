@@ -1,0 +1,499 @@
+<!-- Jekyll Slideshow Template -->
+<!-- This template automatically generates slideshow HTML from _data/slideshow.yml -->
+
+{% assign slides = site.data.slideshow.slides %}
+{% assign settings = site.data.slideshow.settings %}
+
+<!-- Slideshow Styles -->
+<style id="slideshow-styles">
+.hero-slideshow-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    overflow: hidden;
+    background: #000;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Ensure no slides are visible initially, but allow transitions */
+.slide:not(.active) {
+    opacity: 0;
+}
+
+.slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.slide-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.slide-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Pause/Play button */
+.pause-play-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    z-index: 10;
+    user-select: none;
+    opacity: 0.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.pause-play-btn:hover {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Dots */
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active, .dot:hover {
+    background-color: white;
+}
+
+/* Fade animation for smooth transitions between slides */
+.slide.fade {
+    /* No animation initially - will be added by JavaScript when needed */
+}
+
+.slide.fade.transitioning {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/* Clickable slide styles */
+.slide-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.slide-content:hover {
+    transform: translate(-50%, -50%) scale(1.02);
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.click-indicator {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.slide-content:hover .click-indicator {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .hero-slideshow-section {
+        height: 50vh;
+        min-height: 400px;
+    }
+    
+    .slide-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .slide-content p {
+        font-size: 1rem;
+    }
+    
+    .prev, .next {
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+    
+    .featured-content-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .entry-content h1 {
+        font-size: 2rem;
+    }
+}
+</style>
+
+<section id="hero-slideshow" class="hero-slideshow-section">
+    <div class="slideshow-container">
+        {% for slide in slides %}
+        <div class="slide fade" data-slide-id="{{ slide.id }}">
+            {% if slide.link %}
+                <a href="{{ slide.link }}" class="slide-link">
+            {% endif %}
+            <img src="{{ '/assets/images/slideshow/' | append: slide.image | relative_url }}" alt="{{ slide.alt_text }}">
+            <div class="slide-content">
+                <h2>{{ slide.title }}</h2>
+                <p>{{ slide.description }}</p>
+                                        {% if slide.link %}
+                            <span class="click-indicator">{{ slide.link_text | default: "Learn more" }} →</span>
+                        {% endif %}
+            </div>
+            {% if slide.link %}
+                </a>
+            {% endif %}
+        </div>
+        {% endfor %}
+        
+        {% if settings.show_navigation %}
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        {% endif %}
+        
+        <!-- Pause/Play button -->
+        <button class="pause-play-btn" onclick="togglePausePlay()" id="pausePlayBtn" 
+                aria-label="Pause slideshow" title="Pause/Play slideshow">
+            <span id="pausePlayIcon">⏸️</span>
+        </button>
+        
+        {% if settings.show_dots %}
+        <!-- Dots/circles -->
+        <div class="dots-container">
+            {% for slide in slides %}
+            <span class="dot" onclick="currentSlide({{ slide.id }})"></span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<!-- Slideshow JavaScript -->
+<script>
+// Simple, direct slideshow implementation
+let currentSlideIndex = 0;
+let slideInterval;
+let isPaused = false;
+
+// Function to show a specific slide
+function showSlide(index) {
+    console.log('showSlide called with index:', index);
+    
+    // Get all slides and dots
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    console.log('Found slides:', slides.length);
+    console.log('Found dots:', dots.length);
+    
+    if (slides.length === 0) {
+        console.log('No slides found');
+        return;
+    }
+    
+    // Remove transitioning class from all slides
+    slides.forEach(slide => slide.classList.remove('transitioning'));
+    
+    // Hide all slides
+    slides.forEach(slide => slide.classList.remove('active'));
+    
+    // Remove active class from all dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Show current slide and activate corresponding dot
+    if (slides[index]) {
+        slides[index].classList.add('active');
+        // Add transitioning class to trigger fade animation
+        slides[index].classList.add('transitioning');
+        console.log('Activated slide', index);
+    }
+    if (dots[index]) {
+        dots[index].classList.add('active');
+        console.log('Activated dot', index);
+    }
+}
+
+// Function to change slide by offset
+function changeSlide(offset, isManual = true) {
+    console.log('changeSlide called with offset:', offset, 'isManual:', isManual);
+    console.log('Current index before change:', currentSlideIndex);
+    
+    const slides = document.querySelectorAll('.slide');
+    if (slides.length === 0) return;
+    
+    currentSlideIndex += offset;
+    
+    // Loop around if we go past the end or beginning
+    if (currentSlideIndex >= slides.length) {
+        currentSlideIndex = 0;
+    }
+    if (currentSlideIndex < 0) {
+        currentSlideIndex = slides.length - 1;
+    }
+    
+    console.log('New current index:', currentSlideIndex);
+    showSlide(currentSlideIndex);
+    
+    // Reset timer with delay for manual navigation, immediate for auto-advance
+    if (isManual) {
+        resetAutoSlideWithDelay();
+    } else {
+        resetAutoSlide();
+    }
+}
+
+// Function to go to specific slide
+function currentSlide(index) {
+    console.log('currentSlide called with index:', index);
+    
+    const slides = document.querySelectorAll('.slide');
+    if (slides.length === 0) return;
+    
+    currentSlideIndex = index - 1;
+    showSlide(currentSlideIndex);
+    resetAutoSlideWithDelay();
+}
+
+// Function to start auto-sliding
+function startAutoSlide() {
+    if (slideInterval) {
+        clearInterval(slideInterval);
+    }
+    slideInterval = setInterval(() => {
+        advanceSlide();
+    }, {{ settings.interval }}); // Use setting from YAML
+}
+
+// Function to reset auto-slide timer
+function resetAutoSlide() {
+    if (slideInterval) {
+        clearInterval(slideInterval);
+    }
+    startAutoSlide();
+}
+
+// Function to reset auto-slide timer with delay (for manual navigation)
+function resetAutoSlideWithDelay() {
+    if (slideInterval) {
+        clearInterval(slideInterval);
+    }
+    // Wait after manual navigation to give user time to read
+    setTimeout(() => {
+        if (!isPaused) {
+            startAutoSlide();
+        }
+    }, {{ settings.interval }}); // Same as normal interval (5 seconds)
+}
+
+// Function to advance to next slide without resetting timer
+function advanceSlide() {
+    console.log('Auto-advancing to next slide');
+    changeSlide(1, false); // Use changeSlide with isManual = false
+}
+
+// Toggle pause/play functionality
+function togglePausePlay() {
+    const icon = document.getElementById('pausePlayIcon');
+    const button = document.getElementById('pausePlayBtn');
+    
+    if (isPaused) {
+        // Resume slideshow
+        isPaused = false;
+        icon.textContent = '⏸️';
+        button.setAttribute('aria-label', 'Pause slideshow');
+        {% if settings.auto_advance %}
+        // Immediately advance to next slide, then start auto-advance
+        advanceSlide();
+        startAutoSlide();
+        {% endif %}
+        console.log('Slideshow resumed');
+    } else {
+        // Pause slideshow
+        isPaused = true;
+        icon.textContent = '▶️';
+        button.setAttribute('aria-label', 'Resume slideshow');
+        if (slideInterval) {
+            clearInterval(slideInterval);
+            slideInterval = null;
+        }
+        console.log('Slideshow paused');
+    }
+}
+
+// Initialize slideshow when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing slideshow...');
+    console.log('Slideshow settings:', {{ settings | jsonify }});
+    
+    // Start from a random slide for variety
+    const totalSlides = document.querySelectorAll('.slide').length;
+    const randomStartSlide = Math.floor(Math.random() * totalSlides);
+    currentSlideIndex = randomStartSlide;
+    console.log('Starting from random slide:', randomStartSlide + 1, 'of', totalSlides);
+    
+    // Show random starting slide after a brief delay to ensure smooth appearance
+    setTimeout(function() {
+        showSlide(randomStartSlide);
+    }, 100);
+    
+    {% if settings.auto_advance %}
+    // Start auto-slide
+    startAutoSlide();
+    {% endif %}
+    
+    // Hover pause functionality removed - slideshow continues playing during hover
+    
+    // Add keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+            changeSlide(-1);
+        } else if (e.key === 'ArrowRight') {
+            changeSlide(1);
+        }
+    });
+    
+    // Add touch/swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    if (container) {
+        container.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+        
+        container.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+    }
+    
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swipe left - next slide
+                changeSlide(1);
+            } else {
+                // Swipe right - previous slide
+                changeSlide(-1);
+            }
+        }
+    }
+    
+    console.log('Slideshow initialization complete');
+});
+</script>

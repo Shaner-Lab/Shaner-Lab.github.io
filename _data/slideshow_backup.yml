@@ -1,0 +1,160 @@
+# Slideshow Configuration for Lab Website Home Page
+# 20 most striking and varied images selected based on VISUAL CONTENT ANALYSIS
+# Images prioritize scientific content, resolution, and visual impact while representing diverse research themes
+
+slides:
+  - id: 1
+    image: "Sunset_11-11-2017_1.jpeg"
+    title: "Engineering light-based tools from nature"
+    description: "We adapt the chemistry of naturally occurring fluorescent and bioluminescent proteins to build optical probes that report and control cellular activity with high precision."
+    alt_text: "Dramatic natural sunset representing light-based research inspiration"
+    link: "./our-proteins/index.html"
+    link_text: "Explore our probes"
+    
+  - id: 2
+    image: "IMG_0588.jpeg"
+    title: "Exploring marine biodiversity for new probes"
+    description: "Our field collections and transcriptome mining of corals, jellyfish, and other marine organisms yield novel protein scaffolds for imaging and biosensing."
+    alt_text: "High-contrast marine research image with excellent visual quality"
+    link: "./news/index.html"
+    link_text: "Read our latest news"
+    
+  - id: 3
+    image: "PB031271.jpeg"
+    title: "Bioluminescent optogenetics in living systems"
+    description: "By fusing luciferases to light-sensitive ion channels, we create luminopsins that enable chemogenetic delivery of light for non-invasive neural control."
+    alt_text: "High-resolution bioluminescent research imaging"
+    link: "./publications/index.html"
+    link_text: "View our publications"
+    
+  - id: 4
+    image: "Porites lutea wound pink z6.3 RG merge.jpg"
+    title: "CaBLAM: bioluminescent calcium imaging"
+    description: "This engineered indicator detects neural and glial calcium signals in vivo without excitation light, enabling long-term, stable recording in freely behaving animals."
+    alt_text: "Porites coral wound healing fluorescence imaging"
+    link: "./publications/index.html"
+    link_text: "Read our research"
+    
+  - id: 5
+    image: "IMG_3794.jpeg"
+    title: "Photostable yellow fluorescent proteins"
+    description: "The mGold2 family resists photobleaching during extended imaging, addressing a long-standing limitation of YFPs for quantitative microscopy."
+    alt_text: "High-contrast fluorescence microscopy"
+    link: "./our-proteins/index.html"
+    link_text: "Discover our proteins"
+    
+  - id: 6
+    image: "IMG_6976.jpeg"
+    title: "Recording biochemical history in cells"
+    description: "Luciferin-gated fluorescent reporters integrate transient signals over time, converting dynamic activity into stable readouts for later analysis."
+    alt_text: "High-resolution cellular imaging"
+    link: "./publications/index.html"
+    link_text: "View our publications"
+    
+  - id: 7
+    image: "IMG_7092.jpeg"
+    title: "Tracking elusive and mobile cell populations"
+    description: "Our optical tools allow continuous monitoring of immune cells, metastatic cancer cells, and other motile populations in vitro and in vivo."
+    alt_text: "Sharp, high-contrast cell tracking image"
+    link: "./publications/index.html"
+    link_text: "Read our research"
+    
+  - id: 8
+    image: "IMG_7056.jpeg"
+    title: "The UCSD Biosensor Core"
+    description: "We provide consultation, assay development, and probe design to help academic and industry researchers integrate biosensors into their projects."
+    alt_text: "High-quality biosensor research imaging"
+    link: "./news/index.html"
+    link_text: "Learn about our core"
+    
+  - id: 9
+    image: "zoanthid2_comosite.jpg"
+    title: "Probing marine neural circuits in changing oceans"
+    description: "We develop peptide and transmitter indicators to study how marine nervous systems respond to warming, acidification, and other stressors."
+    alt_text: "Zoanthid coral fluorescence imaging"
+    link: "./news/index.html"
+    
+  - id: 10
+    image: "LMB-14_1.25x_composite.jpg"
+    title: "Illuminating immune cell exhaustion"
+    description: "Bioluminescent sensors track CAR T-cell activation patterns, providing insight into mechanisms limiting solid tumor immunotherapy."
+    alt_text: "LMB-14 protein composite imaging"
+    link: "./publications/index.html"
+    
+  - id: 11
+    image: "IMG_5810.jpeg"
+    title: "Orthogonal luciferase–luciferin systems"
+    description: "Distinct bioluminescent chemistries enable simultaneous optical control and readout of multiple biological processes without spectral crosstalk."
+    alt_text: "High-quality orthogonal imaging research"
+    link: "./our-proteins/index.html"
+    
+  - id: 12
+    image: "Echinophyllia_LMB-26_0.5-0.7x_compositeBG.jpg"
+    title: "Synthetic optical synapses"
+    description: "We demonstrate functional connectivity between neurons built entirely from bioluminescent sources and optogenetic actuators."
+    alt_text: "Echinophyllia coral composite with background"
+    link: "./publications/index.html"
+    
+  - id: 13
+    image: "PA311186.jpeg"
+    title: "Open sharing to accelerate adoption"
+    description: "Our group distributes probes and protocols without restriction, fostering rapid validation and application across diverse systems."
+    alt_text: "High-resolution research collaboration image"
+    link: "./news/index.html"
+    
+  - id: 14
+    image: "PB031263.jpeg"
+    title: "Designing for photophysical performance"
+    description: "We tune chromophore environments to optimize brightness, photostability, and spectral properties for demanding imaging tasks."
+    alt_text: "High-resolution photophysical research"
+    link: "./our-proteins/index.html"
+    
+  - id: 15
+    image: "Fungia fungites edge RG merge.jpg"
+    title: "Accessible high-performance microscopy"
+    description: "Bioluminescence enables quantitative in vivo imaging using simple optics, lowering barriers for under-resourced laboratories."
+    alt_text: "Fungia coral edge fluorescence imaging"
+    link: "./news/index.html"
+    
+  - id: 16
+    image: "Echinophyllia_composite.jpg"
+    title: "From sequence to sensor"
+    description: "Transcriptomic data mining and directed evolution link novel sequences to functional probes with tailored performance."
+    alt_text: "Echinophyllia coral composite imaging"
+    link: "./our-proteins/index.html"
+    
+  - id: 17
+    image: "P1050215.jpeg"
+    title: "Collaborating across disciplines"
+    description: "Our projects bring together neuroscientists, marine biologists, chemists, engineers, and clinicians to apply optical tools to new questions."
+    alt_text: "High-resolution interdisciplinary research"
+    link: "./people/index.html"
+    
+  - id: 18
+    image: "PB031258.jpeg"
+    title: "Training through research immersion"
+    description: "Undergraduate, graduate, and postdoctoral researchers learn optical probe engineering and imaging through hands-on mentorship."
+    alt_text: "High-resolution research training image"
+    link: "./people/index.html"
+    
+  - id: 19
+    image: "Blue_slime_1.6x_composite.jpg"
+    title: "Broadening access to advanced imaging"
+    description: "We design sensors to be compatible with standard microscopes, enabling use in labs without specialized equipment."
+    alt_text: "Blue slime composite microscopy imaging"
+    link: "./news/index.html"
+    
+  - id: 20
+    image: "LMB-11_2x_composite.jpg"
+    title: "Translating biological signals into light"
+    description: "Our probes transform molecular events into photons, making invisible processes visible and quantifiable."
+    alt_text: "LMB-11 high-magnification composite imaging"
+    link: "./publications/index.html"
+
+# Slideshow settings
+settings:
+  auto_advance: true
+  interval: 5000
+  transition_duration: 1000
+  show_navigation: true
+  show_dots: true
