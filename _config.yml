@@ -22,6 +22,10 @@ data_dir: _data
 destination: _site
 source: .
 
+# Ensure Next.js static assets are included (directory starts with "_")
+include:
+  - _next
+
 # GitHub Pages settings
 plugins:
   - jekyll-feed

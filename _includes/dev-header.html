@@ -1,0 +1,308 @@
+<header id="masthead" class="site-header header-v2">
+  <style type="text/css">
+    /* Subtitle department links: match text color, highlight on hover */
+    #masthead .site-description a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: inherit;
+      transition: color 150ms ease, font-weight 150ms ease, opacity 150ms ease;
+      opacity: 0.95;
+    }
+    #masthead .site-description a:hover,
+    #masthead .site-description a:focus-visible {
+      color: #ffffff;
+      font-weight: 700;
+      opacity: 1;
+      text-decoration: none;
+    }
+
+    /* Tools dropdown (click-to-toggle) */
+    #masthead .menu-item--tools.has-submenu > a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35em;
+    }
+    #masthead .menu-item--tools.has-submenu > a .tools-caret {
+      font-size: 0.85em;
+      opacity: 0.85;
+      transform: translateY(-0.02em);
+    }
+    #masthead .menu-item--tools .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      min-width: 220px;
+      margin: 0;
+      padding: 10px 0;
+      list-style: none;
+      background: rgba(12, 2, 18, 0.98);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+      z-index: 9999;
+    }
+    #masthead .menu-item--tools .sub-menu a {
+      display: block;
+      padding: 10px 16px;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1em;
+      letter-spacing: 0.02em;
+      text-transform: none;
+      font-variant: small-caps;
+    }
+    #masthead .menu-item--tools .sub-menu a:hover,
+    #masthead .menu-item--tools .sub-menu a:focus-visible {
+      color: #ffffff;
+      background: rgba(80, 57, 202, 0.18);
+    }
+    #masthead .menu-item--tools.submenu-open > .sub-menu {
+      display: block;
+    }
+    #masthead .menu-item--tools.submenu-open > a .tools-caret {
+      transform: rotate(180deg);
+    }
+
+    /* Ensure parent LI is anchor for absolute submenu */
+    #masthead .primary-menu-ul > .menu-item--tools {
+      position: relative;
+    }
+
+    /* Mobile sidebar: menu text styling to match desktop nav */
+    #header-menu-sidebar .primary-menu-ul > li > a .link-before {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+    }
+    /* Mobile: hide theme's built-in right-side toggle icon for Tools.
+       We replace it with our own inline caret span. */
+    #header-menu-sidebar .menu-item--tools.menu-item-has-children > .nav-toggle-icon {
+      display: none !important;
+    }
+    /* Mobile: hard reset for Tools submenu text under sidebar.
+       Customify's mobile menu styles appear to hide/clip submenu descendants.
+       This reset forces normal text flow only for the Tools submenu under #header-menu-sidebar. */
+    #header-menu-sidebar .menu-item--tools.menu-item-has-children > ul.sub-menu,
+    #header-menu-sidebar .menu-item--tools.menu-item-has-children > ul.sub-menu a {
+      position: static !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+      font-size: 0.9rem !important;
+      line-height: 1.4 !important;
+      text-indent: 0 !important;
+      letter-spacing: normal !important;
+      white-space: normal !important;
+      transform: none !important;
+      clip: auto !important;
+      clip-path: none !important;
+      overflow: visible !important;
+      height: auto !important;
+      max-height: none !important;
+      width: auto !important;
+    }
+    #header-menu-sidebar .menu-item--tools.menu-item-has-children > ul.sub-menu {
+      list-style: none;
+      margin: 0;
+      padding: 4px 0 4px 18px;
+      display: none !important;
+    }
+    #header-menu-sidebar .menu-item--tools.menu-item-has-children.submenu-open > ul.sub-menu {
+      display: block !important;
+    }
+    /* Mobile: animate/rotate our caret when submenu is open */
+    #header-menu-sidebar .menu-item--tools > a .tools-caret {
+      display: inline-block;
+      transition: transform 150ms ease;
+      transform-origin: 50% 50%;
+    }
+    #header-menu-sidebar .menu-item--tools.submenu-open > a .tools-caret {
+      transform: rotate(180deg);
+    }
+    #header-menu-sidebar .primary-menu-ul > li > a:hover .link-before,
+    #header-menu-sidebar .primary-menu-ul > li > a:focus-visible .link-before {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  </style>
+  <div id="masthead-inner" class="site-header-inner">
+    <div class="header-main header--row" id="cb-row--header-main" data-row-id="main" data-show-on="desktop mobile">
+      <div class="header--row-inner header-main-inner dark-mode">
+        <div class="customify-container">
+          <div class="customify-grid  cb-row--desktop hide-on-mobile hide-on-tablet customify-grid-middle">
+            <div class="row-v2 row-v2-main no-center">
+              <div class="col-v2 col-v2-left">
+                <div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+                  <div class="site-branding logo-">
+                    <div class="site-name-desc">
+                      <p class="site-title">
+                        <a href="{{ site.baseurl }}/" rel="home">The Shaner Lab</a>
+                      </p>
+                      <p class="site-description text-uppercase text-xsmall">UCSD Departments of <a href="https://neurosciences.ucsd.edu" target="_blank" rel="noopener noreferrer">Neurosciences</a><br>and <a href="https://pharmacology.ucsd.edu" target="_blank" rel="noopener noreferrer">Pharmacology</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-v2 col-v2-right">
+                <div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+                  <nav id="site-navigation-main-desktop" class="site-navigation primary-menu primary-menu-main nav-menu-desktop primary-menu-desktop style-plain">
+                    <ul id="menu-pages" class="primary-menu-ul menu nav-menu">
+                      <li id="menu-item--main-desktop-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-98">
+                        <a href="{{ site.baseurl }}/"><span class="link-before">Home</span></a>
+                      </li>
+                      <li id="menu-item--main-desktop-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146">
+                        <a href="{{ site.baseurl }}/our-proteins/"><span class="link-before">OUR PROBES</span></a>
+                      </li>
+                      <li id="menu-item--main-desktop-500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-500 menu-item--tools has-submenu">
+                        <a href="{{ site.baseurl }}/fret-calculator/" class="tools-toggle" aria-haspopup="true" aria-expanded="false">
+                          <span class="link-before">Tools</span>
+                          <span class="tools-caret" aria-hidden="true">▾</span>
+                        </a>
+                        <ul class="sub-menu">
+                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item--tools-fret">
+                            <a href="{{ site.baseurl }}/fret-calculator/"><span class="link-before">FRET Calculator</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li id="menu-item--main-desktop-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50">
+                        <a href="{{ site.baseurl }}/publications/"><span class="link-before">Publications</span></a>
+                      </li>
+                      <li id="menu-item--main-desktop-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118">
+                        <a href="{{ site.baseurl }}/people/"><span class="link-before">People</span></a>
+                      </li>
+                      <li id="menu-item--main-desktop-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109">
+                        <a href="{{ site.baseurl }}/contact/"><span class="link-before">Contact</span></a>
+                      </li>
+                      <li id="menu-item--main-desktop-411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-411">
+                        <a href="{{ site.baseurl }}/news/"><span class="link-before">News</span></a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cb-row--mobile hide-on-desktop customify-grid customify-grid-middle">
+            <div class="row-v2 row-v2-main no-center no-right">
+              <div class="col-v2 col-v2-left">
+                <div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+                  <a class="menu-mobile-toggle item-button is-size-desktop-medium is-size-tablet-medium is-size-mobile-medium">
+                    <span class="hamburger hamburger--squeeze">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                    </span>
+                    <span class="nav-icon--label hide-on-tablet hide-on-mobile">Menu</span>
+                  </a>
+                </div>
+                <div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+                  <div class="site-branding logo-">
+                    <div class="site-name-desc">
+                      <p class="site-title">
+                        <a href="{{ site.baseurl }}/" rel="home">The Shaner Lab</a>
+                      </p>
+                      <p class="site-description text-uppercase text-xsmall">UCSD Departments of <a href="https://neurosciences.ucsd.edu" target="_blank" rel="noopener noreferrer">Neurosciences</a><br>and <a href="https://pharmacology.ucsd.edu" target="_blank" rel="noopener noreferrer">Pharmacology</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="header-menu-sidebar" class="header-menu-sidebar menu-sidebar-panel dark-mode">
+      <div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg">
+        <div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner">
+          <div class="builder-item-sidebar mobile-item--html">
+            <div class="item--inner" data-item-id="html" data-section="header_html">
+              <div class="builder-header-html-item item--html"></div>
+            </div>
+          </div>
+          <div class="builder-item-sidebar mobile-item--primary-menu mobile-item--menu ">
+            <div class="item--inner" data-item-id="primary-menu" data-section="header_menu_primary">
+              <nav id="site-navigation-sidebar-mobile" class="site-navigation primary-menu primary-menu-sidebar nav-menu-mobile primary-menu-mobile style-plain">
+                <ul id="menu-pages" class="primary-menu-ul menu nav-menu">
+                  <li id="menu-item--sidebar-mobile-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-98">
+                    <a href="{{ site.baseurl }}/"><span class="link-before">Home</span></a>
+                  </li>
+                  <li id="menu-item--sidebar-mobile-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146">
+                    <a href="{{ site.baseurl }}/our-proteins/"><span class="link-before">OUR PROBES</span></a>
+                  </li>
+                  <li id="menu-item--sidebar-mobile-500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-500 menu-item--tools has-submenu menu-item-has-children">
+                    <a href="{{ site.baseurl }}/fret-calculator/" class="tools-toggle" aria-haspopup="true" aria-expanded="false">
+                      <span class="link-before">Tools</span>
+                      <span class="tools-caret" aria-hidden="true">▾</span>
+                    </a>
+                    <ul class="sub-menu">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item--tools-fret">
+                        <a href="{{ site.baseurl }}/fret-calculator/">FRET CALCULATOR</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="menu-item--sidebar-mobile-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50">
+                    <a href="{{ site.baseurl }}/publications/"><span class="link-before">Publications</span></a>
+                  </li>
+                  <li id="menu-item--sidebar-mobile-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118">
+                    <a href="{{ site.baseurl }}/people/"><span class="link-before">People</span></a>
+                  </li>
+                  <li id="menu-item--sidebar-mobile-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109">
+                    <a href="{{ site.baseurl }}/contact/"><span class="link-before">Contact</span></a>
+                  </li>
+                  <li id="menu-item--sidebar-mobile-411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-411">
+                    <a href="{{ site.baseurl }}/news/"><span class="link-before">News</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Click-to-toggle Tools dropdown (desktop + mobile sidebar)
+  (function () {
+    function closeAllToolsMenus() {
+      document.querySelectorAll('#masthead .menu-item--tools.submenu-open, #header-menu-sidebar .menu-item--tools.submenu-open')
+        .forEach((li) => {
+          li.classList.remove('submenu-open');
+          const a = li.querySelector(':scope > a.tools-toggle');
+          if (a) a.setAttribute('aria-expanded', 'false');
+        });
+    }
+
+    function toggleForAnchor(anchor) {
+      const li = anchor && anchor.parentElement;
+      if (!li) return;
+      const isOpen = li.classList.contains('submenu-open');
+      closeAllToolsMenus();
+      if (!isOpen) {
+        li.classList.add('submenu-open');
+        anchor.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    document.addEventListener('click', function (e) {
+      const toggle = e.target.closest('a.tools-toggle');
+      if (toggle && (toggle.closest('#masthead') || toggle.closest('#header-menu-sidebar'))) {
+        e.preventDefault();
+        toggleForAnchor(toggle);
+        return;
+      }
+
+      // Click outside closes menus
+      if (!e.target.closest('#masthead .menu-item--tools') && !e.target.closest('#header-menu-sidebar .menu-item--tools')) {
+        closeAllToolsMenus();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeAllToolsMenus();
+    });
+  })();
+</script>

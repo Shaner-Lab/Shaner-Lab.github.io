@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <title>{{ page.title | default: site.title }}</title>
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/wp-includes/css/dist/block-library/style.min.css">
+  <style type="text/css">
+    .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}
+    .wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+  </style>
+  <style type="text/css">
+    body{--wp--preset--color--black:#000000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#ffffff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;}
+    :where(.is-layout-flex){gap:.5em}:where(.is-layout-grid){gap:.5em}
+  </style>
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/wp-content/plugins/elementor/assets/lib/animations/animations.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/wp-content/plugins/elementor/assets/css/frontend.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/wp-content/uploads/elementor/css/global.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/wp-content/uploads/elementor/css/post-46.css">
+  {% if page.elementor_post_css %}
+  <link rel="stylesheet" href="{{ site.baseurl }}{{ page.elementor_post_css }}">
+  {% endif %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/wp-content/themes/customify/style.min.css">
+
+  <style type="text/css">
+    .customify-container,.layout-contained,.site-framed .site,.site-boxed .site{max-width:2000px}
+    .main-layout-content .entry-content>.alignwide{width:calc(2000px - 4em);max-width:100vw}
+    #page-cover{background-image:url("{{ site.baseurl }}/wp-content/themes/customify/assets/images/default-cover.jpg")}
+    .header--row:not(.header--transparent).header-main .header--row-inner{background-color:#00001c;background-image:url("{{ site.baseurl }}/wp-content/uploads/2021/04/LMB-14_1.25x_composite.jpg");background-repeat:no-repeat;border-style:solid;border-top-width:0;border-right-width:0;border-bottom-width:3px;border-left-width:0;border-color:#0a0000}
+    .header--row:not(.header--transparent).header-bottom .header--row-inner{background-color:#1e73be;border-style:none}
+    .customify-container{padding-left:1em;padding-right:1em}
+    .site-content{background-color:transparent}
+    .col-v2{padding:2em}
+    .site-title{font-size:2em!important}
+    .site-description{font-size:.85em!important}
+    [data-item-id="primary-menu"]{font-size:1.4em!important}
+    header{z-index:0}
+    #page-cover .page-cover-inner{min-height:300px}
+    #page-titlebar{text-align:left}
+    .header--row.header-top .customify-grid,.header--row.header-top .style-full-height .primary-menu-ul>li>a{min-height:33px}
+    .header--row.header-main .customify-grid,.header--row.header-main .style-full-height .primary-menu-ul>li>a{min-height:162px}
+    .header--row.header-bottom .customify-grid,.header--row.header-bottom .style-full-height .primary-menu-ul>li>a{min-height:55px}
+    .header--row .builder-item--logo,.builder-item.builder-item--group .item--inner.builder-item--logo{margin:0}
+    .header--row .builder-first--nav-icon{text-align:right}
+    .header-search_icon-item .search-submit,
+    .header-search_box-item .search-submit,
+    .header-search_box-item .woo_bootster_search .search-submit,
+    .header-search_box-item .header-search-form button.search-submit{margin-left:-40px}
+    .header--row .builder-first--primary-menu{text-align:right}
+    @media screen and (max-width:1024px){
+      #page-cover .page-cover-inner{min-height:250px}
+      .header--row .builder-item--nav-icon,
+      .builder-item.builder-item--group .item--inner.builder-item--nav-icon{margin:0 20px 0 -10px}
+      .header--row .builder-first--nav-icon{text-align:right}
+    }
+    @media screen and (max-width:568px){
+      #page-cover .page-cover-inner{min-height:200px}
+      .header--row.header-top .customify-grid,.header--row.header-top .style-full-height .primary-menu-ul>li>a{min-height:33px}
+      .header--row .builder-item--nav-icon,
+      .builder-item.builder-item--group .item--inner.builder-item--nav-icon{margin:0 20px 0 -30px}
+      .header--row .builder-first--nav-icon{text-align:right}
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Roboto+Slab:100,200,300,400,500,600,700,800,900|Red+Hat+Display:100,200,300,400,500,600,700,800,900">
+  <link rel="stylesheet" href="{{ site.baseurl }}/wp-content/uploads/elementor/css/common.css">
+  <style id="shaner-scrollbar-fix">html{overflow-y:scroll;}</style>
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom-modular.css">
+
+  <style type="text/css">
+    /* Match prototype indent for boxed Elementor sections */
+    body.refactored-layout .elementor-section-boxed > .elementor-container{
+      max-width:1500px;
+      margin:0 auto;
+      padding-left:6px;
+      padding-right:6px;
+    }
+  </style>
+</head>
+
+<body class="content main-layout-content sidebar_vertical_border site-full-width menu_sidebar_slide_left refactored-layout" style="min-height:100vh;display:flex;flex-direction:column;background-color:#0c0212;">
+  <div id="page" class="site box-shadow" style="flex:1 0 auto;display:flex;flex-direction:column;min-height:100vh;">
+    {% include dev-header.html %}
+
+    <div id="site-content" class="site-content">
+      <div class="customify-container">
+        <div class="customify-grid">
+          <main id="main" class="content-area customify-col-12">
+            <div class="content-inner">
+              <article class="page type-page status-publish hentry">
+                <div class="entry-content">
+                  {{ content }}
+                </div>
+              </article>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    {% include dev-footer.html %}
+  </div>
+
+  <script type="text/javascript" id="customify-themejs-js-extra">
+    var Customify_JS = {"is_rtl":"","css_media_queries":{"all":"%s","desktop":"%s","tablet":"@media screen and (max-width: 1024px) { %s }","mobile":"@media screen and (max-width: 568px) { %s }"},"sidebar_menu_no_duplicator":"1"};
+  </script>
+  <script src="{{ site.baseurl }}/wp-includes/js/jquery/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+  <script src="{{ site.baseurl }}/wp-content/themes/customify/assets/js/theme.min.js"></script>
+</body>
+</html>
+

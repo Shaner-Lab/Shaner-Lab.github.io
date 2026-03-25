@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<title>Shaner Lab – Page Template</title>
+	<meta name="robots" content="max-image-preview:large">
+
+	<!-- Core WordPress/Block styles (captured from live pages) -->
+	<link rel="stylesheet" id="wp-block-library-css" href="../wp-includes/css/dist/block-library/style.min.css?ver=6.3.2" type="text/css" media="all">
+	<style id="classic-theme-styles-inline-css" type="text/css">
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em;
+		}
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none;
+		}
+	</style>
+	<style id="global-styles-inline-css" type="text/css">
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+		}
+		:where(.is-layout-flex) { gap: 0.5em; }
+		:where(.is-layout-grid) { gap: 0.5em; }
+	</style>
+
+	<!-- Elementor / theme CSS dependencies used across pages -->
+	<link rel="stylesheet" id="elementor-icons-css" href="../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.11.0" type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-animations-css" href="../wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.1.3" type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="../wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.1.3" type="text/css" media="all">
+	<link rel="stylesheet" id="elementor-global-css" href="../wp-content/uploads/elementor/css/global.css?ver=1697921249" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="../wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
+	<link rel="stylesheet" id="customify-style-css" href="../wp-content/themes/customify/style.min.css?ver=0.3.6" type="text/css" media="all">
+
+	<style id="customify-style-inline-css" type="text/css">
+		.customify-container,
+		.layout-contained,
+		.site-framed .site,
+		.site-boxed .site {
+			max-width: 2000px;
+		}
+		.main-layout-content .entry-content > .alignwide {
+			width: calc(2000px - 4em);
+			max-width: 100vw;
+		}
+		#page-cover {
+			background-image: url("../wp-content/themes/customify/assets/images/default-cover.jpg");
+		}
+		.header--row:not(.header--transparent).header-main .header--row-inner {
+			background-color: #00001c;
+			background-image: url("../wp-content/uploads/2021/04/LMB-14_1.25x_composite.jpg");
+			background-repeat: no-repeat;
+			border-style: solid;
+			border-top-width: 0;
+			border-right-width: 0;
+			border-bottom-width: 3px;
+			border-left-width: 0;
+			border-color: #0a0000;
+		}
+		.header--row:not(.header--transparent).header-bottom .header--row-inner {
+			background-color: #1e73be;
+			border-style: none;
+		}
+		/* Match header/grid vertical sizing from main pages */
+		#page-cover .page-cover-inner {
+			min-height: 300px;
+		}
+		#page-titlebar {
+			text-align: left;
+		}
+		.header--row.header-top .customify-grid,
+		.header--row.header-top .style-full-height .primary-menu-ul > li > a {
+			min-height: 33px;
+		}
+		.header--row.header-main .customify-grid,
+		.header--row.header-main .style-full-height .primary-menu-ul > li > a {
+			min-height: 162px;
+		}
+		.header--row.header-bottom .customify-grid,
+		.header--row.header-bottom .style-full-height .primary-menu-ul > li > a {
+			min-height: 55px;
+		}
+		.header--row .builder-item--logo,
+		.builder-item.builder-item--group .item--inner.builder-item--logo {
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+		}
+		.header--row .builder-first--nav-icon {
+			text-align: right;
+		}
+		.header-search_icon-item .search-submit {
+			margin-left: -40px;
+		}
+		.header-search_box-item .search-submit,
+		.header-search_box-item .woo_bootster_search .search-submit,
+		.header-search_box-item .header-search-form button.search-submit {
+			margin-left: -40px;
+		}
+		.header--row .builder-first--primary-menu {
+			text-align: right;
+		}
+		.customify-container {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+		.site-content {
+			background-color: transparent;
+		}
+		.col-v2 {
+			padding: 2em;
+		}
+		.site-title {
+			font-size: 2em !important;
+		}
+		.site-description {
+			font-size: .85em !important;
+		}
+		[data-item-id="primary-menu"] {
+			font-size: 1.4em !important;
+		}
+		header {
+			z-index: 0;
+		}
+		.footer-social-icons.customify-builder-social-icons li a {
+			font-size: 17px;
+			padding: 0.5em;
+		}
+		.footer-social-icons.customify-builder-social-icons li {
+			margin-left: 27px;
+			margin-right: 27px;
+		}
+		/* Layout helpers so footer sits at bottom on short pages */
+		html, body {
+			height: 100%;
+			min-height: 100vh;
+		}
+		#page {
+			display: flex !important;
+			flex-direction: column !important;
+			min-height: 100vh !important;
+		}
+		#site-content {
+			flex: 1 1 auto !important;
+		}
+		#site-footer {
+			margin-top: auto !important;
+		}
+		/* Tablet and mobile tweaks copied from main pages */
+		@media screen and (max-width: 1024px) {
+			#page-cover .page-cover-inner {
+				min-height: 250px;
+			}
+			.header--row .builder-item--nav-icon,
+			.builder-item.builder-item--group .item--inner.builder-item--nav-icon {
+				margin-top: 0;
+				margin-right: 20px;
+				margin-bottom: 0;
+				margin-left: -10px;
+			}
+			.header--row .builder-first--nav-icon {
+				text-align: right;
+			}
+		}
+		@media screen and (max-width: 568px) {
+			#page-cover .page-cover-inner {
+				min-height: 200px;
+			}
+			.header--row.header-top .customify-grid,
+			.header--row.header-top .style-full-height .primary-menu-ul > li > a {
+				min-height: 33px;
+			}
+			.header--row .builder-item--nav-icon,
+			.builder-item.builder-item--group .item--inner.builder-item--nav-icon {
+				margin-top: 0;
+				margin-right: 20px;
+				margin-bottom: 0;
+				margin-left: -30px;
+			}
+			.header--row .builder-first--nav-icon {
+				text-align: right;
+			}
+		}
+	</style>
+
+	<!-- Google Fonts used globally -->
+	<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Roboto+Slab:100,200,300,400,500,600,700,800,900|Red+Hat+Display:100,200,300,400,500,600,700,800,900&ver=6.3.2" type="text/css" media="all">
+
+	<style type="text/css">
+		/* Minor global tweaks mirrored from existing pages */
+		.recentcomments a {
+			display: inline !important;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		body {
+			background-color: #0c0212;
+		}
+	</style>
+
+	<!-- Extra Elementor/common styles from main pages -->
+	<link rel="stylesheet" href="../wp-content/uploads/elementor/css/common.css" type="text/css" media="all">
+	<style id="shaner-scrollbar-fix">html{overflow-y:scroll;}</style>
+</head>
+
+<body class="home page-template-default page page-id-93 content main-layout-content sidebar_vertical_border site-full-width menu_sidebar_slide_left elementor-default elementor-kit-46 elementor-page elementor-page-93" style="min-height:100vh;display:flex;flex-direction:column;background-color:#0c0212;">
+<div id="page" class="site box-shadow" style="flex:1 0 auto;display:flex;flex-direction:column;min-height:100vh;">
+	<a class="skip-link screen-reader-text" href="#site-content">Skip to content</a>
+
+	<a class="close is-size-medium close-panel close-sidebar-panel" href="#">
+		<span class="hamburger hamburger--squeeze is-active">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"><span class="screen-reader-text">Menu</span></span>
+			</span>
+		</span>
+		<span class="screen-reader-text">Close</span>
+	</a>
+
+	<header id="masthead" class="site-header header-v2">
+		<div id="masthead-inner" class="site-header-inner">
+			<div class="header-main header--row" id="cb-row--header-main" data-row-id="main" data-show-on="desktop mobile">
+				<div class="header--row-inner header-main-inner dark-mode">
+					<div class="customify-container">
+						<!-- Desktop header -->
+						<div class="customify-grid cb-row--desktop hide-on-mobile hide-on-tablet customify-grid-middle">
+							<div class="row-v2 row-v2-main no-center">
+								<div class="col-v2 col-v2-left">
+									<div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+										<div class="site-branding logo-">
+											<div class="site-name-desc">
+												<p class="site-title">
+													<a href="../index.html" rel="home">The Shaner Lab</a>
+												</p>
+												<p class="site-description text-uppercase text-xsmall">UCSD Department of Neurosciences</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-v2 col-v2-right">
+									<div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu">
+										<nav id="site-navigation-main-desktop" class="site-navigation primary-menu primary-menu-main nav-menu-desktop primary-menu-desktop style-plain">
+											<ul id="menu-pages" class="primary-menu-ul menu nav-menu">
+												<li id="menu-item--main-desktop-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-98">
+													<a href="../index.html"><span class="link-before">Home</span></a>
+												</li>
+												<li id="menu-item--main-desktop-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146">
+													<a href="../our-proteins/index.html"><span class="link-before">OUR PROBES</span></a>
+												</li>
+												<li id="menu-item--main-desktop-500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-500">
+													<a href="../fret-calculator/index.html"><span class="link-before">Tools</span></a>
+												</li>
+												<li id="menu-item--main-desktop-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50">
+													<a href="../publications/index.html"><span class="link-before">Publications</span></a>
+												</li>
+												<li id="menu-item--main-desktop-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118">
+													<a href="../people/index.html"><span class="link-before">People</span></a>
+												</li>
+												<li id="menu-item--main-desktop-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109">
+													<a href="../contact/index.html"><span class="link-before">Contact</span></a>
+												</li>
+												<li id="menu-item--main-desktop-411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-411">
+													<a href="../news/index.html"><span class="link-before">News</span></a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Mobile header -->
+						<div class="cb-row--mobile hide-on-desktop customify-grid customify-grid-middle">
+							<div class="row-v2 row-v2-main no-center no-right">
+								<div class="col-v2 col-v2-left">
+									<div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">
+										<a class="menu-mobile-toggle item-button is-size-desktop-medium is-size-tablet-medium is-size-mobile-medium">
+											<span class="hamburger hamburger--squeeze">
+												<span class="hamburger-box">
+													<span class="hamburger-inner"></span>
+												</span>
+											</span>
+											<span class="nav-icon--label hide-on-tablet hide-on-mobile">Menu</span>
+										</a>
+									</div>
+									<div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
+										<div class="site-branding logo-">
+											<div class="site-name-desc">
+												<p class="site-title">
+													<a href="../index.html" rel="home">The Shaner Lab</a>
+												</p>
+												<p class="site-description text-uppercase text-xsmall">UCSD Department of Neurosciences</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Off‑canvas mobile menu -->
+			<div id="header-menu-sidebar" class="header-menu-sidebar menu-sidebar-panel dark-mode">
+				<div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg">
+					<div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner">
+						<div class="builder-item-sidebar mobile-item--html">
+							<div class="item--inner" data-item-id="html" data-section="header_html">
+								<div class="builder-header-html-item item--html"></div>
+							</div>
+						</div>
+						<div class="builder-item-sidebar mobile-item--primary-menu mobile-item--menu">
+							<div class="item--inner" data-item-id="primary-menu" data-section="header_menu_primary">
+								<nav id="site-navigation-sidebar-mobile" class="site-navigation primary-menu primary-menu-sidebar nav-menu-mobile primary-menu-mobile style-plain">
+									<ul id="menu-pages" class="primary-menu-ul menu nav-menu">
+										<li id="menu-item--sidebar-mobile-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-98">
+											<a href="../index.html"><span class="link-before">Home</span></a>
+										</li>
+										<li id="menu-item--sidebar-mobile-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146">
+											<a href="../our-proteins/index.html"><span class="link-before">OUR PROBES</span></a>
+										</li>
+										<li id="menu-item--sidebar-mobile-500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-500">
+											<a href="../fret-calculator/index.html"><span class="link-before">Tools</span></a>
+										</li>
+										<li id="menu-item--sidebar-mobile-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50">
+											<a href="../publications/index.html"><span class="link-before">Publications</span></a>
+										</li>
+										<li id="menu-item--sidebar-mobile-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118">
+											<a href="../people/index.html"><span class="link-before">People</span></a>
+										</li>
+										<li id="menu-item--sidebar-mobile-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109">
+											<a href="../contact/index.html"><span class="link-before">Contact</span></a>
+										</li>
+										<li id="menu-item--sidebar-mobile-411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-411">
+											<a href="../news/index.html"><span class="link-before">News</span></a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- ===== Main content wrapper (page‑specific content goes inside) ===== -->
+	<div id="site-content" class="site-content">
+		<div class="customify-container">
+			<div class="customify-grid">
+				<main id="main" class="content-area customify-col-12">
+					<div class="content-inner">
+						<article class="page type-page">
+							<div class="entry-content">
+								<section class="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default elementor-section-height-default" style="padding-top:0;margin-top:-35px;">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-top-column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-widget elementor-widget-heading">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default" style="color:#ffffff;margin:0;font-size:2.4em;font-weight:600;">
+															Page Title
+														</h2>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<section class="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default elementor-section-height-default" style="background-color:#5039CA;height:10px;margin:0;">
+								</section>
+
+								<section class="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default elementor-section-height-default">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-top-column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-widget elementor-widget-text-editor">
+													<div class="elementor-widget-container">
+														<div style="color:#e9e9e9;font-size:18px;line-height:1.6;max-width:900px;">
+															<p>
+																This is the base template for Shaner Lab pages. Replace this block with
+																page‑specific content (Elementor‑style sections, galleries, news items, etc.)
+																while preserving the shared header, footer, and global styles.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</article>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<footer class="site-footer" id="site-footer" style="background-color:#0c0212;">
+		<div class="footer-main footer--row layout-full-contained" id="cb-row--footer-main" data-row-id="main" data-show-on="desktop">
+			<div class="footer--row-inner footer-main-inner dark-mode" style="background-color:#0c0212;">
+				<div class="customify-container">
+					<div class="customify-grid customify-grid-top" style="padding-top:0;">
+						<div class="customify-col-12_md-12_sm-12_xs-12 builder-item" data-push-left="_sm-0">
+							<div class="item--inner" data-section="footer_adc_nice" data-item-id="footer-adc-nice">
+								<div class="footer-adc-nice-item" style="text-align:left;padding-top:0;margin-top:-70px;padding-bottom:20px;">
+									<a href="https://www.adc-nice.org" target="_blank" rel="noopener noreferrer" title="Visit ADC-NiCE">
+										<img src="../assets/images/whitelogof.svg" alt="ADC-NiCE Logo" style="height:160px;width:auto;max-width:480px;">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- Shared JS dependencies from existing pages -->
+<script type="text/javascript" src="../wp-includes/js/jquery/jquery.min.js?ver=3.7.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="../wp-content/themes/customify/assets/js/theme.min.js?ver=0.3.6" id="customify-themejs-js"></script>
+<script type="text/javascript" src="../wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.1.3" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="../wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.1.3" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="../wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="../wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1" id="elementor-dialog-js"></script>
+<script type="text/javascript" src="../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script type="text/javascript" src="../wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.1.3" id="share-link-js"></script>
+<script type="text/javascript" src="../wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6" id="swiper-js"></script>
+<script type="text/javascript" src="../wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.1.3" id="elementor-frontend-js"></script>
+
+<!-- Sticky header shrink behavior shared by several pages -->
+<script>
+	jQuery(document).ready(function($) {
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > 100) {
+				$('header').addClass('shrink');
+			} else {
+				$('header').removeClass('shrink');
+			}
+		});
+	});
+</script>
+
+</body>
+</html>
+

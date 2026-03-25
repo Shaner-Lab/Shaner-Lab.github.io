@@ -1,0 +1,29 @@
+/* Custom modular layout utilities for refactor prototype.
+ * Safe: not referenced by existing pages.
+ */
+
+.page-hero {
+  padding-top: 0;
+  margin-top: -35px;
+}
+
+.page-hero-title {
+  color: #ffffff;
+  margin: 0;
+  font-size: 2.6em;
+  font-weight: 600;
+}
+
+.page-hero-accent-bar {
+  background-color: #5039CA;
+  height: 10px;
+  margin: 0;
+}
+
+.page-body {
+  color: #e9e9e9;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 900px;
+}
+

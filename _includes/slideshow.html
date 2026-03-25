@@ -467,6 +467,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add touch/swipe support for mobile
     let touchStartX = 0;
     let touchEndX = 0;
+    const container = document.querySelector('.hero-slideshow-section') || document.querySelector('.slideshow-container');
     
     if (container) {
         container.addEventListener('touchstart', function(e) {
