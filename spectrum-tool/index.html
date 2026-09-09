@@ -1,0 +1,89 @@
+---
+layout: refactored
+title: "Spectrum Tool – The Shaner Lab"
+---
+
+<div data-elementor-type="wp-page" class="elementor elementor-spectrum-tool" data-elementor-settings="[]">
+  <div class="elementor-section-wrap">
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-spectrum-heading elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" style="padding-top:0;margin-top:-35px;">
+      <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-spectrum-heading-column" data-element_type="column">
+          <div class="elementor-widget-wrap elementor-element-populated">
+            <div class="elementor-element elementor-element-spectrum-title elementor-widget elementor-widget-heading" data-element_type="widget" data-widget_type="heading.default">
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default" style="color:#ffffff;margin:0;font-size:2.9em;font-weight:600;">Spectrum Tool</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-spectrum-bar elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" style="background-color:#5039CA;height:10px;margin:0;">
+    </section>
+
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-spectrum-embed elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" style="padding-top:40px;padding-bottom:40px;">
+      <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-spectrum-embed-column" data-element_type="column">
+          <div class="elementor-widget-wrap elementor-element-populated">
+            <div class="elementor-element elementor-element-spectrum-iframe elementor-widget elementor-widget-html" data-element_type="widget" data-widget_type="html.default">
+              <div class="elementor-widget-container">
+                <iframe
+                  id="spectrum-tool-iframe"
+                  src="/tools/spectrum-tool/embed/"
+                  title="Spectrum Tool"
+                  style="width:100%;max-width:100%;min-height:500px;border:none;overflow:hidden;"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+  // Resize Spectrum Tool iframe from EmbedResizeNotifier postMessage events.
+  document.addEventListener('DOMContentLoaded', function () {
+    var iframe = document.getElementById('spectrum-tool-iframe');
+    if (!iframe) return;
+
+    var RESIZE_MESSAGE_TYPE = 'fret-embed-resize';
+
+    function applyHeight(height) {
+      if (typeof height !== 'number' || isNaN(height) || height <= 0) return;
+      iframe.style.height = height + 'px';
+    }
+
+    function fallbackMeasure() {
+      try {
+        var doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+        if (!doc) return;
+        var body = doc.body;
+        var html = doc.documentElement;
+        if (!body || !html) return;
+        applyHeight(Math.max(
+          body.scrollHeight || 0,
+          body.offsetHeight || 0,
+          html.clientHeight || 0,
+          html.scrollHeight || 0,
+          html.offsetHeight || 0
+        ));
+      } catch (e) {
+        // Same-origin only; fail silently if that ever changes.
+      }
+    }
+
+    window.addEventListener('message', function (event) {
+      if (!event.data || event.data.type !== RESIZE_MESSAGE_TYPE) return;
+      if (iframe.contentWindow && event.source && event.source !== iframe.contentWindow) return;
+      applyHeight(event.data.height);
+    });
+
+    iframe.addEventListener('load', function () {
+      fallbackMeasure();
+      setTimeout(fallbackMeasure, 500);
+    });
+  });
+</script>

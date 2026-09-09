@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "source": {
+    "path": "dyes_spectra.json",
+    "sha256": "336053b6ed9e9d1e5745e3e63cae624fb62ef230c72d7600dee329c6c946b76e",
+    "bytes": 10715200
+  },
+  "generated_at_utc": "2026-04-21T15:35:25.832Z",
+  "regenerate": "npm run sync:dye-catalog"
+}
